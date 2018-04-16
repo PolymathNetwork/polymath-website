@@ -1,0 +1,70 @@
+// main: ../_theme-portfolio.scss
+
+$em-base: 13;
+
+.portfolio-item {
+
+	&.metro {
+		text-align: center;
+
+		.portfolio-content {
+			padding-left: 6%;
+			padding-right: 6%;
+		}
+
+		&.style-default {
+
+			.portfolio-content {
+				/* padding-left: 0;*/
+			}
+		}
+
+		.col-md-4 &,
+		.col-md-5 &,
+		.col-md-6 & {
+
+			&.style-default,
+			&.outline,
+			&.shadow {
+
+				.portfolio-summary {
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+		.col-md-4 & {
+
+			&.style-default,
+			&.outline,
+			&.shadow {
+
+				.portfolio-summary {
+					width: 80%;
+				}
+			}
+		}
+		.col-md-5 & {
+
+			&.style-default,
+			&.outline,
+			&.shadow {
+
+				.portfolio-summary {
+					width: 70%;
+				}
+			}
+		}
+		.col-md-6 & {
+
+			&.style-default,
+			&.outline,
+			&.shadow {
+
+				.portfolio-summary {
+					width: 60%;
+				}
+			}
+		}
+	}
+}

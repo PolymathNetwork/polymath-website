@@ -1,0 +1,53 @@
+// main: ../_theme-portfolio.scss
+
+$em-base: 14;
+
+.grid {
+
+	&.caption-fixed {
+
+		.portfolio-content {
+			padding-top: em(58);
+			padding-bottom: em(60);
+		}
+	}
+}
+
+@media screen and ( min-width: $grid-breakpoints-md ) {
+
+	.grid {
+
+		&.caption-fixed {
+			min-height: 280px;
+
+			.portfolio-content,
+			.inner-wrapper,
+			.portfolio-main-image,
+			.portfolio-main-image > figure,
+			.portfolio-main-image > figure > img,
+			.parallax-img-parent,
+			.parallax-img-container,
+			.aspect-ratio-container,
+			.aspect-ratio-fill,
+			.aspect-ratio-fill > img,
+			.portfolio-inner {
+				min-height: 280px;
+
+				.col-md-6 & {
+					min-height: 400px;
+				}
+			}
+			.section-parallax-img {
+				min-height: 350px;
+
+				.col-md-6 & {
+					min-height: 480px;
+				}
+			}
+
+			.col-md-6 & {
+				min-height: 400px;
+			}
+		}
+	}
+}

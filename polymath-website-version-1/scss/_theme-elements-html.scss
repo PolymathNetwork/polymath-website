@@ -1,0 +1,156 @@
+// main: theme.scss
+
+/*
+* Name:        Boo HTML Elements
+* Written by: 	Themerella - (http://themerella.com)
+* Version:     1.0.0
+*/
+
+/* Buttons
+*********************/
+
+
+/* Carousels
+*********************/
+
+
+/* Latest Posts
+*********************/
+
+
+/* Tabs
+*********************/
+
+
+/* Testimonials
+*********************/
+
+
+/* Misc Elements
+*********************/
+
+
+
+/* When page builder is activated
+*********************************/
+[data-x-mode="true"] {
+
+	// /* Carousels
+	// *********************/
+	// .carousel-nav {
+	// 	display: none;
+	// }
+
+	/* Latest Posts
+	*********************/
+	.latest-post-hover {
+
+		.overlay-link {
+			visibility: hidden;
+		}
+		p,
+		footer i,
+		.latest-hover-image figure {
+			opacity: 1;
+			visibility: visible;
+		}
+		p {
+			transform: none;
+		}
+		footer i {
+			transform: translate3d(0, -50%, 0);
+		}
+		.latest-hover-image figure {
+			opacity: 0.15;
+			transform: scale3d(1, 1, 1) translate3d(0, 0, 5px)
+		}
+	}
+	.latest-post_carousel-fullwidth {
+		margin-bottom: 30px;
+	}
+
+	/* Testimonials
+	*********************/
+	.testimonial-slider {
+
+		.testimonial-slider-temporary {
+			display: block;
+
+			.testimonial-item {
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				align-items: stretch;
+				flex-flow: row wrap;
+
+				.testimonial-quote,
+				figure {
+					flex: 1 auto;
+					width: 50%;
+				}
+				.testimonial-quote {
+					// display: -webkit-flex;
+					// display: -ms-flex;
+					// display: flex;
+					// padding-left: 2%;
+					// padding-right: 2%;
+					// align-items: center;
+					// justify-content: center;
+					// flex-flow: column wrap;
+					// text-align: center;
+					background-color: #f7f7f7;
+				}
+			}
+		}
+		.testimonial-slider-opposite {
+			display: none;
+		}
+	}
+
+	[data-lettering] {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	/* Text Animations
+	*********************/
+	.typed-keywords {
+
+		.keyword {
+			position: relative;
+			top: auto;
+			left: auto;
+			white-space: normal;
+			opacity: 1;
+
+			+ .keyword {
+				margin-left: 5px;
+
+				&:before {
+					content: ',';
+				}
+			}
+		}
+	}
+	[data-plugin-typed] {
+
+		.typed-strings {
+
+			span {
+				display: inline-block;
+
+				&:after {
+					content: ',';
+					margin-right: 0.5em;
+				}
+			}
+		}
+	}
+
+	.typed {
+
+		.typed-element {
+			display: none;
+		}
+	}
+}

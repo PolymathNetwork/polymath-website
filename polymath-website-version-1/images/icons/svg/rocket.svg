@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Rocket</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="-2.70536404%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#C1C6D2" offset="0%"></stop>
+            <stop stop-color="#959AAC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#A6ABBB" offset="0%"></stop>
+            <stop stop-color="#888DA1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#9CA1B2" offset="0%"></stop>
+            <stop stop-color="#83889D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Website" transform="translate(-710.000000, -1729.000000)">
+            <g id="Rocket" transform="translate(709.000000, 1730.000000)">
+                <circle id="Oval-7" stroke="#AEB3C1" stroke-width="2" cx="42" cy="13" r="3"></circle>
+                <path d="M54.5101688,0.318865888 C45.9866742,1.81328361 39.8099094,3.58715001 35.9798744,5.64046506 C32.1498394,7.69378012 25.9730746,12.5427483 17.44958,20.1873696 L35.0959621,37.8337517 C42.7588791,29.8763388 47.7670313,23.6238579 50.1204186,19.0763088 C52.4738059,14.5287597 53.937056,8.27627876 54.5101688,0.318865888 Z" id="Path-4" stroke="url(#linearGradient-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M35.0801496,37.7557884 L17.4978409,20.1734797 L7.06272669,25.9521306 L14.520771,28.6739161 L14.6132288,29.2544966 C15.3631309,33.9634435 16.2868369,36.8514565 17.2294429,37.775947 C18.1844485,38.7125988 21.2484032,39.7185138 26.2591601,40.6413516 L26.8239028,40.745361 L29.5974775,48.4356478 L35.0801496,37.7557884 Z" id="Path-5" stroke="url(#linearGradient-2)" stroke-width="2"></path>
+                <path d="M9.09724738,34.940526 L2.08942925,53.0796778 L20.2763496,45.649183 C16.3073435,44.8362248 13.6877008,43.8248549 12.3628049,42.5505849 C11.0416988,41.2799599 9.97492881,38.7591421 9.09724738,34.940526 Z" id="Path-6" stroke="url(#linearGradient-3)" stroke-width="2"></path>
+                <circle id="Oval-6" fill="#9A9FB0" cx="26.5" cy="20.5" r="1.5"></circle>
+                <circle id="Oval-6-Copy" fill="#9A9FB0" cx="30.5" cy="24.5" r="1.5"></circle>
+                <circle id="Oval-6-Copy-2" fill="#9A9FB0" cx="34.5" cy="28.5" r="1.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

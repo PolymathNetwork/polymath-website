@@ -1,0 +1,301 @@
+// main: theme-rtl.scss
+
+
+/*
+ * Name:        Boo Theme Portfolio - RTL
+ * Written by: 	Themerella - (http://themerella.com)
+ * Version:     1.0.0
+*/
+
+.masonry-filters {
+
+	&.default {
+
+		ul,
+		.filters-toggle-link {
+			float: right;
+		}
+		.filters-toggle-link {
+
+			svg {
+				transform: translateY(25%) rotateZ(180deg);
+			}
+		}
+		li {
+
+			> span:first-child {
+
+				span {
+
+					&:after {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+			.counter {
+				right: auto;
+				left: 0;
+				-webkit-transform: translateX(-100%);
+				transform: translateX(-100%);
+			}
+			&.active,
+			&:hover {
+
+				> span:first-child span:after {
+					-webkit-transform-origin: right center;
+					transform-origin: right center;
+				}
+			}
+		}
+		&:hover {
+
+			li {
+
+				> span span {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+				&:not(.active) .counter span {
+					-webkit-transform: translateX(300%);
+					transform: translateX(300%);
+				}
+			}
+		}
+	}
+
+	&.grid-transition-started {
+
+		li {
+
+			.counter {
+
+				span {
+					-webkit-transform: translateX(110%) !important;
+					transform: translateX(110%) !important;
+				}
+			}
+		}
+	}
+}
+
+.portfolio-nav {
+
+	.next {
+		float: left;
+
+		i {
+			margin-left: 0;
+			margin-right: 6px;
+		}
+		.fa-angle-right:before {
+			content: "\f104";
+		}
+	}
+	.prev {
+
+		i {
+			margin-right: 0;
+			margin-left: 6px;
+		}
+		.fa-angle-left:before {
+			content: "\f105";
+		}
+	}
+}
+
+.portfolio-likes {
+
+	i {
+		margin-right: 0;
+		margin-left: 5px;
+	}
+}
+
+.portfolio-item {
+
+	.portfolio-footer {
+
+		.btn {
+
+			.fa-long-arrow-right {
+
+				&:before {
+					content: "\f177";
+				}
+			}
+		}
+	}
+	&:not(.style-hover) {
+
+		.portfolio-footer {
+
+			.btn {
+
+				.fa-share {
+					margin: 0;
+					transform: scaleX(-1);
+				}
+			}
+		}
+	}
+	&.grid {
+
+		.like-loader {
+			left: auto;
+			right: -3px;
+		}
+		.portfolio-share-popup {
+			right: auto;
+			left: 0;
+
+			&:before {
+				right: auto;
+				left: 16px;
+			}
+		}
+		&.hover-side,
+		&.hover-bottom-left {
+
+			.portfolio-content {
+				padding-right: 25px;
+				padding-left: 25px;
+				text-align: right;
+			}
+		}
+		&:not(.style-hover) {
+
+			.portfolio-share {
+				margin-left: 0;
+				margin-right: 6px;
+			}
+		}
+	}
+	&.style-hover {
+
+		.portfolio-footer {
+			direction: ltr;
+		}
+		.like-loader {
+			left: auto;
+			right: -7px !important;
+		}
+	}
+	&.hover-side {
+
+		.portfolio-content {
+			text-align: right;
+			padding-right: 4.8%;
+			padding-left: 34%;
+		}
+		.portfolio-footer {
+			right: auto;
+			left: 0;
+
+			&:before {
+				left: auto;
+				right: 0;
+				transform-origin: right center;
+				transform: translateX(-25%) translateY(-34%) rotateZ(-78deg);
+			}
+		}
+
+		&:hover {
+
+			.portfolio-footer {
+
+				&:before {
+					transform: translateX(25%) translateY(-34%) rotateZ(-58deg);
+				}
+			}
+		}
+	}
+	&.hover-elegant {
+
+		.portfolio-content {
+			direction: ltr;
+		}
+	}
+	&.hover-bottom-left {
+
+		.portfolio-content {
+			padding-right: 4%;
+			padding-left: 34%;
+			text-align: right;
+		}
+	}
+}
+
+.portfolio-item.classic {
+
+	&:not(.style-hover) {
+
+		.portfolio-main-image {
+			left: auto;
+		}
+		.portfolio-content {
+			margin-left: 0;
+			margin-right: 66.66666667%;
+		}
+		.portfolio-footer {
+
+			.btn {
+
+				span i {
+					margin-left: 0;
+					margin-right: 6px;
+				}
+			}
+		}
+		.portfolio-share-popup {
+			left: auto;
+			right: 100%;
+			transform: translateX(-8%) translateY(-50%) scaleX(1.05);
+
+			&:before {
+				left: auto;
+				right: -7px;
+				transform: rotateZ(180deg);
+			}
+		}
+		.portfolio-share {
+			padding-right: 0;
+			padding-left: 14px;
+			margin-left: 0;
+			margin-right: 10px;
+
+			&:hover {
+
+				.portfolio-share-popup {
+				}
+			}
+		}
+
+		&.item-left {
+
+			.portfolio-main-image {
+				left: auto;
+				right: 33.33333333%;
+			}
+		}
+		&.item-inside {
+
+			&.item-left {
+
+				.portfolio-content {
+					transform: translate3d(-50%, 0, 0);
+				}
+			}
+			&.item-right {
+
+				.portfolio-content {
+					transform: translate3d(50%, 0, 0);
+				}
+			}
+		}
+	}
+	.portfolio-likes .like-loader {
+		left: auto !important;
+		right: 1px;
+	}
+}

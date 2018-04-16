@@ -1,0 +1,119 @@
+// main: ../theme.scss
+
+/* Shortcodes
+********************/
+.color-black {
+	color: #000;
+}
+.color-white {
+	color: #fff;
+}
+.color-white-faded {
+	color: rgba(#fff, 0.5);
+}
+.color-white-faded-75 {
+	color: rgba(#fff, 0.75);
+}
+.color-gray {
+	color: #cfcfcf;
+}
+.color-gray-1 {
+	color: #9d9d9d;
+}
+.color-gray-2 {
+	color: #999;
+}
+.color-gray-3 {
+	color: #edeef0;
+}
+.color-gray-4 {
+	color: #999;
+}
+.color-gray-5 {
+	color: #c4c4c4;
+}
+.color-gray-6 {
+	color: #bbb;
+}
+
+.bordered {
+	border: 1px solid #ededed;
+}
+.bordered-bottom {
+	border-bottom: 1px solid #ededed;
+}
+.bordered-top {
+	border-top: 1px solid #ededed;
+}
+.bordered-dash {
+	border-top: 2px dashed #f2f2f2;
+	border-bottom: 2px dashed #f2f2f2;
+}
+
+
+.bg-gray {
+	background-color: #f7f7f7 !important;
+}
+.bg-gray-2 {
+	background-color: #efefef !important;
+}
+.bg-gray-3 {
+	background-color: #f4f4f4 !important;
+}
+.bg-gray-4 {
+	background-color: #fafafa !important;
+}
+
+.bg-gradient-1 {
+	background: linear-gradient(122deg, #dd2476 0%, #e34e41 100%);
+}
+.bg-gradient-2 {
+	background: linear-gradient(114deg, #ae57ff 0%, #4f53f0 100%);
+}
+.bg-gradient-3 {
+	background: linear-gradient(122deg,rgb(177, 0, 243) 0%,rgb(104, 88, 234) 100%);
+}
+
+.bg-pos-center-center {
+	background-position: center !important;
+}
+.bg-pos-left-top {
+	background-position: left top !important;
+}
+.bg-pos-left-center {
+	background-position: left center !important;
+}
+.bg-pos-left-bottom {
+	background-position: left bottom !important;
+}
+.bg-pos-right-top {
+	background-position: right top !important;
+}
+.bg-pos-right-center {
+	background-position: right center !important;
+}
+.bg-pos-right-bottom {
+	background-position: right bottom !important;
+}
+.bg-pos-center-top {
+	background-position: center top !important;
+}
+.bg-pos-center-bottom {
+	background-position: center bottom !important;
+}
+
+.bg-size-cover {
+	background-size: cover;
+}
+.bg-size-contain {
+	background-size: contain;
+}
+
+p.big {
+	font-size: 1.4285em;
+}
+p.bigger {
+	font-size: 23px;
+	line-height: 1.739em;
+	letter-spacing: 0.015em;
+}

@@ -1,0 +1,80 @@
+// main: theme.scss
+
+/*
+ * Name:        Boo Theme Blog
+ * Written by: 	Themerella - (http://themerella.com)
+ * Version:     1.0.0
+ */
+
+/*----------------------------------------
+  [Table of contents]
+
+	1. BLOG GENERAL
+	 |- 1.1. Blog general
+	 |- 1.2. Blog post formats
+
+	2. BLOG LAYOUTS
+	 |- 2.1. Classic image large
+	 |- 2.2. Classic image medium
+	 |- 2.3. Grid
+	 |- 2.4. Masonry
+	 |- 2.5. Masonry creative
+	 |- 2.6. Half content
+	 |- 2.7. Classic date featured
+	 |- 2.8. No image
+	 |- 2.9. Only title
+	 |- 2.10. Puzzle
+	 |- 2.11. Timeline
+	 |- 2.12. Title featured
+	 |- 2.13. Featured posts
+
+	3. BLOG SINGLE
+	 |- Blog single
+
+-----------------------------------------*/
+
+/* Common and Vendors*/
+@import 'vendors/bourbon/bourbon';
+@import 'variables';
+@import 'mixin';
+
+/*----- 1. BLOG GENERAL -----*/
+
+/* 1.1. Blog general */
+@import 'blog/blog';
+/* 1.2. Blog post formats */
+@import 'blog/post-formats';
+
+/*----- 2. BLOG LAYOUTS -----*/
+
+/* 2.1. Classic image large */
+@import 'blog/classic-img-lg';
+/* 2.2. Classic image medium */
+@import 'blog/classic-img-md';
+/* 2.3. Grid */
+// @import 'blog/grid';
+/* 2.4. Masonry */
+// @import 'blog/masonry';
+/* 2.5. Masonry creative */
+// @import 'blog/masonry-creative';
+/* 2.6. Half content */
+@import 'blog/half-content';
+/* 2.7. Classic date featured */
+// @import 'blog/classic-date-featured';
+/* 2.8. No image */
+// @import 'blog/no-image';
+/* 2.9. Only title */
+// @import 'blog/only-title';
+/* 2.10. Puzzle */
+// @import 'blog/puzzle';
+/* 2.11. Timeline */
+// @import 'blog/timeline';
+/* 2.12. Title featured */
+// @import 'blog/title-featured';
+/* 2.13. Featured posts */
+// @import 'blog/featured-posts';
+
+/*----- 3. BLOG SINGLE -----*/
+
+/* 3.1. Blog single */
+@import 'blog/single';

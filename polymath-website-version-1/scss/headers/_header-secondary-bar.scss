@@ -1,0 +1,211 @@
+/* main: ../theme.scss*/
+
+.secondary-bar {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+
+	> .container > .row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: stretch;
+		    -ms-flex-align: stretch;
+		        align-items: stretch;
+
+		> [class^=col-] {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: stretch;
+			    -ms-flex-align: stretch;
+			        align-items: stretch;
+
+			&:last-child {
+
+				.module-trigger {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+
+	.header-module {
+
+		&:only-child {
+			padding-left: 0;
+			padding-right: 0;
+
+			.module-trigger {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+		&:first-of-type {
+			padding-left: 0;
+		}
+		&:last-of-type {
+			padding-right: 0;
+		}
+	}
+
+	.v-sep {
+
+		+ .header-module {
+			padding-left: 30px;
+		}
+	}
+
+	.module-trigger {
+		height: auto;
+	}
+
+	.module-container {
+		right: auto;
+		left: 0;
+	}
+
+	.icon-box {
+
+		&.icon-box-inline {
+
+			h3,
+			.icon-container {
+				margin-bottom: 0 !important;
+			}
+			.icon-container {
+				margin-right: 15px;
+			}
+		}
+	}
+
+	.btn {
+
+		&.btn-lg,
+		&.btn-xlg,
+		&.btn-xxlg {
+
+			span {
+				@include padding( null 2em );
+			}
+		}
+	}
+
+	.social-icon {
+
+		&.square {
+			height: 100%;
+
+			li {
+				height: 100%;
+				display: table;
+			}
+			a {
+				width: auto;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			i {
+				display: table;
+
+				&:before {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+			&.social-icon-lg {
+
+				a {
+					width: 50px;
+					height: 50px;
+
+					i {
+						line-height: 50px;
+					}
+				}
+			}
+		}
+	}
+
+	&.shadowed {
+		-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+		        box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+	}
+}
+
+[data-enable-midnight] {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+@media (max-width: $grid-breakpoints-xl - 1) {
+
+	.secondary-bar {
+
+		.icon-box-inline {
+
+			.icon-container {
+				margin-right: em(5);
+			}
+		}
+		.v-sep + .header-module {
+			padding-left: 13px;
+		}
+	}
+}
+
+@media (min-width: $grid-breakpoints-lg) and (max-width: $grid-breakpoints-xl - 1) {
+
+	.secondary-bar {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+
+		> .container > .row,
+		> .container-fluid > .row {
+
+			> [class^=col-] {
+
+				&.text-md-right {
+
+					.wpb_wrapper {
+						-webkit-box-pack: end;
+						    -ms-flex-pack: end;
+						        justify-content: flex-end;
+					}
+				}
+				&.text-md-center {
+
+					.wpb_wrapper {
+						-webkit-box-pack: center;
+						    -ms-flex-pack: center;
+						        justify-content: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $grid-breakpoints-lg - 1) {
+
+	.secondary-bar-placeholder,
+	.secondary-bar {
+		display: none;
+	}
+	.secondary-bar {
+
+		.header-module {
+			margin-bottom: em(15);
+		}
+		.v-sep {
+			display: none;
+		}
+	}
+}

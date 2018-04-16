@@ -1,0 +1,14 @@
+// main: ../theme.scss
+
+/* Dark Version */
+html.dark {
+	body {
+
+	}
+}
+
+/* Dark Version - Responsive */
+@media (max-width: $grid-breakpoints-lg) { }
+@media (max-width: $grid-breakpoints-md) { }
+@media (max-width: $grid-breakpoints-sm) { }
+@media (max-width: $grid-breakpoints-xs) { }

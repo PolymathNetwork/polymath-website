@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="58px" viewBox="0 0 53 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#C2C7D3" offset="0%"></stop>
+            <stop stop-color="#7B8096" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Website" transform="translate(-1082.000000, -1463.000000)">
+            <g id="Clock" transform="translate(1083.000000, 1463.000000)">
+                <circle id="Oval-2" stroke="url(#linearGradient-1)" stroke-width="2" cx="25.5" cy="31.5" r="25.5"></circle>
+                <path d="M25,57 L25,55" id="Line-2" stroke="#7B8096" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M10,17 L11.5811388,18.5811388" id="Line-2-Copy-3" stroke="#B4B9C6" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M39.5839192,17 L38,18.5839192" id="Line-2-Copy-7" stroke="#B4B9C6" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M11.5839192,45 L10,46.5839192" id="Line-2-Copy-8" stroke="#898EA2" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M38,45 L39.5811388,46.5811388" id="Line-2-Copy-6" stroke="#898EA2" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M48,32 L50,32" id="Line-2-Copy-4" stroke="#9EA3B4" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M1,32 L3,32" id="Line-2-Copy-5" stroke="#9EA3B4" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M25,9 L25,1" id="Line-2-Copy" stroke="#C2C7D3" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M25,28 L25,20" id="Line-2-Copy-9" stroke="#A4A9B9" stroke-width="2" stroke-linecap="square"></path>
+                <circle id="Oval-3" stroke="#9EA3B4" stroke-width="1.5" cx="25" cy="32" r="3"></circle>
+                <path d="M29,1 L21,1" id="Line-2-Copy-2" stroke="#CBD0DA" stroke-width="2" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

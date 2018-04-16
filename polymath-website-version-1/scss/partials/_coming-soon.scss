@@ -1,0 +1,60 @@
+/* main: ../theme.scss*/
+
+.page-coming-soon {
+	background: linear-gradient(135deg, rgba(224,63,61,1) 0%, rgba(244,149,66,1) 100%);
+
+	&[data-enable-fullheight] {
+
+		.row-content-middle {
+			height: 100%;
+		}
+	}
+	> .row {
+
+		> [class*=col-] {
+
+			&:first-child {
+				padding: 0 11.5%;
+			}
+			&:last-child {
+				padding: 10% 8.3%;
+			}
+		}
+	}
+}
+
+.coming-soon-alt {
+	padding-top: em(110);
+	padding-bottom: em(90);
+	background: transparent;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+
+	.coming-soon-header {
+	}
+	.coming-soon-contents {
+		font-size: em(12);
+
+		span {
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+	}
+	.coming-soon-footer {
+		font-size: em(15);
+		line-height: 2em;
+
+		h5 {
+			margin-bottom: em(0);
+			font-size: em(40, 15);
+		}
+	}
+}

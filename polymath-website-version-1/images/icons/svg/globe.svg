@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Globe</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.0697254%" id="linearGradient-1">
+            <stop stop-color="#C2C7D3" offset="0%"></stop>
+            <stop stop-color="#83889D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="2.95851302%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#C8C8C8" offset="0%"></stop>
+            <stop stop-color="#BBC0CD" offset="0.860464097%"></stop>
+            <stop stop-color="#8D92A6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="2.72752271%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#9095A8" offset="0%"></stop>
+            <stop stop-color="#C1C6D2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="103.495601%" id="linearGradient-4">
+            <stop stop-color="#969BAD" offset="0%"></stop>
+            <stop stop-color="#C1C6D2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="95.8078436%" y1="0%" x2="-3.05918341%" y2="97.0051836%" id="linearGradient-5">
+            <stop stop-color="#9A9FB0" offset="0%"></stop>
+            <stop stop-color="#A2A7B8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#B3B8C6" offset="0%"></stop>
+            <stop stop-color="#A8ADBC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#B1B6C4" offset="0%"></stop>
+            <stop stop-color="#ABB0BF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#A2A7B7" offset="0%"></stop>
+            <stop stop-color="#969BAE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Website" transform="translate(-319.000000, -1725.000000)">
+            <g id="Globe" transform="translate(319.000000, 1725.000000)">
+                <circle id="Oval-4" stroke="url(#linearGradient-1)" stroke-width="2" cx="28" cy="28" r="27"></circle>
+                <path d="M9.5203123,48.1218035 C21.3239193,43.4064263 29.9237155,37.8313785 35.3197009,31.3966601 C40.7156863,24.9619417 43.6461963,16.7870869 44.111231,6.8720955" id="Path-3" stroke="url(#linearGradient-2)" stroke-width="2"></path>
+                <path d="M5.04326722,42.5454715 C15.195667,39.4728166 22.9698596,35.0310958 28.365845,29.220309 C33.7618304,23.4095222 37.1890421,14.9875691 38.6474802,3.95444997" id="Path-3" stroke="url(#linearGradient-3)" stroke-width="2" transform="translate(21.845374, 23.249961) rotate(175.000000) translate(-21.845374, -23.249961) "></path>
+                <path d="M23.4269989,39.0809738 C31.5865738,37.3304437 38.3643539,33.5497853 43.7603393,27.7389985 C49.1563247,21.9282116 52.5830652,13.5289718 54.0405608,2.54127895" id="Path-3" stroke="url(#linearGradient-4)" stroke-width="2" transform="translate(38.733780, 20.811126) rotate(106.000000) translate(-38.733780, -20.811126) "></path>
+                <path d="M11.6621802,53.1284302 C20.0374869,48.8755272 26.923133,43.8436823 32.3191183,38.0328955 C37.7151037,32.2221087 41.4621563,22.9558752 43.5602763,10.2341951" id="Path-3" stroke="url(#linearGradient-5)" stroke-width="2" transform="translate(27.611228, 31.681313) rotate(63.000000) translate(-27.611228, -31.681313) "></path>
+                <circle id="Oval-5" fill="url(#linearGradient-6)" cx="16" cy="15" r="4"></circle>
+                <circle id="Oval-5-Copy" fill="url(#linearGradient-7)" cx="42" cy="19" r="4"></circle>
+                <circle id="Oval-5-Copy" fill="url(#linearGradient-8)" cx="28" cy="38" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

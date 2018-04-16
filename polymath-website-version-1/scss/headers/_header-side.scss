@@ -1,0 +1,122 @@
+/* main: ../theme.scss*/
+
+@media ( min-width: $grid-breakpoints-lg ) {
+
+	/* pushing content in page */
+	.header-side {
+
+		#content,
+		.titlebar,
+		.main-footer {
+			margin-left: 300px;
+		}
+		#content [data-vc-stretch-content] {
+			width: calc(100vw - 300px) !important;
+
+			+ .vc_row-full-width {
+				margin-left: -300px;
+			}
+		}
+	}
+
+	.main-bar-side {
+		display: inline-block;
+		width: 300px;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		border-right: 1px solid #E1E1E1;
+		background-color: #fff;
+		-webkit-transform: none !important;
+		transform: none !important;
+		-webkit-animation: none !important;
+		animation: none !important;
+
+		.main-bar {
+			padding: 45px 45px 0;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			height: 100%;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+		}
+		.navbar-collapse {
+			flex: 1 auto;
+			flex-flow: column nowrap;
+			margin: 30px -45px;
+		}
+		.main-nav {
+			flex-flow: column nowrap;
+			align-items: flex-start;
+			justify-content: center;
+			flex: 1 auto;
+
+			> li {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+				flex: auto 0;
+
+				> a {
+					display: block;
+					width: 100%;
+					padding-left: 45px;
+					padding-right: 45px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+			}
+			.megamenu {
+				position: relative !important;
+
+				.container {
+					width: 1170px;
+				}
+			}
+		}
+		.nav-item-children {
+			right: auto !important;
+			left: 100% !important;
+			top: 0;
+		}
+		.modules-container {
+			-webkit-box-flex: 0;
+			-ms-flex: 0 auto;
+			flex: 0 auto;
+			margin: 0 -45px 35px;
+			padding: 15px 45px;
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+		.header-module {
+			padding-left: 0;
+			padding-right: 0;
+			margin-bottom: em(15);
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media only screen and ( min-width: $grid-breakpoints-xl ) and ( max-width: 1480px ) {
+
+	.header-side {
+
+		.container {
+			width: 870px;
+		}
+	}
+}
+
+@media only screen and ( min-width: $grid-breakpoints-lg ) and ( max-width: $grid-breakpoints-xl - 1 ) {
+
+	.header-side {
+
+		.container {
+			width: 670px;
+		}
+	}
+}

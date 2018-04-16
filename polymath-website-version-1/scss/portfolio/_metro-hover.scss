@@ -1,0 +1,143 @@
+// main: ../_theme-portfolio.scss
+
+.metro {
+
+	&.style-hover {
+		padding-bottom: 0;
+		height: 380px;
+
+		.portfolio-main-image {
+
+			img {
+				height: 100%;
+
+				&.section-parallax-img {
+					height: 125% !important;
+				}
+			}
+		}
+
+		&.hover-bottom-shadow,
+		&.hover-only-icons,
+		&.hover-bottom {
+
+			.portfolio-content > * {
+				max-width: none;
+			}
+		}
+
+		&.hover-blur {
+
+			.portfolio-content {
+				padding-left: 11%;
+				padding-right: 9%;
+			}
+		}
+
+		&.hover-elegant {
+			// max-height: 280px;
+
+			.portfolio-main-image {
+				height: 100%;
+			}
+			.parallax-img-container,
+			figure {
+				height: 100% !important;
+			}
+		}
+
+		&.hover-bottom,
+		&.hover-bottom-shadow {
+			// max-height: 280px;
+		}
+
+		&.hover-bottom-shadow {
+
+			.portfolio-main-image,
+			.portfolio-main-image figure,
+			.portfolio-main-image .aspect-ratio-container,
+			.portfolio-main-image .aspect-ratio-fill {
+				height: auto;
+			}
+		}
+
+		&.hover-bottom-left {
+
+			.portfolio-content {
+				/* padding-left: 12%;*/
+			}
+		}
+
+		&.hover-frame {
+
+			.portfolio-main-image:after {
+				background-color: rgba(26,188,156,0.93);
+			}
+			.portfolio-inner,
+			.portfolio-content {
+
+				&:before {
+					width: 5px;
+				}
+				&:after {
+					height: 5px;
+				}
+			}
+		}
+	}
+}
+
+/* Media Queries*/
+@media screen and ( min-width: $grid-breakpoints-md ) {
+
+	[data-vc-stretch-content] {
+
+		.metro {
+
+			&.style-hover {
+				min-height: 380px;
+
+				.portfolio-content,
+				.inner-wrapper,
+				.portfolio-main-image,
+				.portfolio-main-image > figure,
+				.portfolio-main-image > figure > img,
+				.parallax-img-parent,
+				.parallax-img-container,
+				.aspect-ratio-container,
+				.aspect-ratio-fill,
+				.aspect-ratio-fill > img,
+				.portfolio-inner {
+					min-height: 380px;
+				}
+				.section-parallax-img {
+					min-height: 475px;
+				}
+			}
+			&.hover-elegant {
+
+				.portfolio-content {
+					min-height: 0;
+				}
+			}
+		}
+	}
+}
+@media screen and ( max-width: $grid-breakpoints-lg - 1 ) {
+
+	.metro {
+
+		&.style-hover {
+
+			.portfolio-main-image {
+
+				img {
+
+					&.section-parallax-img {
+						height: 100% !important;
+					}
+				}
+			}
+		}
+	}
+}

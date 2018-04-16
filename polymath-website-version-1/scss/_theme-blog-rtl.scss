@@ -1,0 +1,178 @@
+// main: theme-rtl.scss
+
+/*
+ * Name:        Boo Theme Blog - RTL
+ * Written by: 	Themerella - (http://themerella.com)
+ * Version:     1.0.0
+*/
+
+/* Common and Vendors*/
+@import "vendors/bourbon/bourbon";
+@import "mixin";
+@import "variables";
+
+.blog-post {
+
+	.post-image img + time,
+	.post-image figure + time,
+	.post-image [data-parallax-bg] + time,
+	.post-image .aspect-ratio-container + time,
+	.post-image .parallax-img-parent + time,
+	.post-image .carousel-container + time,
+	.post-video .wp-video + time,
+	.post-video .mejs-video + time,
+	.post-video .mejs-container + time,
+	.post-audio .mejs-audio + time,
+	.post-video .wp-video + .tags,
+	.post-video .mejs-video + .tags,
+	.post-video + .tags,
+	.post-audio .mejs-audio + .tags,
+	.post-audio + .tags,
+	.post-image figure + time,
+	.post-image figure + .tags,
+	.post-image img + .tags,
+	.post-image [data-parallax-bg] + .tags,
+	.post-image .aspect-ratio-container + .tags,
+	.post-image .carousel-container + .tags,
+	.post-image .parallax-img-parent + .tags {
+		left: auto;
+		right: 0;
+	}
+	.post-info > span:not(:last-child):after {
+		margin-right: 0;
+		margin-left: 13px;
+	}
+	.entry-more {
+
+		i {
+			position: relative;
+			top: 2px;
+		}
+		.fa-angle-right:before {
+			content: "\f104";
+		}
+
+		&:hover {
+
+			i {
+				transform: translate3d(-2px, 0, 0);
+			}
+		}
+	}
+
+	&.post-masonry-alt {
+
+		.post-contents {
+			padding-left: 0;
+			padding-right: 7.5%;
+		}
+		.entry-title {
+			margin-right: 0;
+			margin-left: 25%;
+		}
+		&.format-link .post-contents:before,
+		&.format-quote .post-quote blockquote:before {
+			right: auto;
+		}
+	}
+}
+.format-quote .post-quote > blockquote:before {
+	left: auto;
+	right: -0.45em;
+}
+.format-quote .post-quote > blockquote {
+	padding: 0 25px 0 0;
+}
+.page .format-link .post-contents:before,
+.blog .format-link .post-contents:before {
+	left: auto;
+	right: -1.5em;
+}
+.post-masonry.format-link .post-contents:before {
+	left: auto;
+	right: auto;
+}
+.post-date-featured {
+
+	.entry-date {
+		float: right;
+		margin-right: 0;
+		margin-left: 40px;
+	}
+}
+.post-half-content .post-quote blockquote,
+.post-half-content .entry-title {
+	margin-right: 0;
+	margin-left: 15%;
+}
+.post-timeline {
+
+	&.format-quote {
+
+		.post-quote blockquote:before {
+			left: auto;
+			right: -0.4em;
+		}
+	}
+}
+
+.blog-single {
+
+	.post-info {
+
+		i {
+			margin-right: 0;
+			margin-left: 10px;
+		}
+		> span {
+			margin-right: 0;
+			margin-left: 27px;
+
+			&:after {
+				margin-left: 0;
+				margin-right: 0.5em;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
+.author-info {
+
+	figure {
+		float: right;
+		margin-right: 0;
+		margin-left: 23px;
+	}
+}
+.comment-list {
+
+	.comment {
+
+		figure.avatar {
+			float: right;
+			margin-right: 0;
+			margin-left: 35px;
+		}
+	}
+}
+
+/* MEDIA QUERIES */
+@media ( min-width: $grid-breakpoints-lg ) {
+
+	.post-puzzle {
+		flex-direction: row-reverse;
+	}
+}
+
+@media ( max-width: $grid-breakpoints-lg - 1) {
+
+	.post-puzzle {
+
+		.post-contents {
+			margin-left: 0;
+			margin-right: 50%;
+		}
+	}
+}

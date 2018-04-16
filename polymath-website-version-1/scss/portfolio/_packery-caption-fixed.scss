@@ -1,0 +1,47 @@
+// main: ../_theme-portfolio.scss
+
+.portfolio-item {
+
+	&.packery {
+
+		&.caption-fixed {
+			min-height: 0 !important;
+
+			.portfolio-content,
+			.inner-wrapper,
+			.portfolio-main-image,
+			.portfolio-main-image > figure,
+			.portfolio-main-image > figure > img,
+			.parallax-img-parent,
+			.parallax-img-container,
+			.aspect-ratio-container,
+			.aspect-ratio-fill,
+			.aspect-ratio-fill > img,
+			.portfolio-inner {
+				min-height: 0 !important;
+			}
+			.section-parallax-img {
+				min-height: 0 !important;
+			}
+
+			.portfolio-main-image {
+				position: relative !important;
+				top: auto !important;
+				left: auto !important;
+				right: auto !important;
+				bottom: auto !important;
+
+				.progressive__img:not(.section-parallax-img) {
+					position: relative;
+					top: auto;
+					left: auto;
+				}
+			}
+			.portfolio-content {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}

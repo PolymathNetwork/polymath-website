@@ -1,0 +1,34 @@
+// main: theme.scss
+
+/*
+ * Name:        Boo HTML Theme
+ * Written by: 	Themerella - (http://themerella.com)
+ * Version:     1.0.0
+ */
+
+/* When page builder is activated
+*********************************/
+[data-x-mode="true"] {
+
+	.main-nav {
+
+		li {
+
+			.xmode-toggle {
+				margin-left: 5px;
+
+				&:before {
+					display: inline-block;
+					cursor: pointer;
+				}
+			}
+			&.submenu-is-showing {
+
+				> .nav-item-children {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+}

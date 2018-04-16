@@ -1,0 +1,81 @@
+// main: ../_theme-portfolio.scss
+
+$em-base: 13;
+
+.portfolio-item {
+
+	&.masonry {
+		// margin-bottom: em(40);
+		margin-bottom: 30px;
+
+		.portfolio-content {
+			padding: em(30) 11% em(29);
+		}
+		.title-wrapper {
+			margin-bottom: em(3.55);
+
+			h2 {
+				margin-top: em(6);
+				font-size: em(20);
+			}
+		}
+		.portfolio-summary {
+			margin-bottom: em(5);
+
+			p {
+				letter-spacing: 0.02em
+			}
+		}
+		.portfolio-likes {
+			margin-bottom: em(12);
+
+			i {
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+			}
+		}
+		.like-loader {
+			width: 46px;
+			top: -15px;
+		}
+		.btn {
+
+			span {
+				padding: em(13) 20px;
+			}
+		}
+		.portfolio-share {
+		}
+
+
+		&.style-default {
+
+			.portfolio-content {
+				padding-left: 0;
+			}
+		}
+
+		&.text-center {
+
+			.portfolio-content {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+}
+
+.masonry {
+
+	&.gradient {
+		background: linear-gradient(120deg, #00b9ff 30%, #3d7af5 100%);
+	}
+
+	&.text-light {
+
+		p {
+			color: #fff;
+		}
+	}
+}

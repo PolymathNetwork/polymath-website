@@ -1,0 +1,132 @@
+// main: ../_theme-blog.scss
+
+.post-no-image {
+	padding-bottom: em(50);
+	margin: 0;
+	position: relative;
+	text-align: center;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		left: -9999em;
+		right: -9999em;
+		background-color: #ededed;
+	}
+	.post-quote blockquote,
+	.entry-title {
+		font-size: em(40);
+		font-weight: 400;
+		line-height: 1.5em;
+
+		cite {
+			font-size: em(12, 40);
+		}
+	}
+	.entry-summary {
+		padding-right: 20%;
+		padding-left: 20%;
+		margin-bottom: 2.3em;
+	}
+	.post-info {
+		margin-bottom: 2em;
+		color: #000;
+
+		a {
+			color: #000;
+		}
+		> span:not(:last-child):after {
+			content: none;
+		}
+		time {
+			display: inline-block;
+			padding: em(15) 30px em(65);
+			border: 1px solid #ededed;
+			border-top: none;
+			border-bottom: none;
+			font-size: em(13);
+			font-weight: 400;
+			letter-spacing: 0.1em;
+
+			span {
+				display: block;
+				margin-bottom: 0.1em;
+				font-size: em(32, 13);
+			}
+		}
+		.avatar {
+			margin-top: -53px;
+			margin-bottom: 1em;
+
+			img {
+				width: 106px;
+				height: auto;
+				margin: 0;
+			}
+		}
+		.author {
+			font-size: em(12);
+			font-weight: 400;
+		}
+	}
+	.entry-more {
+
+		&:focus,
+		&:hover {
+			border-color: $color-primary;
+			background-color: $color-primary;
+		}
+	}
+	.blog-posts > .row > [class*=col-]:last-child & {
+
+		&:after {
+			content: none;
+		}
+	}
+
+	&.format-link,
+	&.format-quote {
+		padding-left: 0;
+		padding-right: 0;
+		border: none;
+	}
+	&.format-quote {
+
+		.post-quote {
+			padding-right: 20%;
+			padding-left: 20%;
+
+			blockquote:before {
+				display: block;
+				height: 35px;
+				margin-bottom: em(35, 150);
+				position: relative;
+				top: auto;
+				left: auto;
+			}
+		}
+	}
+	&.format-link {
+
+		.entry-title {
+			margin-bottom: 1em;
+
+			a {
+				border-bottom-width: 3px;
+			}
+		}
+		.post-contents:before {
+			display: block;
+			position: relative;
+			top: auto;
+			left: auto;
+			margin-bottom: 1em;
+		}
+	}
+}
+
+@media (max-width: $grid-breakpoints-lg) {
+}

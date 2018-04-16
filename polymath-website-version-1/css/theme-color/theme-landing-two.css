@@ -1,0 +1,650 @@
+/*----------------------------------------
+ [ TABLE OF CONTENTS ]
+
+	1. TYPOGRAPHY
+	2. PRIMARY COLORS
+		|- 2.1. Primary text colors
+		|- 2.2. Primary border colors
+		|- 2.3. Primary background colors
+		|- 2.4. Primary gradient colors
+	3. SECONDARY COLORS
+		|- 3.1. Secondary text Colors
+		|- 3.2. Secondary background Colors
+
+
+ ----------------------------------------
+
+ // Ascent Colors
+ $color-primary:		#f13c46;
+ $color-secondary:	#f13c46;
+
+-----------------------------------------*/
+/* 1. TYPOGRAPHY */
+body {
+	font-family: 'Karla', sans-serif;
+	font-size: 15px;
+	line-height: 1.8;
+	letter-spacing: -0.2px;
+	color: #737373;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0;
+	color: #000;
+}
+
+h1, .h1 {
+	font-size: 50px;
+	line-height: 1.5em;
+	font-weight: 400;
+}
+
+h2, .h2 {
+	font-size: 40px;
+	line-height: 1.375em;
+	letter-spacing: -0.025em;
+	font-weight: 600;
+}
+
+h3, .h3 {
+	font-size: 21px;
+	line-height: 1.7em;
+	font-weight: 500;
+}
+
+h4, .h4 {
+	font-size: 20px;
+	line-height: 1.7em;
+	font-weight: 500;
+}
+
+h5, .h5 {
+	font-size: 18px;
+	line-height: 2em;
+	font-weight: 500;
+}
+
+h6, .h6 {
+	font-size: 17px;
+	line-height: 2;
+	font-weight: 500;
+	color: #a4a4a4;
+}
+
+/*
+	2. PRIMARY COLORS
+*/
+/* 2.1. Primary text colors */
+a:active,
+a:focus,
+a:hover,
+.accordion-big-square .accordion-toggle a,
+.accordion-boxed .active .accordion-expander,
+.accordion-boxed-minimal .active .accordion-expander,
+.accordion-facebook .accordion-expander,
+.accordion-facebook-alt .accordion-expander,
+.accordion-square-expanded .accordion-expander,
+.accordion-square-inverted .accordion-expander,
+.accordion-university .accordion-expander,
+.accordion-university .active .accordion-toggle a,
+.banner-app h6,
+.blog .format-link .post-contents:before,
+.blog-post .entry-title a:focus,
+.blog-post .entry-title a:hover,
+.blog-post .post-info a:focus,
+.blog-post .post-info a:hover,
+.blog-posts .page-nav .ajax-load-more.loading,
+.blog-posts .page-nav .ajax-load-more:focus,
+.blog-posts .page-nav .ajax-load-more:hover,
+.blog-posts.masonry .entry-more,
+.blog-posts.masonry .entry-more:hover,
+.blog-posts.puzzle .entry-more,
+.blog-posts.puzzle .entry-more:hover,
+.blog-posts.split .entry-more,
+.blog-posts.split .entry-more:hover,
+.blog-posts.timeline .post-info .tags a,
+.blog-posts.timeline .timeline-date,
+.blog-single .entry-content blockquote::before,
+.blog-single .entry-summary blockquote::before,
+.blog-single .post-info a[rel*=category]:hover,
+.blog-single .post-info a[rel*=tag]:hover,
+.btn-app,
+.btn-center,
+.btn-default,
+.btn-linethrough,
+.btn-naked,
+.btn-underlined,
+.btn-underlined:active,
+.btn-underlined:focus,
+.btn-underlined:hover,
+.btn-v-line,
+.btn.ajax-load-more:focus,
+.btn.ajax-load-more:hover,
+.car-rent-reservation .datepicker-container:before,
+.car-rent-reservation .ui-selectmenu-button:after,
+.car-rent-reservation label,
+.car-search input[type="checkbox"]:checked ~ label,
+.car-search input[type="checkbox"]:checked ~ label span,
+.carousel-items .latest-bold-title .entry-title a,
+.carousel-nav-style11 .flickity-prev-next-button:hover,
+.carousel-nav-style11.nav-dark .flickity-prev-next-button:hover,
+.carousel-nav-style11.nav-light .flickity-prev-next-button:hover,
+.carousel-nav-style5 .flickity-prev-next-button:hover,
+.cd-google-map.contents-style4 p,
+.contact-black-alt button,
+.contact-form.contact-inverted input,
+.contact-minimal button:hover,
+.contact-minimal input[type="submit"]:hover,
+.contact-minimal-sm button:hover,
+.contact-minimal-sm input[type="submit"]:hover,
+.content-box-bordered h3,
+.content-box-boxed-numbered .number,
+.content-box-info-centered .content-box-info,
+.featured-box-product h3 a:hover,
+.featured-box-product-centered h3 a,
+.format-link .entry-title a:before,
+.format-link .post-quote blockquote::before,
+.format-link .post-quote blockquote:before,
+.format-quote .post-quote blockquote::before,
+.format-quote .post-quote blockquote:before,
+.icon-box .counter,
+.icon-box-boxed-unfilled-alt3:not(:hover) .icon-container,
+.icon-box-boxed-unfilled-alt4:hover .icon-container,
+.icon-box-boxed-unfilled-alt4:hover h3,
+.icon-box-boxed-unfilled-alt5 .icon-container,
+.icon-box-boxed-unfilled-alt5 h3,
+.icon-box-boxed-unfilled-card .icon-container,
+.icon-box-boxed-unfilled-card h3,
+.icon-box-counter-lg:hover h3,
+.img-maps .contents .info-box .price,
+.latest-post__meta a,
+.latest-post__meta_link-color-accent > span a,
+.main-nav > li mark,
+.main-sidebar .widget.woocommerce .widget-title,
+.main-sidebar .widget.woocommerce > h5,
+.masonry.style-hover .portfolio-likes a i:hover,
+.masonry.style-hover .portfolio-likes a:hover,
+.megamenu .custom-menu > h5,
+.module-cart .header-cart-container .header .items-counter,
+.module-cart .header-cart-container a h5:hover,
+.module-cart .header-cart-container a:hover,
+.module-cart .header-cart-container tfoot .counter,
+.module-search-form h4,
+.module-search-form.style-simple .search-form button,
+.module-wishlist .header-wishlist-container .header .items-counter,
+.module-wishlist .header-wishlist-container a h5:hover,
+.module-wishlist .header-wishlist-container a:hover,
+.module-wishlist .header-wishlist-container tfoot .counter,
+.nav-side li.current-menu-item > a,
+.nav-side li.current_page_item > a,
+.nav-side li:hover > a,
+.outline-filters .masonry-filters li.active,
+.outline-filters .masonry-filters li:hover,
+.page .format-link .post-contents:before,
+.page-links > span,
+.page-nav .ajax-load-more-alt,
+.pagination > li > span:hover,
+.pagination > li a:hover,
+.pagination > li span.current,
+.portfolio-item:not(.style-hover) .title-wrapper h2 a:hover,
+.portfolio-likes a:focus,
+.portfolio-likes a:hover,
+.portfolio-likes.liked a,
+.post-date-featured .entry-date,
+.post-nav a:before,
+.post-nav a:focus,
+.post-nav a:hover,
+.pricing-table-app .btn,
+.pricing-table-app .popular-badge,
+.pricing-table-app .price,
+.pricing-table-app .pricing,
+.pricing-table-classic .price,
+.pricing-table-classic:hover .btn,
+.pricing-table-elegant .price,
+.pricing-table-flat-gradient.featured .currency,
+.pricing-table-flat-gradient.featured .price,
+.pricing-table-flat-gradient.featured .pricing,
+.pricing-table-flat-head .btn,
+.pricing-table-graphic .pricing,
+.pricing-table-minimal .currency,
+.pricing-table-minimal .price,
+.pricing-table-minimal h4,
+.pricing-table-minimal.featured .currency,
+.pricing-table-minimal.featured .price,
+.pricing-table-minimal.featured h4,
+.pricing-table-sticky-head-alt.featured .currency,
+.pricing-table-sticky-head-alt.featured .price,
+.pricing-table-sticky-head-alt.featured .pricing,
+.pricing-table-sticky-head.featured .currency,
+.pricing-table-sticky-head.featured .price,
+.pricing-table-sticky-head.featured .pricing,
+.pricing-table-tabular .price,
+.pricing-table-tabular-alt .price,
+.pricing-table-tabular-alt2 .btn,
+.pricing-table-tabular-alt2 .price,
+.product-elegant ul.products li.product .price,
+.product-elegant ul.products li.product .product-image-container .product-label strong,
+.product-elegant ul.products li.product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a,
+.product-elegant ul.products li.product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a,
+.product-elegant-alt ul.products li.product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a,
+.product-elegant-alt ul.products li.product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a,
+.product-elegant-alt ul.products li.product:hover .price,
+.product-hover-shadow li.product .price,
+.promo i,
+.restaurant-menu .item-price,
+.subscribe-form--button-bordered .wysija-submit,
+.subscribe-form--button-naked .wysija-submit,
+.subscribe-form--button-underlined .wysija-submit,
+.tabs-border:not(.tabs-border-floated) .nav-tabs li.active a,
+.tabs-broad-border:not(.broad-border-alt) .nav-tabs > li.active a,
+.tabs-history .navbar-nav li.active a,
+.tabs-history .navbar-nav li.active i,
+.tabs-icon-center .nav-tabs > li.active a span,
+.tabs-icon-dots .nav-tabs > li > .active > a .icon-container,
+.tabs-icon-dots .nav-tabs > li > a span.number-with-dot,
+.tabs-icon-dots .nav-tabs > li.active > a,
+.tabs-icon-dots .nav-tabs > li.active > a i,
+.tabs-icon-dots .nav-tabs > li.active > a span,
+.tabs-naked .nav-tabs > li.active a,
+.tabs-naked .nav-tabs > li.active a:hover,
+.tabs-naked .nav-tabs > li.active:hover a,
+.tabs-shadow .nav-tabs li.active a,
+.tabs-shadow .tab-content p .fa,
+.tabs-side .nav-tabs li.active > a,
+.tabs-stacked-bubble .nav-pills > li > a .number,
+.tabs-stacked-bubble-invert .nav-pills > li.active > a,
+.tabs-stacked-bubble-invert .nav-pills > li:hover > a,
+.tabs-title-naked .nav-tabs li.active a,
+.team-member .team-member-details > span,
+.team-member .team-member-details a:hover,
+.team-member-border .social-icon a,
+.team-member-button .social-icon li a:hover,
+.team-member-contact-info .team-member-title,
+.team-member-info-side .details-inner > span,
+.team-member-whole-border .team-member-name,
+.team-member-whole-border.team-member-sm .team-member-title,
+.team-member-whole-border.team-member-sm p a,
+.testimonial-blurb-default a,
+.testimonial-details a,
+.testimonial-icon .testimonial-quote:before,
+.testimonial-minimal-vertical-big .quote-symbol:before,
+.testimonial-minimal-vertical-big .testimonial-details:before,
+.testimonial-minimal-vertical-default .testimonial-details a,
+.testimonial-minimal-vertical-default .testimonial-details::before,
+.testimonial-minimal-vertical-default .testimonial-details:before {
+	color: #f13c46;
+}
+
+.color-accent {
+	color: #f13c46 !important;
+}
+
+/* 2.2. Primary border colors */
+.accordion-highlighted .active.accordion-item,
+.accordion-boxed .active .accordion-expander,
+.accordion-boxed-minimal .active .accordion-expander,
+.accordion-square-expanded .active .accordion-toggle a,
+.accordion-boxed .accordion-item.active,
+.accordion-university .active .accordion-toggle,
+.accordion-square.with-filler .active .accordion-toggle,
+.accordion-square-expanded .active .accordion-expander,
+.btn,
+.btn-app,
+.btn-solid,
+.btn-underlined:hover,
+.btn-underlined:active,
+.btn-underlined:focus,
+.btn.ajax-load-more:focus,
+.btn.ajax-load-more:active,
+.btn.ajax-load-more:hover,
+.btn-underlined:before,
+.btn-underlined:after,
+blockquote,
+.page .format-link .entry-title a:hover,
+.blog .format-link .entry-title a:hover,
+.post-no-image .entry-more:hover,
+.post-no-image .entry-more:focus,
+.car-search .ui-slider-handle.ui-state-focus,
+.carousel-nav-style11 .flickity-prev-next-button:hover,
+.carousel-nav-style11.nav-light .flickity-prev-next-button:hover,
+.carousel-nav-style11.nav-dark .flickity-prev-next-button:hover,
+.carousel-nav-style5 .flickity-prev-next-button:hover,
+.client-border2:hover,
+.contact-black-alt button,
+.content-box-boxed-centered figure,
+.content-box-classic .btn:hover,
+.fullpage-nav-style1 #fp-nav ul li .fp-tooltip:before,
+.outline-filters .masonry-filters li:hover,
+.outline-filters .masonry-filters li.active,
+.icon-box-boxed-unfilled-alt2:hover,
+.icon-box-boxed-unfilled-alt:hover,
+.icon-box-bordered,
+.main-bar-container.floated .main-nav .link-txt:before,
+.page-links > span,
+.pricing-table-classic .popular-badge:after,
+.pricing-table-classic:hover .btn,
+.pricing-table-classic:hover,
+.pricing-table-app,
+.pricing-table-app .btn,
+.pricing-table-minimal .btn,
+.pricing-table-flat-head .btn,
+.pricing-table-tabular-alt2 .btn,
+.pricing-table-tabular-alt2 .btn:focus,
+.pricing-table-tabular-alt2 .btn:hover,
+.pricing-table-minimal.featured,
+.pricing-table-tabular-alt:hover .btn,
+.page-nav .ajax-load-more-alt,
+.tabs-stacked-bubble-default .nav-pills > li::before,
+.blog-posts.timeline .timeline-date,
+.blog-posts .page-nav .ajax-load-more.loading,
+.blog-posts .page-nav .ajax-load-more:focus,
+.blog-posts .page-nav .ajax-load-more:hover,
+.page .format-link .entry-title a:hover,
+.pagination > li > span:hover,
+.pagination > li a:hover,
+.pagination > li span.current,
+.portfolio-item:not(.style-hover) .portfolio-footer .btn:hover,
+.portfolio-item:not(.style-hover) .portfolio-footer .portfolio-share:hover .btn,
+.subscribe-form--button-bordered .wysija-submit,
+.subscribe-form--button-underlined .wysija-submit,
+.tabs-side .nav-tabs li:hover a,
+.team-member-border:hover .team-member-details,
+.team-member-side-border .team-member-name,
+.team-member-side-border .team-member-title,
+.testimonial-blurb-default .testimonial-quote,
+.widget_tag_cloud a:hover,
+.widget_product_tag_cloud a:hover,
+.main-sidebar .widget.woocommerce > h5,
+.main-sidebar .widget.woocommerce .widget-title {
+	border-color: #f13c46;
+}
+
+.testimonial-blurb-default .testimonial-quote:before,
+.portfolio-item.classic:not(.style-hover) .portfolio-share-popup:before {
+	border-right-color: #f13c46;
+}
+
+.blog-posts.timeline .timeline-date .loader-inner,
+.car-search .val-tooltip:after,
+.cd-google-map.contents-style4.alt .contents-inner .details::after,
+.cd-google-map.contents-style4 .contents-inner .details::after,
+.img-maps .contents .info-box .border,
+.portfolio-share .portfolio-share-popup:before,
+.tabs-title-naked .nav-tabs li.active a:before,
+.team-member.team-details-up .team-member-details::after,
+.testimonial-blurb-default .testimonial-quote:before,
+.vertical-progressbar .progressbar-bar {
+	border-top-color: #f13c46;
+}
+
+.team-member-masonry .team-member-details:after {
+	border-bottom-color: #f13c46;
+}
+
+/* 2.3. Primary background colors */
+.accordion-red .active .accordion-toggle,
+.accordion-red .accordion-expander,
+.accordion-facebook .active .accordion-toggle,
+.accordion-facebook-alt .active .accordion-toggle,
+.accordion-square .active .accordion-toggle,
+.accordion-square .accordion-expander,
+.accordion-square-expanded .active .accordion-toggle a,
+.accordion-square-hfiller-inverted .accordion-toggle a,
+.accordion-square-expanded .active .accordion-expander,
+.accordion-boxed .accordion-expander,
+.btn-solid,
+.btn-app:hover,
+.btn-app:focus,
+.btn-boxed,
+.btn-boxed:hover,
+.btn-boxed:focus,
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus,
+.btn-linethrough span:after,
+.btn-linethrough span:before,
+.btn-center:hover,
+.btn-hover-curtain .btn-curtain,
+.blog-post a[rel*="tag"],
+.blog-post a[rel*="category"],
+.post-no-image .entry-more:hover,
+.post-no-image .entry-more:focus,
+.boxed-filters .masonry-filters li:hover,
+.boxed-filters .masonry-filters li.active,
+.portfolio-share .portfolio-share-popup,
+.banner-icons,
+.banner-condensed .btn-rhombus:before,
+.blog-post .post-video > time,
+.blog-post .post-audio > time,
+.blog-posts.timeline .blog-post .post-image > time,
+.blog-posts.only-title .post-only-title:hover,
+.blog-post.post-masonry-alt.format-quote,
+.post-featured .post-contents .tags a,
+.comment-respond .comment-form input[type=submit],
+.car-search .val-tooltip,
+.car-search button,
+.car-search .ui-slider-range,
+.car-search .ui-slider-handle:before,
+.car-search .ui-slider-handle.ui-state-focus,
+.car-rent-reservation button,
+.carousel-nav-style4 .flickity-page-dots .dot.is-selected,
+.carousel-nav-style6 .flickity-page-dots .dot.is-selected,
+.cd-google-map.contents-style4.alt .contents-inner .details,
+.cd-google-map.contents-style4 .contents-inner .details,
+.contact-form.contact-inverted button,
+.content-box-boxed figure:after,
+.content-box-big-img-default .content-box-info,
+.content-box-big-img-alt .content-box-info,
+.content-box-caption .content-box-content:before,
+.contact-form.contact-default-primary .wpcf7-submit,
+.contact-inverted-line-alt .wpcf7-submit,
+.contact-default-alt2 button,
+.contact-default-alt3 button,
+.contact-gray button,
+.contact-line-alt .wpcf7-form-control-wrap:after,
+.flickity-page-dots .dot.is-selected,
+.flickity-page-dots li.is-selected,
+.featured-box-product .featured-box-featured,
+.featured-box-product .featured-box-price,
+.fullpage-nav-style1 #fp-nav ul li a span:before,
+.fullpage-nav-style1 #fp-nav ul li .fp-tooltip,
+.grid.style-hover.hover-bottom-shadow.buttons-square .btn:hover,
+.icon-box-boxed-unfilled-alt3:hover,
+.icon-box-square .icon-container,
+.icon-box-circle .icon-container,
+.icon-box-lozenge .icon-container,
+.icon-box-hexagon .icon-container,
+.img-maps .contents .info-box::before,
+.img-maps .contents .info-box::after,
+.latest-post__footer_svg,
+.latest-post__meta_solid,
+.latest-post:hover .latest-post__meta_stick_top-side,
+.main-bar-container.floated .main-nav .link-txt,
+.map_marker,
+.map_marker div,
+.main-bar-container.floated .main-nav a:after,
+.main-sidebar .widget_wysija .wysija-submit,
+.main-sidebar .widget_wysija button,
+.main-sidebar .widget_subscribe .wysija-submit,
+.main-sidebar .widget_subscribe button,
+.mejs-container .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle,
+.mejs-container .mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current,
+.mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-current,
+.module-trigger .badge,
+.main-nav.underlined li > a > .link-txt:after,
+.nav-item-children-style2 .menu-item > a:after,
+.sorting-option input:checked + .input-dummy:after,
+.subscribe-form--button-solid .wysija-submit,
+.pricing-table-graphic h4,
+.pricing-table-classic .popular-badge,
+.pricing-table-flat-head header,
+.pricing-table-minimal .btn,
+.pricing-table-flat-head .btn:hover,
+.pricing-table-flat-head header,
+.pricing-table-tabular-alt2 .btn:focus,
+.pricing-table-tabular-alt2 .btn:hover,
+.pricing-table-tabular-alt:hover .btn,
+.portfolio-item.hover-side .portfolio-footer:before,
+.portfolio-item.hover-bottom-shadow .btn:hover,
+.portfolio-item.hover-bottom-shadow .portfolio-share .btn:hover,
+.portfolio-item.hover-bottom-shadow .portfolio-share:hover .btn,
+.portfolio-likes.liked a i,
+.portfolio-likes a:focus i,
+.portfolio-likes a:hover i,
+.portfolio-item.text-light .portfolio-likes i,
+.portfolio-item.hover-bottom .btn:hover,
+.portfolio-item.hover-bottom .portfolio-share .btn:hover,
+.portfolio-item.hover-bottom .portfolio-share:hover .btn,
+.portfolio-likes.style-alt a > span,
+.grid.style-hover.hover-bottom.text-light .btn:hover,
+.grid.style-hover.hover-bottom.text-light .portfolio-share .btn:hover,
+.grid.style-hover.hover-bottom.text-light .portfolio-share:hover .btn,
+.nav-side a:after,
+.tabs-stacked-bubble-default .nav-pills > li.active > a,
+.tabs-border-floated .nav-tabs li a:before,
+.tabs-border .nav-tabs li a:before,
+.tabs-border-floated .nav-tabs > li.active:hover a,
+.tabs-border-floated .nav-tabs > li:hover a,
+.tabs-border-floated .nav-tabs > li.active a,
+.tabs-border-center-default .nav-tabs > li.active a,
+.tabs-border-center-default .nav-tabs > li.active a:hover,
+.tabs-switch-center .nav-tabs > li a,
+.tabs-icon-dots .nav-tabs > li > a span.number-with-dot:before,
+.tabs-switch-center .nav-tabs > li:hover a,
+.tabs-title-naked .nav-tabs li.active a:after,
+.tabs-stacked-default .nav-pills > li:hover > a,
+.tabs-stacked-bubble-default .nav-pills > li:hover > a,
+.tabs-stacked-bubble-default .nav-pills > li.active > a,
+.tabs-stacked-default .nav-pills > li.active > a,
+.tabs-simple .nav-tabs li.active a,
+.tabs-simple .nav-tabs li.active:hover a,
+.tabs-history .navbar-nav li a:before,
+.tabs-history .navbar-nav li a:after,
+.tabs-border-center-alt1 .nav-tabs > li.active:hover a,
+.tabs-border-center-alt1 .nav-tabs > li.active a,
+.team-member-top-curve .team-member-title,
+.team-member-card-minimal .team-member-title,
+.team-member-hover-social .team-member-title,
+.team-member-masonry .team-member-details,
+.testimonial-boxed-vertical:after,
+.testimonial-bg,
+.team-member-button .btn,
+.page-loader .page-loader-inner,
+.popular-badge,
+.portfolio-classic .item-details:before,
+.portfolio-no-gap .item-details:before,
+.portfolio-flat .item-details:before,
+.portfolio-item:not(.style-hover) .portfolio-footer .btn:hover,
+.portfolio-item:not(.style-hover) .portfolio-footer .portfolio-share:hover .btn,
+.portfolio-simple .item-details a:before,
+.widget_back_to_top_style2 a,
+.widget_search input[type="submit"],
+.widget_product_search input[type="submit"],
+.widget_nav_menu a:hover mark {
+	background: #f13c46;
+}
+
+.bg-accent {
+	background-color: #f13c46 !important;
+}
+
+/* 2.4. Primary gradient colors */
+.bg-gradient-primary,
+.backgroundcliptext .counter-box-sep:hover .counter-element,
+.backgroundcliptext .counter-box-sep:hover p {
+	background: linear-gradient(to top left, #f13c46 0%, #f13c46 30%, #f13c46 100%);
+}
+
+.accordion-facebook .active .accordion-toggle,
+.contact-line.contact-elegant button:before,
+.team-member-hover-social .social-icon:before,
+.contact-line.contact-elegant .form-group:after,
+.pricing-table-elegant .btn:before {
+	background: linear-gradient(to left, #f13c46 0%, #f13c46 30%, #f13c46 100%);
+}
+
+.backgroundcliptext .counter-box-sep:hover .counter-element,
+.backgroundcliptext .counter-box-sep:hover p,
+.carousel-nav-style3 .flickity-prev-next-button:before,
+.carousel-nav-style3 button:before,
+.latest-posts-carousel-nav .flickity-prev-next-button:before,
+.latest-posts-carousel-nav button:before,
+.portfolio-elegant .item-details,
+.pricing-table-sticky-head,
+.pricing-table-sticky-head.featured .btn,
+.progressbar-bar span,
+.team-member-cards .social-icon {
+	background: #f13c46;
+	background: linear-gradient(-45deg, #f13c46 0%, #f13c46 100%);
+}
+
+.section-title i.circle.bg-gradient-primary,
+.backgroundcliptext .pricing-table-elegant .price,
+.pricing-table-elegant.featured,
+.section-title-blue-underline i,
+.testimonial-blurb-vertical .testimonial-quote {
+	background: #f13c46;
+	background: linear-gradient(to top, #f13c46 0%, #f13c46 100%);
+}
+
+/*
+	3. SECONDARY COLORS
+*/
+/* 3.1. Secondary text Colors */
+.btn-default.btn-secondary,
+.car-rent-reservation li:before,
+.featured-box-product h3 a:hover,
+.carousel-items .latest-bold-title .entry-title a:hover,
+.carousel-items .latest-bold-title .entry-title a:focus,
+.pricing-table-minimal.featured h4,
+.pricing-table-minimal.featured .price,
+.pricing-table-minimal.featured .currency,
+.elegant-filters .masonry-filters li.active {
+	color: #f13c46;
+}
+
+/* 3.2. Secondary background Colors */
+.btn-solid.btn-secondary,
+.accordion-big-square .accordion-item.active .accordion-expander,
+.banner-rhombus-subtitle-alt h6,
+.content-box-big-img-alt .content-box-info-2:after,
+.featured-box-product .featured-box-price,
+.latest-posts-carousel-nav .flickity-prev-next-button::before,
+.pricing-table-flat-head:hover header,
+.pricing-table-minimal.featured .btn,
+.portfolio-elegant .item-details,
+.section-title i.circle,
+.tabs-border-center-alt1 .nav-tabs > li.active:hover a,
+.tabs-border-center-alt1 .nav-tabs li.active a,
+.team-member-hover-social:hover .team-member-title,
+.team-member-card-minimal .team-member-title,
+.team-member-hover-social .team-member-title,
+.team-member-hover-social .social-icon:before,
+.testimonial-blurb-vertical .testimonial-quote,
+.vertical-progressbar .progressbar-bar:before,
+.section-title hr {
+	background: #f13c46;
+}
+
+.testimonial-blurb-vertical:hover .testimonial-quote:before,
+.btn-default.btn-secondary,
+.btn-solid.btn-secondary,
+.vertical-progressbar .progressbar-bar,
+.team-member-side-border.style2 .team-member-name,
+.team-member-side-border.style2 .team-member-title,
+.car-rent-reservation li:before,
+.domain-search input[type="checkbox"]:checked + label:before,
+.pricing-table-minimal.featured,
+.pricing-table-minimal.featured .btn {
+	border-color: #f13c46;
+}
+
+.content-box-classic .btn {
+	border-color: rgba(241, 60, 70, 0.2);
+}

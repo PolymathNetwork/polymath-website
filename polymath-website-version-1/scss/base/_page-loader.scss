@@ -1,0 +1,242 @@
+// main: ../theme.scss
+
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes turn {
+  0% {
+    stroke-dashoffset: 187;
+  }
+
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes turn {
+  0% {
+    stroke-dashoffset: 187;
+  }
+
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+
+.page-loader {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #fff;
+	will-change: transform, opacity;
+}
+
+.page-loader-style1 {
+	transform: translate3d(0, 0, 0);
+}
+
+.page-loader-style3 {
+	background-color: transparent;
+}
+
+.page-loader-inner {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50em;
+}
+
+.page-loader-inner-style1 {
+	width: 50px;
+	height: 50px;
+	margin: -25px 0 0 -25px;
+	-webkit-box-shadow: 0 -1px 0 #000;
+	        box-shadow: 0 -1px 0 #000;
+	background-color: transparent !important;
+	-webkit-animation: rotate360 1s linear infinite;
+	animation: rotate360 1s linear infinite;
+}
+
+.page-loader-inner-style2 {
+	width: 40px;
+	height: 40px;
+	margin: -20px 0 0 -20px;
+	background-color: $color-primary;
+	-webkit-animation: dotScaleOut 1.15s ease-in-out both infinite;
+	        animation: dotScaleOut 1.15s ease-in-out both infinite;
+}
+
+.page-loader-inner-style3 {
+	background-color: transparent !important;
+
+	&,
+	.curtain {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.curtain {
+		will-change: transform;
+		-webkit-transform: translate3d(0, 0, 0);
+		        transform: translate3d(0, 0, 0);
+	}
+	.curtain-back {
+		background-color: #0e0f0f;
+	}
+	.curtain-front {
+		background-color: #17191a;
+	}
+}
+
+.page-loader-inner-style4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+
+	.page-loader-spinner {
+		-webkit-animation: rotation 1.4s linear infinite;
+		animation: rotation 1.4s linear infinite;
+
+		.circle {
+		  stroke-dasharray: 187;
+		  stroke-dashoffset: 0;
+		  -webkit-transform-origin: center;
+		  -ms-transform-origin: center;
+		  transform-origin: center;
+		  -webkit-animation: turn 1.4s ease-in-out infinite;
+		  animation: turn 1.4s ease-in-out infinite;
+		}
+	}
+}
+
+body.preloader-animation--not-started {
+
+	/*
+	for default preloader style we'll add translate3d to
+	[#content, .main-footer, .main-header, .titlebar]
+	only when it's needed
+	*/
+	&.preloader-default {
+
+		#content .vc_row,
+		.main-header,
+		.main-footer,
+		.titlebar {
+			will-change: transform;
+			transform: translate3d(150px, 0, 0);
+			transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+		}
+
+		&.page-loaded {
+
+			.page-loader-style1 {
+				animation: slideToLeft 0.9s 1 cubic-bezier(0.86, 0, 0.07, 1) both alternate;
+			}
+			#content .vc_row,
+			.main-header,
+			.main-footer,
+			.titlebar {
+				transform: translate3d(0, 0, 0);
+				transition-delay: 0.4s;
+			}
+		}
+	}
+}
+body.preloader-animation--started {
+
+	&.preloader-default {
+
+		&.page-loaded {
+
+			.page-loader-style1 {
+				animation: slideToLeft 0.9s 1 cubic-bezier(0.86, 0, 0.07, 1) both alternate;
+			}
+		}
+		&.page-unloading {
+
+			.page-loader-style1 {
+				animation: slideFromRight 0.5s 1 cubic-bezier(0.165, 0.84, 0.44, 1) both alternate;
+			}
+		}
+	}
+	.page-loader-style3 {
+
+		.curtain {
+			will-change: transform;
+		}
+	}
+}
+body.page-loaded {
+
+	.page-loader {
+		will-change: auto;
+	}
+	.page-loader-style3 {
+		pointer-events: none;
+
+		.curtain {
+			animation: slideToLeft 0.8s 1 cubic-bezier(0.55, 0.01, 0.15, 0.99) both alternate;
+		}
+		.curtain-back {
+			animation-delay: 0.38s;
+			animation-timing-function: cubic-bezier(0.25, 0.68, 0.38, 0.99);
+		}
+	}
+}
+body.preloader-animation--done {
+
+	.page-loader-style3 {
+
+		.curtain {
+			will-change: auto;
+		}
+	}
+}

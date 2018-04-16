@@ -1,0 +1,76 @@
+// main: ../_theme-blog.scss
+
+.blog-post.post-only-title {
+	margin: 0;
+	position: relative;
+	text-align: center;
+	margin-left: -15px;
+	margin-right: -15px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+
+	&:after {
+		content: '';
+		display: block;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		left: -9999em;
+		right: -9999em;
+		background-color: #ededed;
+	}
+	.post-quote blockquote,
+	.entry-title {
+		margin: 0;
+		font-size: 75px;
+		font-weight: 400;
+		-webkit-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		a {
+			display: block;
+			border: none;
+			padding: 1.25em 8%;
+
+			a:hover {
+				color: #fff;
+			}
+		}
+		cite {
+			font-size: 25%;
+			-webkit-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+	}
+	.post-quote blockquote {
+		padding: 1.25em 8%;
+	}
+
+	&.format-quote,
+	&.format-link {
+		border: none;
+		padding: 0;
+	}
+	&.format-quote .post-quote blockquote:before,
+	&.format-link .post-contents:before {
+		content: none;
+	}
+
+	&:hover {
+		background-color: $color-primary;
+
+		.post-quote blockquote,
+		.entry-title {
+			color: #fff;
+
+			span,
+			cite,
+			a {
+				color: #fff !important;
+			}
+		}
+	}
+}
+
+@media (max-width: $grid-breakpoints-lg) {
+}

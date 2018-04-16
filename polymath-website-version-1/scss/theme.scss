@@ -1,0 +1,141 @@
+/*
+ * Name:        Boo Theme
+ * Written by: 	Themerella - (http://themerella.com)
+ * Version:     1.0.0
+ */
+
+/*----------------------------------------
+ [ TABLE OF CONTENTS ]
+
+ 1. BASE
+ 	|- 1.1. Base
+ 	|- 1.2. Utility
+ 	|- 1.3. Navs
+ 	|- 1.4. Header
+		|-- header modules
+		|-- header main bar
+		|-- header secondary bar
+		|-- header fullwidth
+		|-- header fullscreen
+		|-- header megamenu
+		|-- header states
+ 	|- 1.5. Titlebar
+ 	|- 1.6. Shortcodes
+
+ 2. PARTIALS
+  |- 2.1. Sidebar
+  |- 2.2. Page 404
+  |- 2.3. Page maintenance
+  |- 2.4. Page coming soon
+  |- 2.5. Search results
+
+ 3. FOOTER
+  |- 3.1. Footer
+
+ 4. LAYOUTS
+  |- 4.1. Dark
+  |- 4.2. Boxed
+  |- 4.3. Framed
+
+ 5. Blog
+  |- 5.1. Blog
+
+ 6. Portfolio
+  |- 6.1. Portfolio
+
+ 7. Elements
+  |- 7.1. Elements
+
+ 8. HTML
+  |- 8.1. Theme HTML
+  |- 8.2. Elements HTML
+
+ ----------------------------------------
+
+ [ TYPOGRAPHY ]
+
+ $font-primary:		'Poppins', 'Open Sans', sans-serif;
+ $font-secondary: 'Karla', 'Montserrat', Helvetica, sans-serif;
+ $font-size: 			14px;
+ $line-height: 		30px;
+ $font-color:			#777;
+
+ // Ascent Colors
+ $color-primary:		#f42958;
+ $color-secondary:	#e4442a;
+ $color-tertiary: 	#2331f5;
+
+-----------------------------------------*/
+
+/* Common and Vendors*/
+@import 'vendors/bourbon/bourbon';
+@import 'mixin';
+@import 'variables';
+
+/*------ 1. BASE -------*/
+
+/* 1.1. Base */
+@import 'base/base';
+@import 'base/page-loader';
+/* 1.2. Utility */
+@import 'base/utility';
+/* 1.3. Navs */
+@import 'base/navs';
+/* 1.4. Header */
+@import 'base/header';
+/* 1.5. Titlebar */
+@import 'base/titlebar';
+/* 1.6. Shortcodes */
+@import 'base/shortcodes';
+
+/*------ 2. PARTIALS ------*/
+
+/* 2.1. Sidebar */
+@import 'partials/sidebar';
+/* 2.2. Page 404 */
+@import 'partials/page-not-found';
+/* 2.3. Page maintenance */
+@import 'partials/maintenance';
+/* 2.4. Page coming soon */
+@import 'partials/coming-soon';
+/* 2.5. Page coming soon */
+@import 'partials/search-results';
+
+
+/*------ 3. FOOTER ------*/
+
+/* 3.1. Footer */
+@import 'base/footer';
+
+/*------ 4. LAYOUTS ------*/
+
+/* 4.1. Dark */
+@import 'layouts/dark';
+/* 4.2. Boxed */
+@import 'layouts/boxed';
+/* 4.3. Framed */
+@import 'layouts/framed';
+/* 4.4. Fullpage */
+@import 'layouts/fullpage';
+
+/*------ 5. BLOG ------*/
+
+/* 5.1. Blog styling */
+@import 'theme-blog';
+
+/*------ 6. PORTFOLIO ------*/
+
+/* 6.1. Portfolio styling */
+@import 'theme-portfolio';
+
+/*------ 7. ELEMENTS ------*/
+
+/* 7.1. Elements styling */
+@import 'theme-elements';
+
+/*------ 8. HTML ------*/
+
+/* 8.1. Theme HTML */
+@import 'theme-html';
+/* 8.2. Elements HTML */
+@import 'theme-elements-html';

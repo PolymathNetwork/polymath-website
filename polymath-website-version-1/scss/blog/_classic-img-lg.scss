@@ -1,0 +1,14 @@
+// main: ../_theme-blog.scss
+
+.post-image-large {
+
+	.post-image,
+	.post-video,
+	.post-audio {
+		margin-bottom: 2em;
+
+		iframe {
+			min-height: 420px;
+		}
+	}
+}

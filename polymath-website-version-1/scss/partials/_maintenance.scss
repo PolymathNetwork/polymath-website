@@ -1,0 +1,95 @@
+/* main: ../theme.scss*/
+
+// Page Styles
+.maintenance-mode {
+	font-size: 15px;
+	background-size: cover;
+	background-position: center;
+
+	#content {
+		padding-top: 0;
+		padding-bottom: 0;
+		background-color: transparent;
+	}
+}
+.page-maintenance {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100vh;
+	padding-top: 12vh;
+	padding-bottom: 12vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column nowrap;
+	        flex-flow: column nowrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+
+	.top-sec {
+
+		.container {
+			width: 100%;
+			max-width: none;
+			padding: 0 6.5%;
+		}
+		.row {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+		}
+	}
+	.social-icon {
+		font-family: 'Karla', sans-serif;
+
+		&.text-uppercase {
+			font-size: 15px;
+		}
+	}
+}
+.maintenance-contents {
+	text-align: center;
+
+	.maintenance-icon {
+		margin: 0 auto;
+		width: 112px;
+		height: 123px;
+		-webkit-animation: rotate360 5s linear infinite both;
+		        animation: rotate360 5s linear infinite both;
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	h1 {
+		letter-spacing: -0.025em;
+		font-weight: 600;
+	}
+}
+
+@media all and (max-width: 991px) {
+
+	.page-maintenance {
+		height: auto;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+
+		.top-sec {
+			margin-bottom: 2em;
+
+			.row {
+				display: flex;
+				flex-flow: column wrap;
+				align-items: center;
+				justify-content: center;
+
+				> .col-md-6:first-child {
+					margin-bottom: 3em;
+				}
+			}
+		}
+	}
+}

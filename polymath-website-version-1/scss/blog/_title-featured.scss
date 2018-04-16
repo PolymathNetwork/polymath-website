@@ -1,0 +1,32 @@
+// main: ../_theme-blog.scss
+
+.post-title-featured {
+	margin-bottom: 4em;
+
+	.post-image,
+	.post-video,
+	.post-audio {
+
+		iframe {
+			min-height: 420px;
+		}
+	}
+	.entry-title {
+		margin-top: 0;
+		margin-bottom: 0.9em;
+	}
+	.tags {
+		top: auto !important;
+		bottom: -0.25em;
+	}
+	.post-info {
+
+		.tags {
+			bottom: auto;
+		}
+	}
+
+	&.format-link .post-contents:before {
+		top: -2em;
+	}
+}

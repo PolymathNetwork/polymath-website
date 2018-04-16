@@ -1,0 +1,205 @@
+// main: ../_theme-blog.scss
+
+.format-quote {
+
+	.post-quote {
+
+		blockquote {
+			padding: 0;
+			margin: 0;
+			border: none;
+			position: relative;
+			font-weight: 500;
+			line-height: em(45, 27);
+			color: #000;
+
+			h2, h3, h4, h5, h6, p {
+				margin-top: 0;
+				font-family: inherit;
+				font-weight: inherit;
+				font-size: inherit;
+				line-height: inherit;
+				letter-spacing: inherit;
+				color: inherit;
+			}
+			p {
+				margin-bottom: 0.3em;
+			}
+			footer {
+				font-size: 1em;
+
+				&:before {
+					content: none;
+				}
+			}
+		}
+		> blockquote {
+			font-size: em(27);
+			padding: 0 0 0 15px;
+
+			blockquote {
+				font-size: 1em;
+				line-height: inherit;
+			}
+			&:before {
+				content: '“';
+				display: inline-block;
+				position: absolute;
+				top: -0.05em;
+				left: 0;
+				font-size: 100px;
+				line-height: 1em;
+				font-family: 'Playfair Display';
+				font-weight: 400;
+				color: $color-primary;
+			}
+		}
+		cite {
+			font-size: em(12, 27);
+			font-weight: 400;
+			letter-spacing: 0.1em;
+			font-style: normal;
+			color: #c3c3c3;
+		}
+	}
+}
+.format-link {
+
+	.post-contents {
+		position: relative;
+		padding-left: 65px;
+	}
+	.entry-title {
+		margin-top: 0;
+		margin-bottom: 1em;
+
+		a {
+			position: relative;
+
+			&:before {
+				content: '\f14c';
+				position: absolute;
+				top: 0.1em;
+				left: -65px;
+				font: normal normal 35px/1 fontAwesome;
+				color: $color-primary;
+			}
+		}
+	}
+}
+.format-video {
+
+	.post-video {
+		position: relative;
+		overflow: hidden;
+
+		time,
+		.tags {
+			-webkit-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+	}
+	.wp-video {
+		width: 100% !important;
+	}
+
+	&.is-playing {
+
+		.post-video {
+
+			time,
+			.tags {
+				-webkit-transform: translateX(-100%);
+				        transform: translateX(-100%);
+			}
+		}
+	}
+}
+
+.format-quote,
+.format-link {
+	padding: 3.5em 12% 2.5em;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+
+	.post-contents {
+		padding-left: 0;
+	}
+	blockquote {
+		padding-left: 0;
+	}
+}
+.format-link {
+	padding-top: 2.7em;
+	padding-bottom: 3em;
+
+	.post-contents {
+
+		&:before {
+			content: '\f14c';
+			position: absolute;
+			top: 0.05em;
+			left: -1.5em;
+			font: normal normal 35px/1 fontAwesome;
+			color: $color-primary;
+		}
+	}
+	.entry-title {
+		/* font-size: em(27);*/
+		/* font-weight: 500;*/
+		/* letter-spacing: -0.01em;*/
+
+		a {
+			border-bottom: 2px solid #000;
+
+			&:before {
+				content: none;
+			}
+			&:hover {
+				border-color: $color-primary;
+			}
+		}
+	}
+}
+
+.post-title-featured,
+.post-image-large,
+.post-image-medium,
+.post-half-content {
+
+	&.format-quote,
+	&.format-link {
+		padding: 3em 15% 3em;
+	}
+	.post-quote {
+
+		blockquote:before {
+			left: -0.5em;
+			font-size: 120px;
+		}
+	}
+}
+
+@media screen and (max-width: $grid-breakpoints-md) {
+
+	.format-quote,
+	.format-link {
+		padding-bottom: 3.5em;
+	}
+	.format-quote .post-quote {
+
+		> blockquote {
+			padding-left: 0;
+
+			&:before {
+				display: block;
+				position: relative;
+				top: auto;
+				left: auto !important;
+				font-size: 100px;
+				max-height: 0.5em;
+				margin-bottom: em(15, 100);
+				line-height: 1em;
+			}
+		}
+	}
+}

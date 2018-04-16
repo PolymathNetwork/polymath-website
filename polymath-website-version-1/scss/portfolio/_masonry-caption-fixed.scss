@@ -1,0 +1,16 @@
+// main: ../_theme-portfolio.scss
+
+$em-base: 14;
+
+.masonry {
+
+	&.caption-fixed {
+
+		/* @extend .masonry.style-hover;*/
+
+		.portfolio-content {
+			padding-top: em(95);
+			padding-bottom: em(88);
+		}
+	}
+}

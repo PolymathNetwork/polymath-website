@@ -1,0 +1,47 @@
+/* main: ../theme.scss*/
+
+/* Search Results */
+.search-results {
+
+	.header-overlay {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+	}
+	#content {
+		padding-top: em(75) !important; // it may set to 0 from page options. just reseting.
+		padding-bottom: em(75);
+	}
+	.entry-header {
+		margin-top: 2.5em;
+	}
+	.entry-title {
+		margin-bottom: 0.5em;
+	}
+	.entry-byline {
+		margin-bottom: 1em;
+	}
+
+	.format-link,
+	.format-quote {
+
+		.entry-header {
+			margin-top: 0;
+		}
+	}
+	.post:not(.blog-post).sticky:before,
+	.post:not(.blog-post).format-link:before,
+	.post:not(.blog-post).format-quote:before {
+		content: none;
+	}
+	.blog-nav {
+		margin-top: 5em;
+	}
+}
+
+/* Search Results - Responsive */
+@media (max-width: $grid-breakpoints-lg) { }
+@media (max-width: $grid-breakpoints-md) { }
+@media (max-width: $grid-breakpoints-sm) { }
+@media (max-width: $grid-breakpoints-xs) { }
