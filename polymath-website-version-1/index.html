@@ -7,10 +7,11 @@
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/theme-vendors.css">
 	<link rel="stylesheet" href="css/theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/theme-color/theme-centro.css">
 	<link href="https://fonts.googleapis.com/css?family=Overpass:400,700" rel="stylesheet">
 	<script src="vendors/modernizr.min.js"></script>
@@ -110,7 +111,7 @@
 							<a href="https://www.polymath.network/wizard" class="btn btn-default btn-md border-thicker btn-dark btn-light-alt text-uppercase">
 								<span> Launch Security Token </span>
 							</a>
-							<a href="#works" class="btn btn-default btn-md border-thicker btn-dark btn-light-alt text-uppercase">
+							<a href="#works" id="btn_watchvideo" class="btn btn-default btn-md border-thicker btn-dark btn-light-alt text-uppercase">
 								<span> Watch Explainer Video </span>
 							</a>
 							</a>
@@ -433,7 +434,7 @@
 			</section>
 			<!-- End Graph -->
 			<!-- Start Video -->
-			<section class="section pt-70 pb-70">
+			<section class="section pt-70 pb-70" id="works">
 				<div class="container">
 					<div class="row">
 						<div class="container">
@@ -992,12 +993,19 @@
 			<!-- End Team -->
 
 			<!-- Start Video -->
-			<section class="section pt-180 pb-180 mb-70" style="background-image: url(./images/misc/video-cta-bg.jpg);">
+			<section class="section pt-180 pb-180 mb-70">
 				<div class="video-bg d-sm-none d-md-block">
-					<div class="video-bg__inner">
-						<iframe class="inner" title="YouTube video player" width="1920" height="1080" src="https://www.youtube.com/embed/AGvi-SFjxHw?autoplay=1&amp;iv_load_policy=3&amp;enablejsapi=1&amp;disablekb=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;wmode=transparent&amp;origin=http%3A%2F%2Fboo.themerella.com&amp;widgetid=1&amp;mute=1"></iframe>
+					<div class="overlay">
+						<header class="section-title section-title-default text-light mb-0">
+							<h2>The World's First Security Token Conference</h2>
+							<a href="#" class="btn btn-underlined text-uppercase btn-light">
+								<!-- <span>Watch Now</span> -->
+							</a>
+						</header>
 					</div>
-					<!-- /.video-bg__inner -->
+					<iframe class="inner" title="YouTube video player" width="1920" height="1080" src="https://www.youtube.com/embed/AGvi-SFjxHw?autoplay=1&amp;iv_load_policy=3&amp;enablejsapi=1&amp;disablekb=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;wmode=transparent&amp;origin=http%3A%2F%2Fboo.themerella.com&amp;widgetid=1&amp;mute=1"></iframe>
+				</div>
+				<!-- /.video-bg__inner -->
 				</div>
 				<!-- /.video-bg -->
 				<div class="container-fluid">
@@ -1006,7 +1014,7 @@
 							<header class="section-title section-title-default text-light mb-0">
 								<h2>The World's First Security Token Conference</h2>
 								<a href="#" class="btn btn-underlined text-uppercase btn-light">
-									<span>Watch Now</span>
+									<!-- <span>Watch Now</span> -->
 								</a>
 							</header>
 						</div>
@@ -1694,59 +1702,80 @@
 			</section>
 			<!-- End Banner -->
 
-			</div>
-			<!-- End #content -->
+		</div>
+		<!-- End #content -->
 
-			<!-- Start Main Footer -->
-			<footer class="main-footer main-footer--style-centro" data-fixed="true">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-lg-3 col-md-6 text-lg-center">
-							<figure class="mt-4">
-								<img src="./images/logo/polybull.png" alt="Polymath">
-							</figure>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<h6> A Barbados Company
-								<br>
-								<a href="mailto:info@polymath.network">info@polymath.network</a>
-							</h6>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<h6>
-								<a href="https://www.facebook.com/polymathnetwork">Facebook</a>
-								<br>
-								<a href="https://www.linkedin.com/company/18168860/">Linkedin</a>
-								<br>
-								<a href="https://www.reddit.com/r/polymathnetwork">reddit.</a>
-								<br>
-								<a href="https://www.youtube.com/channel/UC77syPQJO0eA5FBUMczZ4bA">Youtube</a>
-							</h6>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<h6>
-								<a href="https://t.me/polymathnetwork">Telegram</a>
-								<br>
-								<a href="https://github.com/PolymathNetwork">Github</a>
-								<br>
-								<a href="medium.com/@polymathnetwork">Medium</a>
-								<br>
-								<a href="twitter.com/polymathnetwork">Polymath</a>
-							</h6>
-						</div>
+		<!-- Start Main Footer -->
+		<footer class="main-footer main-footer--style-centro" data-fixed="true">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 text-lg-center">
+						<figure class="mt-4">
+							<img src="./images/logo/polybull.png" alt="Polymath">
+						</figure>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<h6> A Barbados Company
+							<br>
+							<a href="mailto:info@polymath.network">info@polymath.network</a>
+						</h6>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<h6>
+							<a href="https://www.facebook.com/polymathnetwork">Facebook</a>
+							<br>
+							<a href="https://www.linkedin.com/company/18168860/">Linkedin</a>
+							<br>
+							<a href="https://www.reddit.com/r/polymathnetwork">reddit.</a>
+							<br>
+							<a href="https://www.youtube.com/channel/UC77syPQJO0eA5FBUMczZ4bA">Youtube</a>
+						</h6>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<h6>
+							<a href="https://t.me/polymathnetwork">Telegram</a>
+							<br>
+							<a href="https://github.com/PolymathNetwork">Github</a>
+							<br>
+							<a href="medium.com/@polymathnetwork">Medium</a>
+							<br>
+							<a href="twitter.com/polymathnetwork">Polymath</a>
+						</h6>
 					</div>
 				</div>
-			</footer>
-			<!-- End Main Footer -->
+			</div>
+		</footer>
+		<!-- End Main Footer -->
 
-		</div>
-		<!-- End #wrap -->
+	</div>
+	<!-- End #wrap -->
 
-		<div class="snackbars" id="form-output-global"></div>
-		<script src="js/core.min.js"></script>
-		<script src="js/theme.vendors.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/theme.min.js"></script>
+	<div class="snackbars" id="form-output-global"></div>
+	<script src="js/core.min.js"></script>
+	<script src="js/theme.vendors.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/theme.min.js"></script>
+	<script>
+		$("#btn_watchvideo").on('click', function (e) {
+
+			// prevent default anchor click behavior
+			e.preventDefault();
+
+			// store hash
+			var hash = this.hash;
+
+			// animate
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 200, function () {
+
+				// when done, add hash to url
+				// (default click behaviour)
+				window.location.hash = hash;
+			});
+
+		});
+	</script>
 </body>
 
 </html>

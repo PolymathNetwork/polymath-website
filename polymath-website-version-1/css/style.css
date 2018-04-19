@@ -1,0 +1,11 @@
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  padding-top: 5%;
+  background: grey;
+  opacity: 0.5;
+}
