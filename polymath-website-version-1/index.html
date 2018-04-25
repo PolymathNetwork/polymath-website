@@ -451,13 +451,13 @@
 							</header>
 						</div>
 						<div class="col-sm-6">
-							<div id="gifs-rows">
-								<img src="./images/graphs/ethereum3.gif" alt="gif preset" class="preset-file">
+							<div>
+								<img src="./images/graphs/eth-graph.png" alt="Ethereum" id="eth-animation">
 							</div>
 						</div>
 						<div class="col-sm-6">
-							<div id="gifs-rows2">
-								<img src="./images/graphs/poly3.gif" alt="gif preset" class="preset-file">
+							<div>
+								<img src="./images/graphs/poly-graph.png" alt="Polymath" id="poly-animation">
 							</div>
 						</div>
 
@@ -1270,9 +1270,20 @@
 		</script>
 
 		<script type="text/javascript">
-			$("img", "#gifs-rows").hover(function () {
-				$('.preset-file').toggle();
-				$('.gif-file').toggle();
+			$("#eth-animation").mouseover(function (e) {
+				$("#eth-animation").attr("src", './images/graphs/ethereum3.gif');
+			});
+
+			$("#eth-animation").mouseout(function (e) {
+				$("#eth-animation").attr("src", './images/graphs/eth-graph.png');
+			});
+
+			$("#poly-animation").mouseover(function (e) {
+				$("#poly-animation").attr("src", './images/graphs/poly3.gif');
+			});
+
+			$("#poly-animation").mouseout(function (e) {
+				$("#poly-animation").attr("src", './images/graphs/poly-graph.png');
 			});
 		</script>
 </body>
