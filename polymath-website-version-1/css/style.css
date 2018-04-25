@@ -1,4 +1,4 @@
-/* .overlay {
+.overlay {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -8,7 +8,7 @@
   padding-top: 5%;
   background: grey;
   opacity: 0.5;
-} */
+}
 
 .team-member-name {
   padding-top: 80%;
@@ -27,4 +27,11 @@
   -moz-background-size: cover;
   -o-background-size: cover; */
   background-size: cover;
+}
+
+#gifs-rows img {
+  cursor: pointer;
+}
+#gifs-rows .gif-file {
+  display: none;
 }

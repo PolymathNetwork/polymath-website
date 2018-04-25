@@ -450,9 +450,17 @@
 								</p>
 							</header>
 						</div>
-						<figure class="image-container align-center">
-							<img src="images/newsidebyside.gif">
-						</figure>
+						<div class="col-sm-6">
+							<div id="gifs-rows">
+								<img src="./images/graphs/ethereum3.gif" alt="gif preset" class="preset-file">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div id="gifs-rows2">
+								<img src="./images/graphs/poly3.gif" alt="gif preset" class="preset-file">
+							</div>
+						</div>
+
 					</div>
 					<div class="col-lg-8 mx-auto text-center mt-5">
 						<p class="">
@@ -801,12 +809,7 @@
 			<section class="section pt-180 pb-180 mb-70">
 				<div class="video-bg d-sm-none d-md-block">
 					<div class="overlay">
-						<header class="section-title section-title-default text-light mb-0">
-							<h2>The World's First Security Token Conference</h2>
-							<a href="#" class="btn btn-underlined text-uppercase btn-light">
-								<!-- <span>Watch Now</span> -->
-							</a>
-						</header>
+
 					</div>
 					<iframe class="inner" title="YouTube video player" width="1920" height="1080" src="https://www.youtube.com/embed/AGvi-SFjxHw?autoplay=1&amp;iv_load_policy=3&amp;enablejsapi=1&amp;disablekb=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;wmode=transparent&amp;origin=http%3A%2F%2Fboo.themerella.com&amp;widgetid=1&amp;mute=1"></iframe>
 				</div>
@@ -1263,6 +1266,13 @@
 						$content.html(output);
 					}
 				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$("img", "#gifs-rows").hover(function () {
+				$('.preset-file').toggle();
+				$('.gif-file').toggle();
 			});
 		</script>
 </body>
