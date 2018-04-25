@@ -1,4 +1,4 @@
-.overlay {
+/* .overlay {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -8,4 +8,23 @@
   padding-top: 5%;
   background: grey;
   opacity: 0.5;
+} */
+
+.team-member-name {
+  padding-top: 80%;
+}
+
+.img-responsive {
+  width: auto;
+  /* height: 100%; */
+}
+
+.background-polymath {
+  min-height: 700px;
+  /* background: url("../images/bg/bg-newpolymath.png") no-repeat center center; */
+  background: url("../images/bg/bg_bull.png") no-repeat center center;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  background-size: cover;
 }
