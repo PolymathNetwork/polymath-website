@@ -421,11 +421,11 @@
 							</div>
 
 						</div>
-						<div class="col-md-12 text-center mt-30">
+						<!-- <div class="col-md-12 text-center mt-30">
 							<a class="btn btn-default text-uppercase" href="#">
 								<span>Explore all Features</span>
 							</a>
-						</div>
+						</div> -->
 						<!-- </div> -->
 					</div>
 			</section>
@@ -526,8 +526,8 @@
 						</div>
 						<div class="col-sm-12">
 							<div class="line-guide">
-								<figure class="image-container align-center">
-									<img src="images/animations/ipos.gif">
+								<figure class="align-center">
+									<img id="ipo-animation" src="images/animations/ipos.png" height="1000" class="img-responsive">
 								</figure>
 							</div>
 						</div>
@@ -538,7 +538,7 @@
 			<!-- End ICO Diagram -->
 
 			<!-- Start Team -->
-			<section class="section 70 pb-70">
+			<section class="section pt-70 pb-70">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
@@ -748,7 +748,7 @@
 							</div>
 							<!-- /.team-member -->
 						</div>
-						<div class="col-lg-3 col-md-6 d-none d-md-block">
+						<!-- <div class="col-lg-3 col-md-6 d-none d-md-block">
 							<div class="team-member team-member-hover-social-special">
 								<figure>
 									<img src="./images/team/dave.jpg" alt="Dave Kajpust">
@@ -760,10 +760,10 @@
 									</h4>
 									<h5 class="team-member-title text-uppercase">Developer</h5>
 								</div>
-								<!-- /.team-member-details -->
+								
 							</div>
-							<!-- /.team-member -->
-						</div>
+							
+						</div> -->
 						<div class="col-lg-3 col-md-6 d-none d-md-block">
 							<div class="team-member team-member-hover-social-special">
 								<figure>
@@ -780,7 +780,7 @@
 							</div>
 							<!-- /.team-member -->
 						</div>
-						<div class="col-lg-3 col-md-6 d-none d-md-block">
+						<!-- <div class="col-lg-3 col-md-6 d-none d-md-block">
 							<div class="team-member team-member-hover-social-special">
 								<figure>
 									<img src="./images/team/nick.jpg" alt="Nick Yeates">
@@ -792,10 +792,10 @@
 									</h4>
 									<h5 class="team-member-title text-uppercase">Open Source Community Manager</h5>
 								</div>
-								<!-- /.team-member-details -->
+								
 							</div>
-							<!-- /.team-member -->
-						</div>
+							
+						</div> -->
 						<div class="col-lg-3 col-md-6 d-none d-md-block">
 							<div class="team-member team-member-hover-social-special">
 								<figure>
@@ -808,9 +808,9 @@
 									</h4>
 									<h5 class="team-member-title text-uppercase">Sr. Project Manager</h5>
 								</div>
-								<!-- /.team-member-details -->
+
 							</div>
-							<!-- /.team-member -->
+
 						</div>
 						<!-- /.col-lg-3 col-md-6 -->
 						<div class="col-md-12 text-center mt-30 d-block d-sm-none">
@@ -826,10 +826,9 @@
 			<!-- End Team -->
 
 			<!-- Start Video -->
-			<section class="section pt-100 pb-100">
+			<section class="section pt-100 pb-100" style="min-height:500px">
 				<div class="video-bg d-sm-none d-md-block">
 					<div class="overlay">
-
 					</div>
 					<iframe class="inner" title="YouTube video player" width="1920" height="1080" src="https://www.youtube.com/embed/AGvi-SFjxHw?autoplay=1&amp;iv_load_policy=3&amp;enablejsapi=1&amp;disablekb=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;wmode=transparent&amp;origin=http%3A%2F%2Fboo.themerella.com&amp;widgetid=1&amp;mute=1"></iframe>
 				</div>
@@ -1173,7 +1172,26 @@
 			<!-- End Advisors -->
 
 			<!-- Start Latest Posts -->
+			<section class="section pt-90 pb-100">
+				<div class="container">
+					<div class="row" id="section-articles">
+						<div class="col-md-12 mb-sm-0 mb-4">
+							<header class="section-title section-title-resolve section-title-default" data-plugin-resolve="true" data-plugin-resolve-options="{ &quot;seperator&quot;: &quot;chars&quot; }">
+								<h2>Polymath Articles</h2>
+							</header>
+						</div>
 
+						<!-- /.col-md-12 -->
+
+						<!-- <div class="col-md-12 text-center mt-5">
+							<a class="btn btn-underlined btn-dark text-uppercase mt-lg-4 mt-sm-0" href="https://blog.polymath.network">
+								<span>see latest storıes</span>
+							</a>
+						</div> -->
+						<!-- /.col-md-12 text-center -->
+					</div>
+				</div>
+			</section>
 			<!-- End Latest Posts -->
 
 			<!-- Start Banner -->
@@ -1284,24 +1302,79 @@
 		</script>
 		<script type="text/javascript">
 			$(function () {
-				var $content = $('#content2');
+				var $content = $('#section-articles');
+
 				var data = {
-					rss_url: 'https://medium.com/feed/@polymathnetwork'
+					rss_url: 'https://blog.polymath.network/feed' //Get posts from publication
+
 				};
 				$.get('https://api.rss2json.com/v1/api.json', data, function (response) {
 					if (response.status == 'ok') {
-						var output = '<h1>' + response.feed.title + '</h1>';
-						$.each(response.items, function (k, item) {
-							output += '<h2><a href="' + item.link + '" >' + item.title + '</h2></a>';
-							output += '<p>' + item.description + '</p>';
-						});
-						$content.html(output);
+
+						var styles = [
+							"blue-card",
+							"",
+							"gray-card"
+						];
+
+						var output = '';
+						var items = response.items;
+						// $.each(response.items, function (k, item) {
+						for (var i = 0; i < 3; i++) {
+
+							output += '<div class="col-lg-4 offset-lg-0 col-sm-12">'
+								+ '<article class="latest-post latest-post-hover" data-hover3d="true" data-custom-image="true" data-custom-image-selector="{ &quot;backgroundImage&quot;: &quot;.latest-post-figure&quot;, &quot;src&quot;: &quot;.latest-post-image&quot; }" data-custom-links="true">'
+								+ '<div class="latest-hover-box ' + styles[i] + '" data-stacking-factor="0.6">'
+								+ '<div class="latest-hover-box-inner"></div>'
+								+ '</div>'
+								+ '<div class="latest-hover-image ' + styles[i] + '" data-stacking-factor="0.6">'
+								+ '<figure class="latest-post-figure" style="background-image: url(\'images/medium/security.jpeg\');">'
+								+ '<img class="latest-post-image" src="images/medium/security.jpeg" alt="">'
+								+ '</figure>'
+								+ '</div>'
+								+ '<div class="latest-hover-line ' + styles[i] + '" data-stacking-factor="0.7">'
+								+ '<div class="latest-hover-content">'
+								+ '<header>'
+								+ '<h3 class="entry-title latest-post__title">' + items[i].title + '</h3>'
+								+ '</header>'
+								+ '<div class="latest-post__excerpt">'
+								// + '<p>' + item.description.substr(0, 50) + '</p>'
+								+ '</div>'
+
+								+ '<footer>'
+								+ '<span>Read the story'
+								+ '<i class="fa fa-long-arrow-right novi-icon"></i>'
+								+ '</span>'
+								+ '</footer>'
+								+ '</div>'
+
+								+ '</div>'
+								+ '<a class="entry-read-more overlay-link" href="' + items[i].link + '"></a>'
+								+ '</article>'
+								+ '</div>';
+						};
+
+
+						$content.append(output);
+
 					}
 				});
 			});
 		</script>
 
+		<script>
+		</script>
+
 		<script type="text/javascript">
+
+			$("#ipo-animation").mouseover(function (e) {
+				$("#ipo-animation").attr("src", './images/animations/ipos.gif');
+			});
+
+			$("#ipo-animation").mouseout(function (e) {
+				$("#ipo-animation").attr("src", './images/animations/ipos.png');
+			});
+
 			$("#eth-animation").mouseover(function (e) {
 				$("#eth-animation").attr("src", './images/graphs/eth.gif');
 			});

@@ -20,7 +20,7 @@
 }
 
 .background-polymath {
-  min-height: 700px;
+  min-height: 900px;
   background: url("../images/bg/bg-newpolymath.png") no-repeat center center;
   /* background: url("../images/bg/bg_bull.png") no-repeat center center; */
   /* -webkit-background-size: cover;
@@ -34,4 +34,12 @@
 }
 #gifs-rows .gif-file {
   display: none;
+}
+
+.blue-card {
+  background-image: linear-gradient(120deg, #252e6a 0%, #40487f 100%);
+}
+
+.gray-card {
+  background-image: linear-gradient(120deg, #c1c6d2 0%, #71778f 100%);
 }
