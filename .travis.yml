@@ -15,4 +15,8 @@ deploy:
   # Name of the S3 bucket to which your site should be uploaded.
   bucket: polymath.network
   # Prevent Travis from deleting your built site so it can be uploaded.
-  skip_cleanup: true
+ skip_cleanup: true
+ #local_dir: dist/
+ acl: public_read
+ on:
+   branch: optimized
