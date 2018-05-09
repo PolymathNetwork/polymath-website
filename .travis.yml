@@ -16,7 +16,5 @@ deploy:
   bucket: polymath.network
   # Prevent Travis from deleting your built site so it can be uploaded.
  skip_cleanup: true
- #local_dir: dist/
- acl: public_read
- on:
-   branch: optimized
+  on:
+    branch: optimized
