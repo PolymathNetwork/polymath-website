@@ -5,6 +5,7 @@ var jshint = require("gulp-jshint");
 var changed = require("gulp-changed");
 //imgs
 var imagemin = require("gulp-imagemin");
+const imageminMozjpeg = require("imagemin-mozjpeg");
 var minifyHTML = require("gulp-minify-html");
 // js files
 var concat = require("gulp-concat");
@@ -20,8 +21,14 @@ var htmlreplace = require("gulp-html-replace");
 var postcss = require("gulp-postcss");
 var uncss = require("postcss-uncss");
 
+const purgecss = require("gulp-purgecss");
+
 const webp = require("gulp-webp");
 var gzip = require("gulp-gzip");
+
+var csso = require("gulp-csso");
+
+var runSequence = require("run-sequence");
 
 // JS hint task
 gulp.task("jshint", function() {
@@ -40,7 +47,13 @@ gulp.task("imagemin", function() {
     .src(imgSrc)
     // .pipe(webp())
     // .pipe(changed(imgDst))
-    .pipe(imagemin())
+    .pipe(
+      imagemin([
+        imageminMozjpeg({
+          quality: 50
+        })
+      ])
+    )
     .pipe(gulp.dest(imgDst));
 });
 
@@ -51,7 +64,7 @@ gulp.task("clean-html", function() {
 
   gulp
     .src(htmlSrc)
-    .pipe(changed(htmlDst))
+    // .pipe(changed(htmlDst))
     .pipe(minifyHTML())
     // .pipe(gzip({ append: false }))
     .pipe(gulp.dest(htmlDst));
@@ -67,15 +80,20 @@ gulp.task("clean-css", function() {
   return (
     gulp
       .src([
-        "./assets/css/*.css",
-        "./assets/css/*/*.css",
-        "./assets/css/*.min.css"
+        "./assets/css/bootstrap.min.css",
+        "./assets/css/theme-vendors.css",
+        "./assets/css/theme.min.css",
+        "./assets/css/style.css",
+        "./assets/css/theme-color/theme-centro.css"
       ])
-      .pipe(postcss(plugins))
+      //
       .pipe(concat("compiled.min.css"))
+      // .pipe(postcss(plugins))
+      .pipe(purgecss({ content: ["*.html"] }))
       // .pipe(gzip({ append: false }))
       .pipe(cleanCSS())
-      .pipe(gulp.dest("assets/css"))
+      // .pipe(csso())
+      .pipe(gulp.dest("dist/assets/css"))
   );
 });
 
@@ -86,7 +104,7 @@ gulp.task("clean-js", function() {
     .pipe(concat("compiled.min.js"))
     // .pipe(stripDebug())
     .pipe(uglify())
-    .pipe(gulp.dest("assets/js/"));
+    .pipe(gulp.dest("dist/assets/js/"));
 });
 
 gulp.task("renameSources", function() {
@@ -94,7 +112,7 @@ gulp.task("renameSources", function() {
     .src(["index.html"])
     .pipe(
       htmlreplace({
-        js: "assets/js/compiled.min.js",
+        // js: "assets/js/compiled.min.js",
         css: "assets/css/compiled.min.css"
       })
     )
@@ -112,6 +130,21 @@ gulp.task("serve", ["imagemin", "clean-css"], function() {
 });
 
 // default gulp task
-gulp.task("default", ["imagemin", "clean-css", "clean-html"], function() {
-  // gulp.start("renameSources");
+gulp.task(
+  "default",
+  ["imagemin", "clean-css", "clean-html", "clean-js", "renameSources"],
+  function() {
+    // gulp.start("renameSources");
+  }
+);
+
+gulp.task("dist", function(callback) {
+  runSequence(
+    // "imagemin",
+    "clean-css",
+    "clean-html",
+    "clean-js",
+    "renameSources",
+    callback
+  );
 });

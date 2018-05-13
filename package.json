@@ -36,9 +36,13 @@
     "lighthouse": "^2.9.4"
   },
   "dependencies": {
+    "gulp-csso": "^3.0.1",
     "gulp-gzip": "^1.4.2",
     "gulp-postcss": "^7.0.1",
+    "gulp-purgecss": "^0.21.0",
     "gulp-webp": "^3.0.0",
-    "postcss-uncss": "^0.16.1"
+    "imagemin-mozjpeg": "^7.0.0",
+    "postcss-uncss": "^0.16.1",
+    "run-sequence": "^2.2.1"
   }
 }
