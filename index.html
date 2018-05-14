@@ -553,13 +553,13 @@
 						<div class="col-sm-6 ">
 							<div>
 								<img class="lazy " src="http://via.placeholder.com/300x300 " data-src="assets/images/graphs/eth-graph.png
-									 " alt="Ethereum " id="eth-animation ">
+									 " alt="Ethereum " id="eth-animation">
 							</div>
 						</div>
 						<div class="col-sm-6 ">
 							<div>
 								<img class="lazy " src="http://via.placeholder.com/300x300 " data-src="assets/images/graphs/poly-graph.png
-									 " alt="Polymath " id="poly-animation ">
+									 " alt="Polymath " id="poly-animation">
 							</div>
 						</div>
 
@@ -880,9 +880,9 @@
 									</h4>
 									<h5 class="team-member-title text-uppercase ">Developer</h5>
 								</div>
-								
+
 							</div>
-							
+
 						</div> -->
 						<div class="col-lg-3 col-md-6 d-none d-md-block ">
 							<div class="team-member team-member-hover-social-special ">
@@ -1399,10 +1399,9 @@
 			<!-- Start Latest Posts -->
 			<section class="section pt-90 pb-100 ">
 				<div class="container ">
-					<div class="row " id="section-articles ">
+					<div class="row " id="section-articles">
 						<div class="col-md-12 mb-sm-0 mb-4 ">
-							<header class="section-title section-title-resolve section-title-default " data-plugin-resolve="true
-									 " data-plugin-resolve-options="{ &quot;seperator&quot;: &quot;chars&quot; } ">
+							<header class="section-title section-title-resolve section-title-default ">
 								<h2>Polymath Articles</h2>
 							</header>
 						</div>
@@ -1414,8 +1413,7 @@
 			<!-- End Latest Posts -->
 
 			<!-- Start Bottom Banner -->
-			<section class="section mt-70 pt-70 pb-100 " style="background-image: url(assets/images/bg/bottom.jpg);
-									 " data-parallax-bg="true ">
+			<section class="section mt-70 pt-70 pb-100 " style="background: url(assets/images/bg/bottom.jpg) no-repeat center center;background-size:cover">
 				<div class="container ">
 					<div class="row ">
 						<div class="col-lg-8 col-md-10 mx-auto text-center ">
@@ -1565,6 +1563,7 @@
 						// $.each(response.items, function (k, item) {
 						for (var i = 0; i < 3; i++) {
 
+
 							output += '<div class="col-lg-4 offset-lg-0 col-sm-12 ">'
 								+ '<article class="latest-post latest-post-hover" data-hover3d="true" data-custom-image="true" data-custom-image-selector="{ &quot;backgroundImage&quot;: &quot;.latest-post-figure&quot;, &quot;src&quot;: &quot;.latest-post-image&quot; }" data-custom-links="true">'
 								+ '<div class="latest-hover-box ' + styles[i] + '" data-stacking-factor="0.6">'
@@ -1588,7 +1587,6 @@
 								+ '</span>'
 								+ '</footer>'
 								+ '</div>'
-
 								+ '</div>'
 								+ '<a class="entry-read-more overlay-link " href=" ' + items[i].link + ' "></a>'
 								+ '</article>'
@@ -1609,28 +1607,28 @@
 
 		<script type="text/javascript ">
 
-			$("#ipo-animation ").mouseover(function (e) {
-				$("#ipo-animation ").attr("src ", 'assets/images/animations/ipos.gif');
+			$("#ipo-animation").mouseover(function (e) {
+				$("#ipo-animation").attr("src", 'assets/images/animations/ipos.gif');
 			});
 
-			$("#ipo-animation ").mouseout(function (e) {
-				$("#ipo-animation ").attr("src ", 'assets/images/animations/ipos.png');
+			$("#ipo-animation").mouseout(function (e) {
+				$("#ipo-animation").attr("src", 'assets/images/animations/ipos.png');
 			});
 
-			$("#eth-animation ").mouseover(function (e) {
-				$("#eth-animation ").attr("src ", 'assets/images/graphs/eth-graph.gif');
+			$("#eth-animation").mouseover(function (e) {
+				$("#eth-animation").attr("src", 'assets/images/graphs/eth-graph.gif');
 			});
 
-			$("#eth-animation ").mouseout(function (e) {
-				$("#eth-animation ").attr("src ", 'assets/images/graphs/eth-graph.png');
+			$("#eth-animation").mouseout(function (e) {
+				$("#eth-animation").attr("src", 'assets/images/graphs/eth-graph.png');
 			});
 
-			$("#poly-animation ").mouseover(function (e) {
-				$("#poly-animation ").attr("src ", 'assets/images/graphs/poly-graph.gif');
+			$("#poly-animation").mouseover(function (e) {
+				$("#poly-animation ").attr("src", 'assets/images/graphs/poly-graph.gif');
 			});
 
-			$("#poly-animation ").mouseout(function (e) {
-				$("#poly-animation ").attr("src ", 'assets/images/graphs/poly-graph.png');
+			$("#poly-animation").mouseout(function (e) {
+				$("#poly-animation").attr("src", 'assets/images/graphs/poly-graph.png');
 			});
 		</script>
 </body>
