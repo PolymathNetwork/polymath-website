@@ -24,6 +24,10 @@ p.big {
   background: url("../images/Telegram_logo.svg") no-repeat -50px 50px;
 }
 
+.poly-cta {
+  background: url("../images/bull_circle.svg") no-repeat -10px 50px;
+}
+
 /* .sidenav {
   height: 100%;
   width: 0;
