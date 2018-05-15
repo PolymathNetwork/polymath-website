@@ -1,6 +1,6 @@
 p {
   font-family: Overpass;
-  /* font-size:16px !important; */
+  font-size: 16px !important;
 }
 
 p.big {
@@ -11,10 +11,18 @@ span.poly {
   color: #252e6a;
 }
 
-.line {
+.content p {
+  font-size: 16px !important;
+}
+
+.weight-medium {
+  font-size: 23px !important;
+}
+
+/* .line {
   display: inline-block !important;
   width: 250px !important;
-}
+} */
 
 /* .line span {
   text-transform: capitalize;
@@ -32,8 +40,17 @@ span.poly {
   line-height: 36px;
 }
 
+.arrow-right {
+  background: url("../images/icons/svg/icn-arrow.svg") no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 14px;
+  width: 16px;
+}
+
 .telegram-cta {
-  background: url("../images/Telegram_logo.svg") no-repeat -50px 50px;
+  background: url("../images/Telegram_logo.svg") no-repeat -30px 20px;
 }
 
 .poly-cta {
@@ -50,6 +67,11 @@ span.poly {
   background: #ccc;
   width: 150px;
   height: 70px;
+}
+
+.subtitle-link {
+  font-size: 23px;
+  color: #252e6a !important;
 }
 
 .navbar-toggler {
@@ -74,6 +96,20 @@ span.poly {
   }
 }
 
+.main-header--style-centro .main-nav > li {
+  color: #5a6872 !important;
+  font-weight: 600 !important;
+}
+
+.menu-item a:hover {
+  opacity: 0.25 !important;
+}
+
+.section-title h2 {
+  font-size: 56px !important;
+  font-weight: bold;
+}
+
 .overlay {
   height: 100%;
   width: 100%;
@@ -96,8 +132,8 @@ span.poly {
 }
 
 .background-polymath {
-  height: 600px;
-  background: url("../images/bg/bg-newpolymath.png") no-repeat center 80%;
+  height: 700px;
+  background: url("../images/bg/header-polymath.png") no-repeat center 80%;
   /* background: url("../images/bg/bg_bull.png") no-repeat center center; */
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -123,6 +159,8 @@ span.poly {
 
 .btn {
   border: 2px solid;
+  font-weight: 600 !important;
+  /* padding: 5px 4px !important; */
 }
 
 .btn-white {
