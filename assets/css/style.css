@@ -7,18 +7,30 @@ p.big {
   font-size: 23px !important;
 }
 
+span.poly {
+  color: #252e6a;
+}
+
 .line {
   display: inline-block !important;
   width: 250px !important;
 }
 
-.line div {
+/* .line span {
   text-transform: capitalize;
   color: #252e6a;
   font-size: 16px !important;
+} */
+.line span {
+  height: 60px;
+  width: 192px;
+  color: #252e6a;
+  text-transform: capitalize;
+  font-family: Overpass;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 36px;
 }
-
-
 
 .telegram-cta {
   background: url("../images/Telegram_logo.svg") no-repeat -50px 50px;
@@ -28,53 +40,39 @@ p.big {
   background: url("../images/bull_circle.svg") no-repeat -10px 50px;
 }
 
-/* .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+.slider {
+  background: #333;
+  height: 400px;
+  width: 100%;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+#logo {
+  background: #ccc;
+  width: 150px;
+  height: 70px;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.navbar-toggler {
+  margin-top: 15px;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#wrap {
-  transition: margin-left 0.5s;
-  /* padding: 16px; */
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 130px;
   }
-  .sidenav a {
-    font-size: 18px;
+  #logo {
+    width: 260px;
+    height: 120px;
+    position: relative;
+    bottom: -20px;
   }
-} */
+  .navbar-light .navbar-nav .nav-link {
+    padding-right: 75px;
+  }
+  #nav-left {
+    padding-left: 30px;
+  }
+}
 
 .overlay {
   height: 100%;
@@ -141,11 +139,23 @@ p.big {
   color: #fff !important;
   font-size: 14px;
   text-transform: uppercase;
+  font-weight: 600 !important;
+  letter-spacing: 0.88px !important;
+  line-height: 22px !important;
   list-style: none;
+}
+
+.main-footer a:hover {
+  color: #505995 !important;
 }
 
 .poly_email {
   font-size: 23px;
+  font-weight: normal !important;
+}
+
+.poly_email:hover {
+  color: #505995 !important;
 }
 
 ul.social {
@@ -181,15 +191,13 @@ ul.social li a i {
   transition: all 0.8s;
 }
 ul.social li a:hover i {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
+  color: #505995 !important;
+}
+
+.tinted-image {
+  background: linear-gradient(rgba(37, 46, 106, 0.45), rgba(37, 46, 106, 0.45)),
+    url("../images/bg/bottom_lg.jpg") no-repeat bottom center;
+  background-size: cover;
 }
 
 #gifs-rows img {
