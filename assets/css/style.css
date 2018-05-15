@@ -1,4 +1,30 @@
-.sidenav {
+p {
+  font-family: Overpass;
+  /* font-size:16px !important; */
+}
+
+p.big {
+  font-size: 23px !important;
+}
+
+.line {
+  display: inline-block !important;
+  width: 250px !important;
+}
+
+.line div {
+  text-transform: capitalize;
+  color: #252e6a;
+  font-size: 16px !important;
+}
+
+
+
+.telegram-cta {
+  background: url("../images/Telegram_logo.svg") no-repeat -50px 50px;
+}
+
+/* .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -44,7 +70,7 @@
   .sidenav a {
     font-size: 18px;
   }
-}
+} */
 
 .overlay {
   height: 100%;
@@ -68,13 +94,98 @@
 }
 
 .background-polymath {
-  height: 700px;
-  background: url("../images/bg/bg-newpolymath.png") no-repeat center center;
+  height: 600px;
+  background: url("../images/bg/bg-newpolymath.png") no-repeat center 80%;
   /* background: url("../images/bg/bg_bull.png") no-repeat center center; */
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; */
   background-size: cover;
+}
+
+.btn-social {
+  border-radius: 50%;
+  /* color: #ffffff !important; */
+  background: #fff;
+  display: inline-block;
+  height: 54px;
+  line-height: 54px;
+  font-size: 20px;
+  margin: 8px 4px;
+  text-align: center;
+  text-decoration: none;
+  /* transition: background-color .3s; */
+  /* webkit-transition: background-color .3s; */
+  width: 54px;
+}
+
+.btn {
+  border: 2px solid;
+}
+
+.btn-white {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+.btn-white:hover {
+  background: #fff;
+  color: #252e6a !important;
+}
+
+.main-footer ul {
+  color: #fff !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.poly_email {
+  font-size: 23px;
+}
+
+ul.social {
+  list-style: none;
+}
+ul.social li {
+  display: inline;
+  padding: 0;
+  margin: 0 5px;
+}
+ul.social li a {
+  display: inline-block;
+  margin: 5px auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  position: relative;
+  background-color: #fff;
+}
+ul.social li a i {
+  color: #252e6a;
+  text-align: center;
+  margin: 0;
+  line-height: 50px;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+ul.social li a:hover i {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 #gifs-rows img {

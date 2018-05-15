@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>4-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#27326C" offset="0%"></stop>
+            <stop stop-color="#A6ABC6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Website-1-Copy" transform="translate(-1064.000000, -4303.000000)">
+            <g id="scheme-blk" transform="translate(160.000000, 3748.000000)">
+                <g id="Group-7">
+                    <g id="scheme" transform="translate(0.000000, 188.000000)">
+                        <g id="item-4-2" transform="translate(880.000000, 343.000000)">
+                            <g id="4-circle" transform="translate(24.000000, 24.000000)">
+                                <circle id="Combined-Shape" stroke="url(#linearGradient-1)" stroke-width="2" cx="28" cy="28" r="27"></circle>
+                                <path d="M29.7125,37 L29.7125,33.025 L20.2875,33.025 L20.2875,31.35 L29.2375,19.5 L32.3125,19.5 L32.3125,30.625 L34.5875,30.625 L34.5875,33.025 L32.3125,33.025 L32.3125,37 L29.7125,37 Z M29.7125,30.625 L29.7125,22.65 L23.7375,30.625 L29.7125,30.625 Z" id="4" fill="url(#linearGradient-1)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
