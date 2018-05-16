@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Website-3" transform="translate(-796.000000, -5556.000000)" fill="#252E6A">
+            <g id="team-blk" transform="translate(165.000000, 5476.000000)">
+                <g id="icn-arrow" transform="translate(627.000000, 75.000000)">
+                    <polygon id="arrow--right" transform="translate(11.000000, 11.000000) rotate(-45.000000) translate(-11.000000, -11.000000) " points="15.6 10 3 10 3 12 15.7 12 10.7 16.7 12 18 19 11 12 4 10.7 5.3"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

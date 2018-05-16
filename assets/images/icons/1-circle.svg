@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>1-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#27326C" offset="0%"></stop>
+            <stop stop-color="#A6ABC6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Website-1-Copy" transform="translate(-184.000000, -3960.000000)">
+            <g id="scheme-blk" transform="translate(160.000000, 3748.000000)">
+                <g id="Group-7">
+                    <g id="scheme" transform="translate(0.000000, 188.000000)">
+                        <g id="item-1-2">
+                            <g id="1-circle" transform="translate(24.000000, 24.000000)">
+                                <circle id="Combined-Shape" stroke="url(#linearGradient-1)" stroke-width="2" cx="28" cy="28" r="27"></circle>
+                                <path d="M27.675,37 L27.675,23.425 L24.8,23.425 L24.8,21.5 C26.6833428,21.5 27.8416645,20.83334 28.275,19.5 L30.275,19.5 L30.275,37 L27.675,37 Z" id="1" fill="url(#linearGradient-1)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
