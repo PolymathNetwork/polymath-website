@@ -27,6 +27,7 @@ const webp = require("gulp-webp");
 var gzip = require("gulp-gzip");
 
 var csso = require("gulp-csso");
+purge = require("gulp-css-purge");
 
 var runSequence = require("run-sequence");
 
@@ -81,17 +82,19 @@ gulp.task("clean-css", function() {
     gulp
       .src([
         "./assets/css/bootstrap.min.css",
-        "./assets/css/theme-vendors.css",
+        // "./assets/css/theme-vendors.css",
         "./assets/css/theme.min.css",
-        "./assets/css/style.css",
-        "./assets/css/theme-color/theme-centro.css"
+        "./assets/css/theme-color/theme-centro.css",
+        "./assets/css/lity.min.css",
+        "./assets/css/style.css"
       ])
       //
       .pipe(concat("compiled.min.css"))
       // .pipe(postcss(plugins))
-      .pipe(purgecss({ content: ["*.html"] }))
+      // .pipe(purgecss({ content: ["*.html"] }))
       // .pipe(gzip({ append: false }))
-      .pipe(cleanCSS())
+      // .pipe(purge())
+      // .pipe(cleanCSS())
       // .pipe(csso())
       .pipe(gulp.dest("dist/assets/css"))
   );
