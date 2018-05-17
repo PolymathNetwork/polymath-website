@@ -662,13 +662,13 @@ h2.xl {
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  .section-title h2 {
+    font-size: 45px !important;
+    color: #152935 !important;
+  }
   h2.xl {
     font-size: 56px !important;
     font-weight: bold;
-    color: #152935 !important;
-  }
-  .section-title h2 {
-    font-size: 45px !important;
     color: #152935 !important;
   }
 }
@@ -764,6 +764,10 @@ span.poly {
   color: #252e6a !important;
 }
 
+.subtitle-link:hover {
+  opacity: 0.5 !important;
+}
+
 .navbar-toggler {
   margin-top: 15px;
 }
@@ -847,6 +851,14 @@ span.poly {
   border: 2px solid;
   font-weight: 600 !important;
   /* padding: 5px 4px !important; */
+}
+
+.btn span {
+  /* height: 40px !important; */
+  line-height: 18px !important;
+  letter-spacing: 1px !important;
+  padding: 11px 2em !important;
+  /* height: 40px !important; */
 }
 
 .btn-white {
