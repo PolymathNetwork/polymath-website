@@ -25,6 +25,70 @@ h2.xl {
   padding-left: 20px !important;
 }
 
+.terms-ui h3{
+  color: #252E6A;	font-family: Overpass;	font-size: 36px;	font-weight: 600;	line-height: 55px;
+}
+
+.terms-ui .terms-sidemenu{
+  position:fixed;
+}
+
+.terms-sidemenu{
+  color:#252E6A;
+  width:20%;
+  min-width:300px;
+  height:500px;
+  overflow:auto;
+  overflow-y:scroll;
+}
+
+.terms-sidemenu li{
+  font-size:20px;
+  font-weight:550;
+  min-height:26px;
+  padding-top:10px;
+  padding-bottom:10px;
+  line-height:31px;
+  /* color:#3D70B2; */
+}
+
+.terms-content h3{
+  font-size:20px;
+  font-weight:normal;
+}
+
+.terms-content p{
+  margin-bottom:10px!important;
+}
+
+.terms-content ol { counter-reset: item }
+.terms-content li{ display: block }
+.terms-content li:before { content: counters(item, ".") " "; counter-increment: item }
+
+.terms-content-headings{
+  text-transform:uppercase;
+  color:#252E6A;
+  font-size:20px;
+  font-weight:550;
+}
+
+.terms-content-headings .terms-content-subheadings{
+  font-size:16px;
+  text-transform:none !important;
+  font-weight:300;
+}
+
+.terms-content-headings .terms-content-subheadings li{
+  text-transform:underline !important;
+}
+
+.terms-content-headings p{
+  text-transform:none;
+  font-weight:300;
+  margin-left:2em;
+  color:#333;
+}
+
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
   h2.xl {
