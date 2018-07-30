@@ -29,20 +29,33 @@ h2.xl {
   color: #252E6A;	font-family: Overpass;	font-size: 36px;	font-weight: 600;	line-height: 55px;
 }
 
-.terms-ui .terms-sidemenu{
-  position:fixed;
-}
-
 .terms-sidemenu{
-  color:#252E6A;
+  position:fixed;
+  padding:10px;
   width:20%;
   min-width:300px;
+  margin-bottom:200px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.terms-sidemenu h3{
+  
+}
+
+
+.terms-sidemenu ol {
+  
+  color:#252E6A;
+  /* padding:5px; */
+  text-indent:1em;
+  margin-left:1em;
   height:500px;
+  
   overflow:auto;
   overflow-y:scroll;
 }
 
-.terms-sidemenu li{
+.terms-sidemenu ol li{
   font-size:20px;
   font-weight:550;
   min-height:26px;
@@ -63,7 +76,7 @@ h2.xl {
 
 .terms-content ol { counter-reset: item }
 .terms-content li{ display: block }
-.terms-content li:before { content: counters(item, ".") " "; counter-increment: item }
+.terms-content li:before { content: counters(item, ".") ". "; counter-increment: item }
 
 .terms-content-headings{
   text-transform:uppercase;
