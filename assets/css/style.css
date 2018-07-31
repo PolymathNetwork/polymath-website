@@ -1,3 +1,18 @@
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
 h2 .white {
   color: #fff !important;
 }
@@ -25,21 +40,30 @@ h2.xl {
   padding-left: 20px !important;
 }
 
+#sticky-sidebar {
+  position:fixed;
+  max-width: 20%;
+}
+
 .terms-ui h3{
-  color: #252E6A;	font-family: Overpass;	font-size: 36px;	font-weight: 600;	line-height: 55px;
+  color: #252E6A;	font-family: Overpass;	font-size: 20px;	font-weight: 600;
+}
+
+.terms-ui .navbar{
+  height:50px;
 }
 
 .terms-sidemenu{
-  position:fixed;
+  /* position:fixed; */
+  /* width:20%;
+  min-width:300px; */
   padding:10px;
-  width:20%;
-  min-width:300px;
-  margin-bottom:200px;
+  /* margin-bottom:200px; */
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.terms-sidemenu h3{
-  
+.fixed{
+position:fixed;
 }
 
 
@@ -47,16 +71,15 @@ h2.xl {
   
   color:#252E6A;
   /* padding:5px; */
-  text-indent:1em;
+  /* text-indent:1em; */
   margin-left:1em;
   height:500px;
-  
   overflow:auto;
   overflow-y:scroll;
 }
 
 .terms-sidemenu ol li{
-  font-size:20px;
+  font-size:16px;
   font-weight:550;
   min-height:26px;
   padding-top:10px;
@@ -74,9 +97,42 @@ h2.xl {
   margin-bottom:10px!important;
 }
 
-.terms-content ol { counter-reset: item }
+/* .terms-content ol { counter-reset: item }
 .terms-content li{ display: block }
-.terms-content li:before { content: counters(item, ".") ". "; counter-increment: item }
+.terms-content li:before { content: counters(item, ".") ". "; counter-increment: item } */
+
+.terms-content ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+.terms-content li:before {
+    counter-increment: section;
+    content: counters(section, ".") ". ";
+}
+
+.terms-content li li:before {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+}
+
+.terms-content ol ol ol {
+    counter-reset: list;
+    margin: 0;
+}
+
+.terms-content ol ol ol > li {
+    list-style: none;
+    text-indent:2.5em;
+    position: relative;
+}
+
+.terms-content ol ol ol > li:before {
+    counter-increment: list;
+    content: "(" counter(list, lower-alpha) ") ";
+    text-indent:2em;
+    position: absolute;
+    left: -1.4em;
+}
 
 .terms-content-headings{
   text-transform:uppercase;
