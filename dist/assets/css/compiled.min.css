@@ -931,6 +931,21 @@ blockquote,
 /*! Lity - v2.3.1 - 2018-04-20
 * http://sorgalla.com/lity/
 * Copyright (c) 2015-2018 Jan Sorgalla; Licensed MIT */.lity{z-index:9990;position:fixed;top:0;right:0;bottom:0;left:0;white-space:nowrap;background:#0b0b0b;background:rgba(0,0,0,0.9);outline:none !important;opacity:0;-webkit-transition:opacity .3s ease;-o-transition:opacity .3s ease;transition:opacity .3s ease}.lity.lity-opened{opacity:1}.lity.lity-closed{opacity:0}.lity *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.lity-wrap{z-index:9990;position:fixed;top:0;right:0;bottom:0;left:0;text-align:center;outline:none !important}.lity-wrap:before{content:'';display:inline-block;height:100%;vertical-align:middle;margin-right:-0.25em}.lity-loader{z-index:9991;color:#fff;position:absolute;top:50%;margin-top:-0.8em;width:100%;text-align:center;font-size:14px;font-family:Arial,Helvetica,sans-serif;opacity:0;-webkit-transition:opacity .3s ease;-o-transition:opacity .3s ease;transition:opacity .3s ease}.lity-loading .lity-loader{opacity:1}.lity-container{z-index:9992;position:relative;text-align:left;vertical-align:middle;display:inline-block;white-space:normal;max-width:100%;max-height:100%;outline:none !important}.lity-content{z-index:9993;width:100%;-webkit-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1);-webkit-transition:-webkit-transform .3s ease;transition:-webkit-transform .3s ease;-o-transition:-o-transform .3s ease;transition:transform .3s ease;transition:transform .3s ease, -webkit-transform .3s ease, -o-transform .3s ease}.lity-loading .lity-content,.lity-closed .lity-content{-webkit-transform:scale(.8);-ms-transform:scale(.8);-o-transform:scale(.8);transform:scale(.8)}.lity-content:after{content:'';position:absolute;left:0;top:0;bottom:0;display:block;right:0;width:auto;height:auto;z-index:-1;-webkit-box-shadow:0 0 8px rgba(0,0,0,0.6);box-shadow:0 0 8px rgba(0,0,0,0.6)}.lity-close{z-index:9994;width:35px;height:35px;position:fixed;right:0;top:0;-webkit-appearance:none;cursor:pointer;text-decoration:none;text-align:center;padding:0;color:#fff;font-style:normal;font-size:35px;font-family:Arial,Baskerville,monospace;line-height:35px;text-shadow:0 1px 2px rgba(0,0,0,0.6);border:0;background:none;outline:none;-webkit-box-shadow:none;box-shadow:none}.lity-close::-moz-focus-inner{border:0;padding:0}.lity-close:hover,.lity-close:focus,.lity-close:active,.lity-close:visited{text-decoration:none;text-align:center;padding:0;color:#fff;font-style:normal;font-size:35px;font-family:Arial,Baskerville,monospace;line-height:35px;text-shadow:0 1px 2px rgba(0,0,0,0.6);border:0;background:none;outline:none;-webkit-box-shadow:none;box-shadow:none}.lity-close:active{top:1px}.lity-image img{max-width:100%;display:block;line-height:0;border:0}.lity-iframe .lity-container,.lity-youtube .lity-container,.lity-vimeo .lity-container,.lity-facebookvideo .lity-container,.lity-googlemaps .lity-container{width:100%;max-width:964px}.lity-iframe-container{width:100%;height:0;padding-top:56.25%;overflow:auto;pointer-events:auto;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-overflow-scrolling:touch}.lity-iframe-container iframe{position:absolute;display:block;top:0;left:0;width:100%;height:100%;-webkit-box-shadow:0 0 8px rgba(0,0,0,0.6);box-shadow:0 0 8px rgba(0,0,0,0.6);background:#000}.lity-hide{display:none}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
 h2 .white {
   color: #fff !important;
 }
@@ -958,25 +973,46 @@ h2.xl {
   padding-left: 20px !important;
 }
 
-.terms-ui h3{
-  color: #252E6A;	font-family: Overpass;	font-size: 36px;	font-weight: 600;	line-height: 55px;
+#sticky-sidebar {
+  position:fixed;
+  max-width: 20%;
 }
 
-.terms-ui .terms-sidemenu{
-  position:fixed;
+.terms-ui h3{
+  color: #252E6A;	font-family: Overpass;	font-size: 20px;	font-weight: 600;
+}
+
+.terms-ui .navbar{
+  height:50px;
 }
 
 .terms-sidemenu{
+  /* position:fixed; */
+  /* width:20%;
+  min-width:300px; */
+  padding:10px;
+  /* margin-bottom:200px; */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.fixed{
+position:fixed;
+}
+
+
+.terms-sidemenu ol {
+  
   color:#252E6A;
-  width:20%;
-  min-width:300px;
+  /* padding:5px; */
+  /* text-indent:1em; */
+  margin-left:1em;
   height:500px;
   overflow:auto;
   overflow-y:scroll;
 }
 
-.terms-sidemenu li{
-  font-size:20px;
+.terms-sidemenu ol li{
+  font-size:16px;
   font-weight:550;
   min-height:26px;
   padding-top:10px;
@@ -994,9 +1030,42 @@ h2.xl {
   margin-bottom:10px!important;
 }
 
-.terms-content ol { counter-reset: item }
+/* .terms-content ol { counter-reset: item }
 .terms-content li{ display: block }
-.terms-content li:before { content: counters(item, ".") " "; counter-increment: item }
+.terms-content li:before { content: counters(item, ".") ". "; counter-increment: item } */
+
+.terms-content ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+.terms-content li:before {
+    counter-increment: section;
+    content: counters(section, ".") ". ";
+}
+
+.terms-content li li:before {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+}
+
+.terms-content ol ol ol {
+    counter-reset: list;
+    margin: 0;
+}
+
+.terms-content ol ol ol > li {
+    list-style: none;
+    text-indent:2.5em;
+    position: relative;
+}
+
+.terms-content ol ol ol > li:before {
+    counter-increment: list;
+    content: "(" counter(list, lower-alpha) ") ";
+    text-indent:2em;
+    position: absolute;
+    left: -1.4em;
+}
 
 .terms-content-headings{
   text-transform:uppercase;
