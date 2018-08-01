@@ -83,7 +83,7 @@ h2.xl {
   color:#252E6A;
   list-style:none;
   /* padding:5px; */
-  /* text-indent:1em; */
+  /* text-indent:2em; */
   /* margin-left:1em; */
   height:500px;
   overflow:auto;
@@ -118,7 +118,11 @@ h2.xl {
 }
 
 .no-list-numbers li{
-  text-transform:capitalize;
+  /* text-transform:capitalize; */
+}
+
+.terms-body ul, .terms-body ol{
+  margin-left:2em;
 }
 
 .terms-content ol {
