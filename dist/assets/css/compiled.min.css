@@ -1115,51 +1115,12 @@ h2.xl {
   color:#333;
 }
 
-/* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {
-  h2.xl {
-    font-size: 38px !important;
-    font-weight: bold;
-    color: #152935 !important;
-  }
-
-  .section-title h2 {
-    font-size: 32px !important;
-    color: #152935 !important;
-  }
+#logo {
+  /* background: #ccc; */
+  width: 243px;
+  height: 90px;
 }
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
-  .section-title h2 {
-    font-size: 45px !important;
-    color: #152935 !important;
-  }
-  h2.xl {
-    font-size: 56px !important;
-    font-weight: bold;
-    color: #152935 !important;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .telegram-cta {
-    background: url("../images/Telegram_logo.svg") no-repeat;
-    background-position: bottom -40px left -30px;
-    /* background-attachment: fixed; */
-    /* background-size: contain; */
-  }
-
-  .telegram-cta h2 {
-    font-size: 32px !important;
-    padding-left: 10px !important;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
 
 p {
   font-family: Overpass;
@@ -1222,11 +1183,7 @@ span.poly {
   width: 100%;
 }
 
-#logo {
-  background: #ccc;
-  width: 150px;
-  height: 70px;
-}
+
 
 .subtitle-link {
   font-size: 23px;
@@ -1241,24 +1198,13 @@ span.poly {
   margin-top: 15px;
 }
 
-/* Large devices */
-@media screen and (min-width: 992px) {
-  .navbar {
-    height: 130px;
-  }
-  #logo {
-    width: 260px;
-    height: 120px;
-    position: relative;
-    bottom: -20px;
-  }
-  .navbar-light .navbar-nav .nav-link {
-    padding-right: 75px;
-  }
-  #nav-left {
-    padding-left: 30px;
-  }
+.navbar .navbar-nav .nav-link {
+  text-transform:uppercase;
+  font-size:14px;
+  font-weight:600;
 }
+
+
 
 .main-header--style-centro .main-nav > li {
   color: #5a6872 !important;
@@ -1291,7 +1237,7 @@ span.poly {
 }
 
 .background-polymath {
-  height: 700px;
+  height: 600px;
   background: url("../images/bg/header-polymath.png") no-repeat center 80%;
   /* background: url("../images/bg/bg_bull.png") no-repeat center center; */
   /* -webkit-background-size: cover;
@@ -1359,7 +1305,7 @@ span.poly {
 }
 
 .poly_email {
-  font-size: 23px !important;
+  font-size: 23px;
   font-weight: normal !important;
   color: #fff !important;
 }
@@ -1433,3 +1379,77 @@ ul.social li a:hover i {
     #71778f 100%
   ) !important;
 }
+
+/* Small devices (landscape phones, 544px and up) */
+@media only screen and (max-device-width: 480px) {
+
+  #logo {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    bottom: -20px;
+  }
+
+  h2.xl {
+    font-size: 38px !important;
+    font-weight: bold;
+    color: #152935 !important;
+  }
+
+  .section-title h2 {
+    font-size: 32px !important;
+    color: #152935 !important;
+  }
+
+  .poly_email{
+    font-size:14px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .section-title h2 {
+    font-size: 45px !important;
+    color: #152935 !important;
+  }
+  h2.xl {
+    font-size: 56px !important;
+    font-weight: bold;
+    color: #152935 !important;
+  }
+}
+
+/* Large devices */
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 130px;
+  }
+  #logo {
+    width: 260px;
+    height: 120px;
+    position: relative;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    padding: 0px 30px;
+  }
+  .navbar-nav{
+    padding-left: 30px;
+  }
+
+  .telegram-cta {
+    background: url("../images/Telegram_logo.svg") no-repeat;
+    background-position: bottom -40px left -30px;
+    /* background-attachment: fixed; */
+    /* background-size: contain; */
+  }
+
+  .telegram-cta h2 {
+    font-size: 32px !important;
+    padding-left: 10px !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
