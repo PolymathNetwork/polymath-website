@@ -1,3 +1,18 @@
+body {
+  /* Margin bottom by footer height */
+  /* margin-bottom: 60px; */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
 h2 .white {
   color: #fff !important;
 }
@@ -25,51 +40,154 @@ h2.xl {
   padding-left: 20px !important;
 }
 
-/* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {
-  h2.xl {
-    font-size: 38px !important;
-    font-weight: bold;
-    color: #152935 !important;
-  }
-
-  .section-title h2 {
-    font-size: 32px !important;
-    color: #152935 !important;
-  }
+#sticky-sidebar {
+  position:fixed;
+  max-width: 20%;
 }
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
-  .section-title h2 {
-    font-size: 45px !important;
-    color: #152935 !important;
-  }
-  h2.xl {
-    font-size: 56px !important;
-    font-weight: bold;
-    color: #152935 !important;
-  }
+.terms-ui h3{
+  color: #252E6A;	font-family: Overpass;	font-size: 20px;	font-weight: 600;
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .telegram-cta {
-    background: url("../images/Telegram_logo.svg") no-repeat;
-    background-position: bottom -40px left -30px;
-    /* background-attachment: fixed; */
-    /* background-size: contain; */
-  }
-
-  .telegram-cta h2 {
-    font-size: 32px !important;
-    padding-left: 10px !important;
-  }
+.terms-ui .navbar{
+  height:50px;
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+.terms-sidemenu{
+  /* position:fixed; */
+  width:20%;
+  min-width:300px;
+  padding:10px;
+  /* margin-bottom:200px; */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+
+.fixed{
+  position:fixed;
+}
+
+
+.terms-sidemenu ol {
+  
+  color:#252E6A;
+  /* padding:5px; */
+  /* text-indent:1em; */
+  margin-left:1em;
+  height:500px;
+  overflow:auto;
+  overflow-y:scroll;
+}
+
+.terms-sidemenu ul {
+  
+  color:#252E6A;
+  list-style:none;
+  /* padding:5px; */
+  /* text-indent:2em; */
+  /* margin-left:1em; */
+  height:500px;
+  overflow:auto;
+  overflow-y:scroll;
+}
+
+.terms-sidemenu ol li, .terms-sidemenu ul li{
+  font-size:20px;
+  font-weight:550;
+  min-height:26px;
+  padding-top:10px;
+  padding-bottom:10px;
+  line-height:31px;
+  /* color:#3D70B2; */
+}
+
+.terms-content h3{
+  font-size:20px;
+  font-weight:normal;
+}
+
+.terms-content p{
+  margin-bottom:10px!important;
+}
+
+/* .terms-content ol { counter-reset: item }
+.terms-content li{ display: block }
+.terms-content li:before { content: counters(item, ".") ". "; counter-increment: item } */
+
+.no-list-numbers{
+  list-style-type:none;
+}
+
+.no-list-numbers li{
+  /* text-transform:capitalize; */
+}
+
+.terms-body ul, .terms-body ol{
+  margin-left:2em;
+}
+
+.terms-content ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+.terms-content li:before {
+    counter-increment: section;
+    content: counters(section, ".") ". ";
+}
+
+.terms-content li li:before {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+}
+
+.terms-content ol ol ol {
+    counter-reset: list;
+    margin: 0;
+}
+
+.terms-content ol ol ol > li {
+    list-style: none;
+    text-indent:2.5em;
+    position: relative;
+}
+
+.terms-content ol ol ol > li:before {
+    counter-increment: list;
+    content: "(" counter(list, lower-alpha) ") ";
+    text-indent:2em;
+    position: absolute;
+    left: -1.4em;
+}
+
+.terms-content-headings{
+  text-transform:uppercase;
+  color:#252E6A;
+  font-size:20px;
+  font-weight:550;
+}
+
+.terms-content-headings .terms-content-subheadings{
+  font-size:16px;
+  text-transform:none !important;
+  font-weight:300;
+}
+
+.terms-content-headings .terms-content-subheadings li{
+  text-transform:underline !important;
+}
+
+.terms-content-headings p{
+  text-transform:none;
+  font-weight:300;
+  margin-left:1em;
+  color:#333;
+}
+
+#logo {
+  /* background: #ccc; */
+  width: 243px;
+  height: 90px;
+}
+
 
 p {
   font-family: Overpass;
@@ -86,6 +204,7 @@ span.poly {
 
 .content p {
   font-size: 16px !important;
+  display: inline-block !important;
 }
 
 .weight-medium {
@@ -132,11 +251,7 @@ span.poly {
   width: 100%;
 }
 
-#logo {
-  background: #ccc;
-  width: 150px;
-  height: 70px;
-}
+
 
 .subtitle-link {
   font-size: 23px;
@@ -151,24 +266,13 @@ span.poly {
   margin-top: 15px;
 }
 
-/* Large devices */
-@media screen and (min-width: 992px) {
-  .navbar {
-    height: 130px;
-  }
-  #logo {
-    width: 260px;
-    height: 120px;
-    position: relative;
-    bottom: -20px;
-  }
-  .navbar-light .navbar-nav .nav-link {
-    padding-right: 75px;
-  }
-  #nav-left {
-    padding-left: 30px;
-  }
+.navbar .navbar-nav .nav-link {
+  text-transform:uppercase;
+  font-size:14px;
+  font-weight:600;
 }
+
+
 
 .main-header--style-centro .main-nav > li {
   color: #5a6872 !important;
@@ -201,7 +305,7 @@ span.poly {
 }
 
 .background-polymath {
-  height: 700px;
+  height: 600px;
   background: url("../images/bg/header-polymath.png") no-repeat center 80%;
   /* background: url("../images/bg/bg_bull.png") no-repeat center center; */
   /* -webkit-background-size: cover;
@@ -269,7 +373,7 @@ span.poly {
 }
 
 .poly_email {
-  font-size: 23px !important;
+  font-size: 23px;
   font-weight: normal !important;
   color: #fff !important;
 }
@@ -343,3 +447,94 @@ ul.social li a:hover i {
     #71778f 100%
   ) !important;
 }
+
+/* Small devices (landscape phones, 544px and up) */
+@media only screen and (max-device-width: 480px) {
+
+  #logo {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    bottom: -20px;
+  }
+
+  h2.xl {
+    font-size: 38px !important;
+    font-weight: bold;
+    color: #152935 !important;
+  }
+
+  .section-title h2 {
+    font-size: 32px !important;
+    color: #152935 !important;
+  }
+
+  .poly_email{
+    font-size:14px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .section-title h2 {
+    font-size: 45px !important;
+    color: #152935 !important;
+  }
+  h2.xl {
+    font-size: 56px !important;
+    font-weight: bold;
+    color: #152935 !important;
+  }
+}
+
+/* Large devices */
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 130px;
+  }
+  #logo {
+    width: 260px;
+    height: 120px;
+    position: relative;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    padding: 0px 30px;
+  }
+  .navbar-nav{
+    padding-left: 30px;
+  }
+
+  .telegram-cta {
+    background: url("../images/Telegram_logo.svg") no-repeat;
+    background-position: bottom -40px left -30px;
+    /* background-attachment: fixed; */
+    /* background-size: contain; */
+  }
+
+  .telegram-cta h2 {
+    font-size: 32px !important;
+    padding-left: 10px !important;
+  }
+
+    form.hs-form,
+  .hs_cos_wrapper .form-title {
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  }
+
+  /* To center the form title within a form module */
+  .hs_cos_wrapper .form-title {
+  text-align: center;
+  }
+
+  /* To center the form submit button */
+  .hs_submit {
+      text-align: center;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
