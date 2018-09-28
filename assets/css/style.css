@@ -516,7 +516,7 @@ ul.social li a:hover i {
     padding-left: 10px !important;
   }
 
-    form.hs-form,
+  form.hs-form,
   .hs_cos_wrapper .form-title {
   max-width: 500px;
   display: block;
@@ -532,6 +532,7 @@ ul.social li a:hover i {
   .hs_submit {
       text-align: center;
   }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

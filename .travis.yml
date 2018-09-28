@@ -7,14 +7,25 @@ after_success: s3_website push
 branches:
   only:
   - master
+  - dev
 deploy:
-  provider: s3
-  # You can refer to environment variables from Travis repo settings!
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
-  # Name of the S3 bucket to which your site should be uploaded.
-  bucket: polymath.network
-  # Prevent Travis from deleting your built site so it can be uploaded.
-  skip_cleanup: true
-  on:
-    branch: master
+  - provider: s3
+    # You can refer to environment variables from Travis repo settings!
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    # Name of the S3 bucket to which your site should be uploaded.
+    bucket: polymath.network
+    # Prevent Travis from deleting your built site so it can be uploaded.
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: s3
+    # You can refer to environment variables from Travis repo settings!
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    # Name of the S3 bucket to which your site should be uploaded.
+    bucket: polymath-website-staging
+    # Prevent Travis from deleting your built site so it can be uploaded.
+    skip_cleanup: true
+    on:
+      branch: dev
