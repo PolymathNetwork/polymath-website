@@ -166,8 +166,15 @@
 					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 					<script>
 					hbspt.forms.create({
-						portalId: "4703451",
-						formId: "bf4e57b7-b0b6-4326-9197-a25b13ad18fb"
+						portalId: '4703451',
+						formId: 'bf4e57b7-b0b6-4326-9197-a25b13ad18fb',
+						inlineMessage: "Thank you, we'll forward you to TokenStudio",
+						onFormSubmit: function($form){
+							setTimeout( function() {
+								var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
+								window.location = "https://tokenstudio.polymath.network/ticker?email=" + email;
+							}, 250 ); 
+						}
 					});
 					</script>
 				
