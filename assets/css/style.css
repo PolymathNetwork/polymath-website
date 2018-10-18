@@ -266,6 +266,10 @@ span.poly {
   margin-top: 15px;
 }
 
+.navbar-nav{
+  margin-left:5em;
+}
+
 .navbar .navbar-nav .nav-link {
   text-transform:uppercase;
   font-size:14px;

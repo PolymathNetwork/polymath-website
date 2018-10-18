@@ -1137,6 +1137,7 @@ span.poly {
 
 .content p {
   font-size: 16px !important;
+  display: inline-block !important;
 }
 
 .weight-medium {
@@ -1447,6 +1448,24 @@ ul.social li a:hover i {
     font-size: 32px !important;
     padding-left: 10px !important;
   }
+
+  form.hs-form,
+  .hs_cos_wrapper .form-title {
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  }
+
+  /* To center the form title within a form module */
+  .hs_cos_wrapper .form-title {
+  text-align: center;
+  }
+
+  /* To center the form submit button */
+  .hs_submit {
+      text-align: center;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
