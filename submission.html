@@ -180,6 +180,7 @@
 						inlineMessage: "Thank you, we'll forward you to TokenStudio",
 						onFormSubmit: function($form){
 							setTimeout( function() {
+								ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
 								var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
 								window.location = "https://tokenstudio.polymath.network/ticker?email=" + email;
 							}, 250 ); 
