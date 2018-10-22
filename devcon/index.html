@@ -114,7 +114,9 @@
 		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=150772082236560&ev=PageView&noscript=1">
 	</noscript>
 	<!--  End Facebook Pixel Code  -->
-
+	<style>
+		
+	</style>
 
 </head>
 
@@ -166,25 +168,28 @@
 			<!-- Start Page -->
 			<div class="container">
                     <div class="row" style="min-height:500px;">
-                            <div class="col-md-6 offset-md-3">
-                                <!--[if lte IE 8]>
-                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                                <![endif]-->
-                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                                <script>
-                                    hbspt.forms.create({
-                                        portalId: "4703451",
-                                        formId: "a4552c6c-ac5b-4ffa-bdb3-f49f745d70cf",
-                                        inlineMessage: "Thank you, we'll forward you to TokenStudio",
-                                        onFormSubmit: function($form){
-                                            setTimeout( function() {
-                                                ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
-                                                var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
-                                                window.location = "https://tokenstudio.polymath.network/ticker?email=" + email;
-                                            }, 250 ); 
-                                        }
-                                    });
-                                </script>
+                            <div class="col-md-6 offset-md-3 text-center">
+								<div class="d-flex justify-content-center align-items-center">
+									<!--[if lte IE 8]>
+									<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+									<![endif]-->
+									<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+									<script>
+										hbspt.forms.create({
+											portalId: "4703451",
+											formId: "a4552c6c-ac5b-4ffa-bdb3-f49f745d70cf",
+											inlineMessage: "Thank you, you will now be forwarded to the TokenStudio",
+											onFormSubmit: function($form){
+												setTimeout( function() {
+													ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
+													var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
+													window.location = "https://tokenstudio.polymath.network/ticker";
+												}, 2000 ); 
+											}
+										});
+									</script>
+								</div>
+                                
                             </div>
                     </div>
                 
@@ -290,12 +295,12 @@
 	<!-- End #wrap -->
 
 	<!-- build:js -->
-	<script src="assets/js/core.min.js"></script>
+	<script src="../assets/js/core.min.js"></script>
 	<!-- <script src="assets/js/jquery.min.js"></script> -->
-	<script src="assets/vendors/modernizr.min.js"></script>
-	<script src="assets/js/theme.vendors.min.js"></script>
+	<script src="../assets/vendors/modernizr.min.js"></script>
+	<script src="../assets/js/theme.vendors.min.js"></script>
 	<!-- <script src="assets/js/script.js"></script> -->
-	<script src="assets/js/theme.min.js"></script>
+	<script src="../assets/js/theme.min.js"></script>
 	<!--endbuild-->
 	<!-- cdnjs -->
 
