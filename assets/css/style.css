@@ -271,12 +271,13 @@ span.poly {
   opacity: 0.5 !important;
 }
 
+
 .navbar-toggler {
   margin-top: 15px;
 }
 
 .navbar-nav{
-  margin-left:10em;
+  margin-left:3em;
 }
 
 .navbar .navbar-nav .nav-link {

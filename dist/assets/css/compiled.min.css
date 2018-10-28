@@ -1140,6 +1140,10 @@ span.poly {
   display: inline-block !important;
 }
 
+#content img{
+  padding-bottom:20px;
+}
+
 .weight-medium {
   font-size: 23px !important;
 }
@@ -1200,12 +1204,13 @@ span.poly {
   opacity: 0.5 !important;
 }
 
+
 .navbar-toggler {
   margin-top: 15px;
 }
 
 .navbar-nav{
-  margin-left:10em;
+  margin-left:1em;
 }
 
 .navbar .navbar-nav .nav-link {
