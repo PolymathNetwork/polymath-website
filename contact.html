@@ -203,7 +203,8 @@
 										$("#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e").change(function() {
 											var option = $(this).val();
 											//console.log($(this).val());
-											if (option == "Help with dApp") {
+											if (option == "Technical Help") {
+												ga('send', 'event', 'Site Transfer', 'dApp Ticket ', '');
 												window.location = 'https://polymath.zendesk.com/hc/en-us/requests/new';
 											}
 											// https://polymath.zendesk.com/hc/en-us/requests/new
