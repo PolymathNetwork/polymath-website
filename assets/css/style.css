@@ -504,20 +504,20 @@ ul.social li a:hover i {
 
 /* Large devices */
 @media screen and (min-width: 992px) {
-  .navbar {
+  /* .navbar {
     height: 130px;
-  }
+  } */
   #logo {
     width: 260px;
     height: 120px;
     position: relative;
   }
-  .navbar-light .navbar-nav .nav-link {
+  /* .navbar-light .navbar-nav .nav-link {
     padding: 0px 30px;
   }
   .navbar-nav{
     padding-left: 30px;
-  }
+  } */
 
   .telegram-cta {
     background: url("../images/Telegram_logo.svg") no-repeat;
