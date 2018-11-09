@@ -287,6 +287,10 @@ span.poly {
   color:#737373;
 }
 
+/* .ml-auto{
+  margin-right:3rem;
+} */
+
 
 
 .main-header--style-centro .main-nav > li {
@@ -512,10 +516,10 @@ ul.social li a:hover i {
     height: 120px;
     position: relative;
   }
-  /* .navbar-light .navbar-nav .nav-link {
+  .navbar-light .navbar-nav .nav-link {
     padding: 0px 30px;
   }
-  .navbar-nav{
+  /* .navbar-nav{
     padding-left: 30px;
   } */
 
