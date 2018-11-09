@@ -29,6 +29,8 @@
 			opacity: 0 !important
 		}
 	</style>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/moment.js"></script>
 	<script>
 		(function(a, s, y, n, c, h, i, d, e) {
 			s.className += ' ' + y;
@@ -85,7 +87,7 @@
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-white" style="background: red">
 
-			<div style="position: absolute; right: 20px; top: 10px;"><a href="contact.html"><i class="fas fa-globe"></i> Contact Us</a></div>
+			<div style="position: absolute; right: 20px; top: 10px;"><a href="#"><i class="fas fa-globe"></i> Contact Us</a></div>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
 			 aria-expanded="false" aria-label="Toggle navigation">
@@ -93,11 +95,16 @@
 			</button>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav text-center">
+					<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="issuer.html">Issuers</a>
+		          <a class="dropdown-item" href="investor.html">Investors</a>
+		          <a class="dropdown-item" href="provider.html">Service Providers</a>
+		        </div>
+		      </li>
 					<li class="nav-item">
 						<a class="nav-link" href="st20.html">ST-20 Standard</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://polymath.network/deck" target="_blank">Deck</a>
 					</li>
 					<li class="nav-item" >
 						<a class="nav-link" href="team.html">Team</a>
@@ -178,7 +185,8 @@
 
 				#contactForm {
 					text-align: center;
-					font-weight: bold
+					font-weight: bold;
+					margin: top
 				}
 			</style>
 
@@ -187,36 +195,91 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<header class="section-title section-title-default align-center mb-100" style=" margin-bottom: 2.25em !important">
-								<h2>Contact Polymath</h2>
+								<h2>Polymath Security Token Q &amp; A and Live Demo</h2>
+								<p>							
+								Want to know more about what security tokens are and how they work? Here's your chance to participate in a live webinar and demo with Polymath's Chief Product Officer Thomas Borrel and see how Polymath's dApp simplifies issuing securities and increases your access to capital.
+								</p>
 							</header>
 
-							<!--[if lte IE 8]>
-								<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-								<![endif]-->
-							<script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
-							<script>
-								hbspt.forms.create({
-									portalId: "4703451",
-									formId: "c95809d8-9859-4bba-9e0b-b38cf471070e",
-									target: '#contactForm',
-									onFormReady: function($form) {
-										$("#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e").change(function() {
-											var option = $(this).val();
-											//console.log($(this).val());
-											if (option == "Help with dApp") {
-												window.location = 'https://polymath.zendesk.com/hc/en-us/requests/new';
-											}
-											// https://polymath.zendesk.com/hc/en-us/requests/new
-										});
 
+							<style type="text/css">
+							.custom_dropdown, .hs-input {    display: inline-block;
+						    width: 90%;
+						    max-width: 500px;
+						    height: 40px;
+						    padding: 9px 10px;
+						    font-size: 16px;
+						    font-weight: normal;
+						    line-height: 22px;
+						    color: #33475b;
+						    background-color: #ffff;
+						    border: 1px solid #dedede;
+						    box-sizing: border-box;
+								margin-bottom: 8px;}
 
-									}
-								});
-							</script>
-							<div id="contactForm">
+								.hs-richtext p {font-size: 12px !important; color: #dedede; line-height: 18px;}
+								.hs-richtext p a {font-size: 12px !important; }
+
+							</style>
+
+							<div style="width: 100%; text-align: center;">
+								<p style="margin: 0; padding: 0; margin-bottom: 15px; font-size: 14px !important; font-weight: bold">This webinar is offered several times. Select the date and time that works best for you.</p>
+								<select id="training-series-times" tabindex="1" name="webinar" size="" class="form-control custom_dropdown" style="width: 475px"></select>
 							</div>
 
+							<script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
 
+							<script>
+
+							var obj = [
+								{"id":"1027319187976656386","datetime":"2018-11-13T13:30:00Z"},
+								{"id":"5662443495773345538","datetime":"2018-11-20T13:30:00Z"},
+								{"id":"2715597301727816962","datetime":"2018-11-22T19:00:00Z"},
+								{"id":"5669598017935284226","datetime":"2018-11-27T13:30:00Z"},
+								{"id":"1703935553499491842","datetime":"2018-11-29T19:00:00Z"},
+								{"id":"6690387911697406210","datetime":"2018-12-04T13:30:00Z"},
+								{"id":"932583066637889026","datetime":"2018-12-06T19:00:00Z"},
+								{"id":"266623167811459330","datetime":"2018-12-11T13:30:00Z"},
+								{"id":"8612030771374255874","datetime":"2018-12-13T19:00:00Z"},
+								{"id":"3129037863493736962","datetime":"2018-12-18T13:30:00Z"},
+								{"id":"5847334072098942978","datetime":"2018-12-20T19:00:00Z"},
+								{"id":"2411301961182670850","datetime":"2018-12-27T13:30:00Z"},
+							]
+
+							let dropdown = $('#training-series-times');
+
+							dropdown.empty();
+							dropdown.append('<option selected="true" disabled>Choose a time</option>');
+							dropdown.prop('selectedIndex', 0);
+
+							const url = 'https://api.myjson.com/bins/7xq2x';
+
+							// Populate dropdown with list of provinces
+
+						  $.each(obj, function (key, entry) {
+
+								// check to see if date is in the past
+								if(moment(entry.datetime) > moment()) {
+						    	dropdown.append($('<option></option>').attr('value', entry.id).text(moment(entry.datetime).format("ddd, MMM D, YYYY hh:mm A") + " - " + moment(entry.datetime).add(1,"hours").format("hh:mm A")));
+								}
+						  })
+
+							$("#training-series-times").change(function() {
+								var option = $(this).val();
+
+								hbspt.forms.create({
+									portalId: "4703451",
+									formId: "bbffc010-14f2-4fa6-9991-b03974e83a4a",
+									target: '#contactForm',
+									goToWebinarWebinarKey : option
+								});
+
+
+							});
+
+							</script>
+							<div id="contactForm"></div>
+							<div style="padding-top: 20px;">&nbsp;</div>
 						</div>
 
 						<!-- /.col-lg-12 -->
@@ -224,15 +287,6 @@
 
 					<!-- /.row -->
 
-				</div>
-			</section>
-
-			<section class="section">
-				<header class="section-title section-title-default align-center mb-100" style="margin-top: 80px !important; margin-bottom: 2.25em !important">
-					<h3>Corporate Headquarters</h3>
-				</header>
-				<div class="map-frame" style="height: 550px;">
-					<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=155%20Wellington%20St%20W+(Polymath)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"></iframe>
 				</div>
 			</section>
 
@@ -357,12 +411,14 @@
 	<!-- End #wrap -->
 
 	<script src="assets/js/core.min.js"></script>
-	<!-- <script src="assets/js/jquery.min.js"></script> -->
+
 	<script src="assets/vendors/modernizr.min.js"></script>
-	<script src="assets/js/theme.vendors.min.js"></script>
+	<!--  <script src="assets/js/theme.vendors.min.js"></script> -->
+
+
 	<!-- <script src="assets/js/script.js"></script> -->
-	<script src="assets/js/theme.min.js"></script>
-	<script type="text/javascript " src="assets/js/jQuery.loadScroll.js "></script>
+
+
 
 </body>
 

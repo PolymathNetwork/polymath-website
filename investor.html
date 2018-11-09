@@ -85,7 +85,7 @@
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-white" style="background: red">
 
-			<div style="position: absolute; right: 20px; top: 10px;"><a href="contact.html"><i class="fas fa-globe"></i> Contact Us</a></div>
+			<div style="position: absolute; right: 20px; top: 10px;"><a href="#"><i class="fas fa-globe"></i> Contact Us</a></div>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
 			 aria-expanded="false" aria-label="Toggle navigation">
@@ -93,11 +93,16 @@
 			</button>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav text-center">
+					<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="issuer.html">Issuers</a>
+		          <a class="dropdown-item" href="investor.html">Investors</a>
+		          <a class="dropdown-item" href="provider.html">Service Providers</a>
+		        </div>
+		      </li>
 					<li class="nav-item">
 						<a class="nav-link" href="st20.html">ST-20 Standard</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://polymath.network/deck" target="_blank">Deck</a>
 					</li>
 					<li class="nav-item" >
 						<a class="nav-link" href="team.html">Team</a>
@@ -128,94 +133,13 @@
 		<!-- Start #content -->
 		<div id="content">
 
-			<style type="text/css">
-				.hbspt-form input {
-					width: 80%;
-					clear: both;
-				}
-
-				#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					height: 50px;
-					margin-bottom: 10px;
-				}
-
-				#firstname-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					padding: 6px;
-					margin-bottom: 10px;
-				}
-
-				#email-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					padding: 6px;
-					margin-bottom: 10px;
-				}
-
-				#message-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					padding: 6px;
-					height: 120px;
-					margin-bottom: 10px;
-				}
-
-				.hs-button {
-					background: #252E6A;
-					color: white;
-					padding: 8px;
-					width: 200px;
-					border: 0px;
-					margin: 10px;
-				}
-
-				#contactForm {
-					text-align: center;
-					font-weight: bold
-				}
-			</style>
-
 			<section class="section pt-70">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
 							<header class="section-title section-title-default align-center mb-100" style=" margin-bottom: 2.25em !important">
-								<h2>Contact Polymath</h2>
+								<h2>Investor</h2>
 							</header>
-
-							<!--[if lte IE 8]>
-								<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-								<![endif]-->
-							<script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
-							<script>
-								hbspt.forms.create({
-									portalId: "4703451",
-									formId: "c95809d8-9859-4bba-9e0b-b38cf471070e",
-									target: '#contactForm',
-									onFormReady: function($form) {
-										$("#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e").change(function() {
-											var option = $(this).val();
-											//console.log($(this).val());
-											if (option == "Help with dApp") {
-												window.location = 'https://polymath.zendesk.com/hc/en-us/requests/new';
-											}
-											// https://polymath.zendesk.com/hc/en-us/requests/new
-										});
-
-
-									}
-								});
-							</script>
-							<div id="contactForm">
-							</div>
-
 
 						</div>
 
@@ -224,15 +148,6 @@
 
 					<!-- /.row -->
 
-				</div>
-			</section>
-
-			<section class="section">
-				<header class="section-title section-title-default align-center mb-100" style="margin-top: 80px !important; margin-bottom: 2.25em !important">
-					<h3>Corporate Headquarters</h3>
-				</header>
-				<div class="map-frame" style="height: 550px;">
-					<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=155%20Wellington%20St%20W+(Polymath)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"></iframe>
 				</div>
 			</section>
 
