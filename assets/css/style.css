@@ -68,7 +68,7 @@ h2.xl {
 
 
 .terms-sidemenu ol {
-  
+
   color:#252E6A;
   /* padding:5px; */
   /* text-indent:1em; */
@@ -79,7 +79,7 @@ h2.xl {
 }
 
 .terms-sidemenu ul {
-  
+
   color:#252E6A;
   list-style:none;
   /* padding:5px; */
@@ -462,6 +462,15 @@ ul.social li a:hover i {
   ) !important;
 }
 
+/* Styles to center Navigation */
+.nav.navbar-nav {margin: auto 0;}
+.navbar-collapse ul {margin: auto}
+.navbar-collapse li { padding-top: 30px;}
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+
 /* Small devices (landscape phones, 544px and up) */
 @media only screen and (max-device-width: 480px) {
 
@@ -549,7 +558,8 @@ ul.social li a:hover i {
 
 }
 
+
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
-
