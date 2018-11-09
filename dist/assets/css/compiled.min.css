@@ -1001,7 +1001,7 @@ h2.xl {
 
 
 .terms-sidemenu ol {
-  
+
   color:#252E6A;
   /* padding:5px; */
   /* text-indent:1em; */
@@ -1012,7 +1012,7 @@ h2.xl {
 }
 
 .terms-sidemenu ul {
-  
+
   color:#252E6A;
   list-style:none;
   /* padding:5px; */
@@ -1210,7 +1210,7 @@ span.poly {
 }
 
 .navbar-nav{
-  margin-left:1em;
+  margin-left:3em;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -1395,6 +1395,9 @@ ul.social li a:hover i {
   ) !important;
 }
 
+
+
+
 /* Small devices (landscape phones, 544px and up) */
 @media only screen and (max-device-width: 480px) {
 
@@ -1482,7 +1485,8 @@ ul.social li a:hover i {
 
 }
 
+
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
-
