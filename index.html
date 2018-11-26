@@ -126,26 +126,29 @@
 	<!-- Start #wrap -->
 	<div id="wrap">
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-white">
-
-			<div style="position: absolute; right: 20px; top: 10px;"><a href="contact.html"><i class="fas fa-globe"></i> Contact Us</a></div>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
+		<!-- Start Main Header -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white" style="background: red">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
 			 aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+		<span class="navbar-toggler-icon"></span>
+	</button>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav text-center">
-					<li class="nav-item">
+					<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="issuers.html">Issuers</a>
+		          <a class="dropdown-item" href="investors.html">Investors</a>
+		          <a class="dropdown-item" href="serviceproviders.html">Service Providers</a>
+		        </div>
+		      </li>
+				<li class="nav-item">
 						<a class="nav-link" href="st20.html">ST-20 Standard</a>
-					</li>
-					
-					<li class="nav-item" >
-						<a class="nav-link" href="team.html">Team</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="https://blog.polymath.network/" target="_blank">Blog</a>
 					</li>
+
 				</ul>
 			</div>
 			<!-- <a class="navbar-brand mx-auto" href="#">Navbar</a> -->
@@ -154,17 +157,26 @@
 			</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav text-center">
-					
+				  
+					<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="team.html">Team</a>
+		          <a class="dropdown-item" href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
+		        </div>
+		      </li>
 					<li class="nav-item">
 						<a class="nav-link" href="https://developers.polymath.network" target="_blank">Developers</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
+						<a class="nav-link" href="contactus.html">Contact Us</a>
 					</li>
 
 				</ul>
 			</div>
+
 		</nav>
+		<!-- End Main Header -->
 
 
 
@@ -1434,7 +1446,7 @@
 			<!-- End Advisors -->
 
 			<!-- Events -->
-			<section class="section pb-70" id="events_section">
+			<section class="section pb-70">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 ml-md-auto mr-md-auto">
@@ -1450,8 +1462,42 @@
 							</header>
 						</div>
 					</div>
-					<div class="row justify-content-center" id="upcoming_events">
-						<!-- populated via javascript -->
+					<div class="row justify-content-center">
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+							<div class="icon-box icon-box-heading-md icon-box-shadow-onhover icon-box-xlg">
+								<div class="contents">
+									<h2 class="weight-medium">Toronto</h2>
+									<p>Boost Blockchain Job Fair<br>August 24, 2018</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+							<div class="icon-box icon-box-heading-md icon-box-shadow-onhover icon-box-xlg">
+								<div class="contents">
+									<h2 class="weight-medium">Berlin</h2>
+									<p>ETH Berlin<br>September 7-9, 2018</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+							<div class="icon-box icon-box-heading-md icon-box-shadow-onhover icon-box-xlg">
+								<div class="contents">
+									<h2 class="weight-medium">Hong Kong</h2>
+									<p>ETHIS<br>September 8-9, 2018</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+							<div class="icon-box icon-box-heading-md icon-box-shadow-onhover icon-box-xlg">
+								<div class="contents">
+									<h2 class="weight-medium">Toronto</h2>
+									<p>Hack-The-North<br>September 14-16, 2018</p>
+								</div>
+							</div>
+						</div>
 					</div>
 			</section>
 			<!-- /Events -->
@@ -1518,7 +1564,7 @@
 							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 							<![endif]-->
 
-							<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
+							<script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
 							<script>
 							hbspt.forms.create({
 							portalId: "4703451",
@@ -1879,94 +1925,112 @@
 		<!-- End #content -->
 
 		<!-- Start Main Footer -->
-		<footer class="main-footer main-footer--style-centro" style="background-color:#252E6A;font-family:Overpass"
-		 data-fixed="true">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-6 col-md-3 text-lg-center">
-						<figure>
-							<img src="assets/images/logo-footer.svg" alt="Polymath">
-						</figure>
-					</div>
+	<footer class="main-footer main-footer--style-centro" style="background-color:#252E6A;font-family:Overpass" data-fixed="true">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 col-md-2 text-lg-center">
+					<figure>
+						<img src="assets/images/logo-footer.svg" alt="Polymath">
+					</figure>
+				</div>
 
-					<div class="col-sm-6 col-md-3 text-left">
-						<ul>
-							<li>
-								<a href="st20.html">ST-20 Standard</a>
-							</li>
-							
-							<li>
-								<a href="https://blog.polymath.network" target="_blank">Blog</a>
-							</li>
-							<li>
-								<a href="whitepaper.html">Whitepaper</a>
-							</li>
-							<li>
-								<a href="https://developers.polymath.network" target="_blank">Developers</a>
-							</li>
-							<li>
-								<a href="team.html">Team</a>
-							</li>
-							<li>
-								<a href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
-							</li>
+				<div class="col-sm-6 col-md-2 text-left">
+					<ul>
+						<li>
+							<a href="issuers.html">issuers</a>
+						</li>
+						<li>
+							<a href="investors.html">Investors</a>
+						</li>
+						<li>
+							<a href="serviceproviders.html">Service Providers</a>
+						</li>
+						<li>
+							<a href="st20.html">ST-20 Standard</a>
+						</li>
+						<li>
+							<a href="https://blog.polymath.network" target="_blank">Blog</a>
+						</li>
 
-						</ul>
+						
 
-					</div>
-					<div class="col-sm-12 col-md-6 text-center text-md-right">
-						<p class="poly_email">
-							<a href="contact.html"><i class="fas fa-globe"></i> Contact Us</a>
-						</p>
-						<ul class="social">
-							<li>
-								<a href="https://www.facebook.com/polymathnetwork" target="_blank">
-									<i class="fab fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/polymathnetwork" target="_blank">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.youtube.com/channel/UC77syPQJO0eA5FBUMczZ4bA" target="_blank">
-									<i class="fab fa-youtube"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/company/18168860/" target="_blank">
-									<i class="fab fa-linkedin-in"></i>
-								</a>
-							</li>
-						</ul>
-						<ul class="social">
-							<li>
-								<a href="https://t.me/polymathnetwork" target="_blank">
-									<i class="fab fa-telegram-plane"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/PolymathNetwork" target="_blank">
-									<i class="fab fa-github"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://medium.com/@polymathnetwork" target="_blank">
-									<i class="fab fa-medium-m"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.reddit.com/r/polymathnetwork" target="_blank">
-									<i class="fab fa-reddit-alien"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
+					</ul>
+
+				</div>
+				<div class="col-sm-6 col-md-2 text-left">
+					<ul>
+						<li>
+							<a href="team.html">Team</a>
+						</li>
+						<li>
+							<a href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
+						</li>
+						
+						</li>
+						<li>
+							<a href="https://developers.polymath.network" target="_blank">Developers</a>
+						</li>
+						<li>
+							<a href="contactus.html">contact us</a>
+						</li>
+					<li>
+							<a href="whitepaper.html">Whitepaper</a>
+						</li>
+
+					</ul>
+
+				</div>
+				<div class="col-sm-12 col-md-6 text-center text-md-right">
+					
+					<ul class="social">
+						<li>
+							<a href="https://www.facebook.com/polymathnetwork" target="_blank">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/polymathnetwork" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/channel/UC77syPQJO0eA5FBUMczZ4bA" target="_blank">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/18168860/" target="_blank">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="social">
+						<li>
+							<a href="https://t.me/polymathnetwork" target="_blank">
+								<i class="fab fa-telegram-plane"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/PolymathNetwork" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://medium.com/@polymathnetwork" target="_blank">
+								<i class="fab fa-medium-m"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.reddit.com/r/polymathnetwork" target="_blank">
+								<i class="fab fa-reddit-alien"></i>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</footer>
-		<!-- End Main Footer -->
+		</div>
+	</footer>
+	<!-- End Main Footer -->
 
 
 
@@ -2027,54 +2091,6 @@
 
 		});
 	</script>
-	<script>
- 
-		// ID of the Google Spreadsheet
-		var spreadsheetID = "1rZDzIGiO7VyH1cBZhwu434gAkFBTWI0wtWB25rvnoRo";
-	   
-		// Make sure it is public or set to Anyone with link can view 
-		var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
-	   
-		$.getJSON(url, function(data) {
-	   
-		 var entry = data.feed.entry;
-		 var currentDate = new Date(2019,1,1);
-		 var event_array = [];
-			// console.log(entry)
-		 $(entry).each(function(){
-		   // Column names are name, age, etc.
-			var event_date = this.gsx$date.$t;
-			var event_date = event_date.split('-')
-			console.log(event_date)
-			var compare_date = new Date(event_date[0], event_date[1], event_date[2])
-			
-			if(compare_date >= currentDate){
-				event_array.push(
-					'<div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">'+
-							'<div class="icon-box icon-box-heading-md icon-box-shadow-onhover icon-box-xlg">'+
-								'<div class="contents">'+
-									'<h2 class="weight-medium">'+this.gsx$title.$t+'</h2>'+
-									'<p>'+this.gsx$venue.$t+'<br>'+this.gsx$date.$t+'</p>'+
-								'</div>'+
-							'</div>'+
-						'</div>'
-					);
-			}
-
-			
-		 });
-
-		 if(event_array.length < 1){
-				//Display error?
-				$('#events_section').hide()
-			}
-
-			$('#upcoming_events').append(event_array)
-		   
-	   
-		});
-	   
-	   </script>
 	<script type="text/javascript">
 		$(function () {
 			$('#section-articles').hide();
