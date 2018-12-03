@@ -10,9 +10,16 @@ function serviceProviderForm(gtm = false) {
     onFormReady: function($form) {
         // what_are_you_interested_in_doing_with_polymath_
         $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Becoming a Solution Provider').change();
+      },
+      onFormSubmit: function($form) {
+        if(redirect == 'create token') {
+          var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
+  				window.location = "https://tokenstudio.polymath.network/ticker";
+        } else {
+          window.location = "https://polymath.network/thank-you.html";
+        }
       }
     });
-
 }
 
 function investorForm(gtm = false) {
@@ -25,6 +32,14 @@ function investorForm(gtm = false) {
     onFormReady: function($form) {
         // what_are_you_interested_in_doing_with_polymath_
         $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Investing in Security Tokens').change();
+      },
+      onFormSubmit: function($form) {
+        if(redirect == 'create token') {
+          var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
+  				window.location = "https://tokenstudio.polymath.network/ticker";
+        } else {
+          window.location = "https://polymath.network/thank-you.html";
+        }
       }
     });
 }
@@ -39,13 +54,23 @@ function otherForm(gtm = false) {
     onFormReady: function($form) {
         // what_are_you_interested_in_doing_with_polymath_
         $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Other').change();
+      },
+    onFormSubmit: function($form) {
+      if(redirect == 'create token') {
+        var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
+        window.location = "https://tokenstudio.polymath.network/ticker";
+      } else {
+        window.location = "https://polymath.network/thank-you.html";
       }
+    }
     });
 }
 
 
+function createTokenForm(gtm = false, redirect = false) {
 
-function createTokenForm(gtm = false) {
+  console.log(redirect);
+  return false;
 
   hbspt.forms.create({
     portalId: "4703451",
@@ -85,6 +110,16 @@ function createTokenForm(gtm = false) {
         }
         // https://polymath.zendesk.com/hc/en-us/requests/new
       });
+
+    },
+    onFormSubmit: function($form) {
+
+      if(redirect == 'create token') {
+        var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
+				window.location = "https://tokenstudio.polymath.network/ticker";
+      } else {
+        window.location = "https://polymath.network/thank-you.html";
+      }
 
     }
 
