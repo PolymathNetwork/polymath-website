@@ -6,7 +6,11 @@ function serviceProviderForm(gtm = false) {
     formId: "f4ebffea-b69f-4571-acbd-b10562a2a731",
     target: '#contactForm',
     goToWebinarWebinarKey : gtm,
-    cssClass: ''
+    cssClass: '',
+    onFormReady: function($form) {
+        // what_are_you_interested_in_doing_with_polymath_
+        $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Becoming a Solution Provider').change();
+      }
     });
 
 }
@@ -14,12 +18,32 @@ function serviceProviderForm(gtm = false) {
 function investorForm(gtm = false) {
   hbspt.forms.create({
     portalId: "4703451",
-    formId: "f4ebffea-b69f-4571-acbd-b10562a2a731",
+    formId: "e1ff0ac0-b8d1-4dde-9921-157205014849",
     target: '#contactForm',
     goToWebinarWebinarKey : gtm,
-    cssClass: ''
+    cssClass: '',
+    onFormReady: function($form) {
+        // what_are_you_interested_in_doing_with_polymath_
+        $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Investing in Security Tokens').change();
+      }
     });
 }
+
+function otherForm(gtm = false) {
+  hbspt.forms.create({
+    portalId: "4703451",
+    formId: "6742ac7d-ec45-4380-b8ff-469cbafce6ce",
+    target: '#contactForm',
+    goToWebinarWebinarKey : gtm,
+    cssClass: '',
+    onFormReady: function($form) {
+        // what_are_you_interested_in_doing_with_polymath_
+        $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Other').change();
+      }
+    });
+}
+
+
 
 function createTokenForm(gtm = false) {
 
@@ -46,8 +70,7 @@ function createTokenForm(gtm = false) {
         }
 
         // what_are_you_interested_in_doing_with_polymath_
-        $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val(option).change();
-        $('#lead_source-70504cfb-bbeb-455e-9592-192a4ba89699').val('Create a Security Token Form').change();
+        $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Create a Security Token').change();
 
         // https://polymath.zendesk.com/hc/en-us/requests/new
       });

@@ -13,9 +13,10 @@
 	<link rel="icon" href="dist/assets/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="assets/css/theme-vendors.css">
+
 	<link rel="stylesheet" href="assets/css/theme.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/forms.css">
 	<link rel="stylesheet" href="assets/css/theme-color/theme-centro.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href="dist/assets/css/compiled.min.css"> -->
@@ -130,58 +131,7 @@
 		<div id="content">
 
 			<style type="text/css">
-				.hbspt-form input {
-					width: 80%;
-					clear: both;
-				}
-
-				#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					height: 50px;
-					margin-bottom: 10px;
-				}
-
-				#firstname-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					padding: 6px;
-					margin-bottom: 10px;
-				}
-
-				#email-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					padding: 6px;
-					margin-bottom: 10px;
-				}
-
-				#message-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					padding: 6px;
-					height: 120px;
-					margin-bottom: 10px;
-				}
-
-				.hs-button {
-					background: #252E6A;
-					color: white;
-					padding: 8px;
-					width: 200px;
-					border: 0px;
-					margin: 10px;
-				}
-
-				#contactForm {
-					text-align: center;
-					font-weight: bold;
-					margin: top
-				}
+				
 			</style>
 
 			<section class="section pt-70">
@@ -194,27 +144,6 @@
 								Want to know more about what security tokens are and how they work? Here's your chance to participate in a live webinar and demo with Polymath's Chief Product Officer Thomas Borrel and see how Polymath's dApp simplifies issuing securities and increases your access to capital.
 								</p>
 							</header>
-
-
-							<style type="text/css">
-							.custom_dropdown, .hs-input {    display: inline-block;
-						    width: 90%;
-						    max-width: 500px;
-						    height: 40px;
-						    padding: 9px 10px;
-						    font-size: 16px;
-						    font-weight: normal;
-						    line-height: 22px;
-						    color: #33475b;
-						    background-color: #ffff;
-						    border: 1px solid #dedede;
-						    box-sizing: border-box;
-								margin-bottom: 8px;}
-
-								.hs-richtext p {font-size: 12px !important; color: #dedede; line-height: 18px;}
-								.hs-richtext p a {font-size: 12px !important; }
-
-							</style>
 
 							<div style="width: 100%; text-align: center;">
 								<p style="margin: 0; padding: 0; margin-bottom: 15px; font-size: 14px !important; font-weight: bold">This webinar is offered several times. Select the date and time that works best for you.</p>
@@ -316,6 +245,10 @@
 
 									serviceProviderForm(gtm);
 
+								} else if (option === 'Investing in Security Tokens') {
+									investorForm(gtm);
+								} else if (option === 'Other') {
+									otherForm(gtm);
 								}
 
 
