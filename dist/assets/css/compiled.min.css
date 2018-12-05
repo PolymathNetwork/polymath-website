@@ -1210,14 +1210,19 @@ span.poly {
 }
 
 .navbar-nav{
-  margin-left:3em;
+  /* margin-left:1em; */
 }
 
 .navbar .navbar-nav .nav-link {
   text-transform:uppercase;
   font-size:14px;
   font-weight:600;
+  color:#737373;
 }
+
+/* .ml-auto{
+  margin-right:3rem;
+} */
 
 
 
@@ -1395,7 +1400,13 @@ ul.social li a:hover i {
   ) !important;
 }
 
-
+/* Styles to center Navigation */
+.nav.navbar-nav {margin: auto 0 !important;}
+.navbar-collapse ul {margin: auto !important;}
+.navbar-collapse li { padding-top: 30px !important;}
+.navbar .navbar-collapse {
+    text-align: center !important;
+}
 
 
 /* Small devices (landscape phones, 544px and up) */
@@ -1439,9 +1450,9 @@ ul.social li a:hover i {
 
 /* Large devices */
 @media screen and (min-width: 992px) {
-  .navbar {
+  /* .navbar {
     height: 130px;
-  }
+  } */
   #logo {
     width: 260px;
     height: 120px;
@@ -1450,9 +1461,9 @@ ul.social li a:hover i {
   .navbar-light .navbar-nav .nav-link {
     padding: 0px 30px;
   }
-  .navbar-nav{
+  /* .navbar-nav{
     padding-left: 30px;
-  }
+  } */
 
   .telegram-cta {
     background: url("../images/Telegram_logo.svg") no-repeat;
