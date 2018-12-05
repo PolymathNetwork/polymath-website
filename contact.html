@@ -19,7 +19,6 @@
 	<link rel="stylesheet" href="assets/css/forms.css">
 	<link rel="stylesheet" href="assets/css/theme-color/theme-centro.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
-	<!-- <link href="assets/css/external.css" rel="stylesheet"> -->
 	<!-- <link rel="stylesheet" href="dist/assets/css/compiled.min.css"> -->
 
 	<link href="https://fonts.googleapis.com/css?family=Overpass:400,700" rel="stylesheet">
@@ -75,7 +74,6 @@
 	<!-- Start #wrap -->
 	<div id="wrap">
 
-		<!-- TEMPORARY STYLES -->
 		<style type="text/css">
 
 			.nav.navbar-nav {margin: auto 0;}
@@ -89,55 +87,56 @@
 
 		<!-- Start Main Header -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-white" style="background: red">
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
-			 aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-			<div class="collapse navbar-collapse">
-				<ul class="navbar-nav text-center">
-					<li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="issuers.html">Issuers</a>
-		          <a class="dropdown-item" href="investors.html">Investors</a>
-		          <a class="dropdown-item" href="serviceproviders.html">Service Providers</a>
-		        </div>
-		      </li>
-				<li class="nav-item">
-						<a class="nav-link" href="st20.html">ST-20 Standard</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://blog.polymath.network/" target="_blank">Blog</a>
-					</li>
-
-				</ul>
-			</div>
-			<!-- <a class="navbar-brand mx-auto" href="#">Navbar</a> -->
-			<a href="index.html" class="mx-auto">
-				<img src="dist/assets/images/logo/logo-top-bar.svg" alt="Polymath">
-			</a>
-			<div class="collapse navbar-collapse">
-				<ul class="navbar-nav text-center">
-				  
-					<li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="team.html">Team</a>
-					<a class="dropdown-item" href="advisors.html">Advisors</a>
-		          <a class="dropdown-item" href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
-		        </div>
-		      </li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://developers.polymath.network" target="_blank">Developers</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contactus.html">Contact Us</a>
-					</li>
-
-				</ul>
-			</div>
-		</nav>
-		<!-- End Main Header -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
+						 aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+						<div class="collapse navbar-collapse">
+							<ul class="navbar-nav text-center">
+								<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <a class="dropdown-item" href="issuers.html">Issuers</a>
+							  <a class="dropdown-item" href="investors.html">Investors</a>
+							  <a class="dropdown-item" href="serviceproviders.html">Service Providers</a>
+							</div>
+						  </li>
+							<li class="nav-item">
+									<a class="nav-link" href="st20.html">ST-20 Standard</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="https://blog.polymath.network/" target="_blank">Blog</a>
+								</li>
+			
+							</ul>
+						</div>
+						<!-- <a class="navbar-brand mx-auto" href="#">Navbar</a> -->
+						<a href="index.html" class="mx-auto">
+							<img src="dist/assets/images/logo/logo-top-bar.svg" alt="Polymath">
+						</a>
+						<div class="collapse navbar-collapse">
+							<ul class="navbar-nav text-center">
+							  
+								<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <a class="dropdown-item" href="team.html">Team</a>
+								<a class="dropdown-item" href="advisors.html">Advisors</a>
+							  <a class="dropdown-item" href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
+							</div>
+						  </li>
+								<li class="nav-item">
+									<a class="nav-link" href="https://developers.polymath.network" target="_blank">Developers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contact Us</a>
+								</li>
+			
+							</ul>
+						</div>
+			
+					</nav>
+					<!-- End Main Header -->
 
 		<!-- Start #content -->
 		<div id="content">
@@ -171,24 +170,80 @@
 							        sParameterName,
 							        i;
 
-									}
-								});
+							    for (i = 0; i < sURLVariables.length; i++) {
+							        sParameterName = sURLVariables[i].split('=');
+
+							        if (sParameterName[0] === sParam) {
+							            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+							        }
+							    }
+							};
+
+							$( document ).ready(function() {
+
+							// Hide the Interst Field until a time is selected
+
+
+							// grab the Webinar ID from URL
+							let id = getUrlParameter('id');
+
+							if (id === undefined) {
+								
+							// if no id is set - use the JSON object to load the webinar times
+
+							} else {
+								if(id === "contact") {
+									console.log('contact is here')
+									$("#what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val('Becoming a Solution Provider')	
+									$('#what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb').trigger('change');
+									serviceProviderForm();
+								}
+							}
+
+							$("#what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").change(function() {
+
+								var gtm = $("#training-series-times").val()
+								var option = $(this).val();
+
+								console.log(option);
+
+								// check if creating a token is selected
+								if(option === 'Creating a Security Token') {
+
+									createTokenForm(gtm);
+
+								} else if (option === 'Becoming a Solution Provider') {
+
+									serviceProviderForm(gtm);
+
+								} else if (option === 'Investing in Security Tokens') {
+									investorForm(gtm);
+								} else if (option === 'Other') {
+									otherForm(gtm);
+								} else if (option === 'Technical Help') {
+										ga('send', 'event', 'Site Transfer', 'dApp Ticket ', '');
+										window.location = 'https://polymath.zendesk.com/hc/en-us/requests/new';
+
+								}
+
+
+							});
+
+							});
+
 							</script>
-							<div id="contactForm">
-							</div>
+							<div id="contactForm"></div>
+							<div style="padding-top: 20px;">&nbsp;</div>
 						</div>
+
+						<!-- /.col-lg-12 -->
 					</div>
+
+					<!-- /.row -->
+
 				</div>
 			</section>
-			
-<section class="section">
-		<header class="section-title section-title-default align-center mb-100" style="margin-top: 80px !important; margin-bottom: 2.25em !important">
-					<h3>Corporate Headquarters</h3>
-				</header>
-				<div class="map-frame" style="height: 550px;">
-					<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=155%20Wellington%20St%20W+(Polymath)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"></iframe>
-				</div>
-			</section>
+
 
 			<!-- Start Bottom Banner -->
 			<section class="section mt-70 pt-70 pb-100 tinted-image" style="margin-top: 0px !important">
@@ -199,7 +254,7 @@
 
 						<div class="col-lg-8 col-md-10 mx-auto text-center">
 
-							<h2 class="text-white"> Trillions of Dollars Are Coming to the Blockchain</h2>
+							<h2 class="text-white"> Trillions of Dollars On The Blockchain Are Coming</h2>
 							<a href="submission.html" class="btn btn-white text-uppercase" data-type="video">
 									<span>Create Your Security Token</span>
 								</a>
@@ -252,16 +307,15 @@
 							<a href="team.html">Team</a>
 						</li>
 						<li>
-							<a href="advisors.html">Advisors</a>
-						</li>
-						<li>
 							<a href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
 						</li>
+						
+						
 						<li>
 							<a href="https://developers.polymath.network" target="_blank">Developers</a>
 						</li>
 						<li>
-							<a href="contactus.html">contact us</a>
+							<a href="contact.html">contact us</a>
 						</li>
 					<li>
 							<a href="whitepaper.html">Whitepaper</a>

@@ -49,6 +49,9 @@
 	<!-- endbuild -->
 
 	<link href="https://fonts.googleapis.com/css?family=Overpass:400,700" rel="stylesheet">
+	
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/moment.js"></script>
 
 	<!-- Google Optimize Snippet -->
 	<style>.async-hide { opacity: 0 !important} </style>
@@ -556,46 +559,22 @@ $(document).ready(function(){
 		<!-- End #content -->
 
 		<div class="col-sm-12">
-							<header class="section-title section-title-default align-center mb-100" style=" margin-bottom: 2.25em !important">
-							<h3 class="text-uppercase" style="padding-left: 20%; padding-right: 20%;">Sign up below to learn 
-</h3> <p style=" margin-top: -0.75em !important">how you can create a security token in only 10 minutes!.</p>
-							</header>
+							
 						</div>
 			
 
 
-		  <section class="section pt-70">
+		  <section class="section">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12" style="margin-top: -35px">
-						
-
-							<!--[if lte IE 8]>
-								<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-								<![endif]-->
-							<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
-							<script>
-								hbspt.forms.create({
-									portalId: "4703451",
-									formId: "c95809d8-9859-4bba-9e0b-b38cf471070e",
-									target: '#contactForm',
-									onFormReady: function($form) {
-										$("#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e").change(function() {
-											var option = $(this).val();
-											//console.log($(this).val());
-											if (option == "Technical Help") {
-												ga('send', 'event', 'Site Transfer', 'dApp Ticket ', '');
-												window.location = 'https://polymath.zendesk.com/hc/en-us/requests/new';
-											}
-											// https://polymath.zendesk.com/hc/en-us/requests/new
-										});
-
-
-									}
-								});
-							</script>
-							<div id="contactForm">
-							</div>
+						<div class="col-sm-12" style="margin: 0 auto; text-align: center">
+							<h3>Take the Next Steps</h3>
+							<a href="/submission.html" class="btn btn-solid text-uppercase" style="border:none">
+								<span> Create Security Token </span>
+							</a>
+							<a href="/webinar.html" class="btn btn-default text-uppercase">
+								<span> Schedule a Demo </span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -801,6 +780,7 @@ $(document).ready(function(){
 
 	<script src="assets/js/core.min.js"></script>
 	<!-- <script src="assets/js/jquery.min.js"></script> -->
+	<script src="assets/vendors/modernizr.min.js"></script>
 	<script src="assets/vendors/modernizr.min.js"></script>
 	<script src="assets/js/theme.vendors.min.js"></script>
 	<!-- <script src="assets/js/script.js"></script> -->

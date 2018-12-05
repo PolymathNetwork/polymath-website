@@ -13,9 +13,10 @@
 	<link rel="icon" href="dist/assets/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="assets/css/theme-vendors.css">
+
 	<link rel="stylesheet" href="assets/css/theme.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/forms.css">
 	<link rel="stylesheet" href="assets/css/theme-color/theme-centro.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href="dist/assets/css/compiled.min.css"> -->
@@ -85,105 +86,61 @@
 
 		</style>
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-white">
-
-			<div style="position: absolute; right: 20px; top: 10px;"><a href="contact.html"><i class="fas fa-globe"></i> Contact Us</a></div>
-
+		<!-- Start Main Header -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white" style="background: red">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
-			aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse">
-				<ul class="navbar-nav text-center">
-					<li class="nav-item">
-						<a class="nav-link" href="st20.html">ST-20 Standard</a>
-					</li>
-
-					<li class="nav-item" >
-						<a class="nav-link" href="team.html">Team</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://blog.polymath.network/" target="_blank">Blog</a>
-					</li>
-				</ul>
-			</div>
-			<!-- <a class="navbar-brand mx-auto" href="#">Navbar</a> -->
-			<a href="index.html" class="mx-auto">
-				<img src="dist/assets/images/logo/logo-top-bar.svg" alt="Polymath">
-			</a>
-			<div class="collapse navbar-collapse">
-				<ul class="navbar-nav text-center">
-					<li class="nav-item">
-						<a class="nav-link" href="https://blog.polymath.network/" target="_blank">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://developers.polymath.network" target="_blank">Developers</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
-					</li>
-
-				</ul>
-			</div>
-		</nav>
+						 aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+						<div class="collapse navbar-collapse">
+							<ul class="navbar-nav text-center">
+								<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <a class="dropdown-item" href="issuers.html">Issuers</a>
+							  <a class="dropdown-item" href="investors.html">Investors</a>
+							  <a class="dropdown-item" href="serviceproviders.html">Service Providers</a>
+							</div>
+						  </li>
+							<li class="nav-item">
+									<a class="nav-link" href="st20.html">ST-20 Standard</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="https://blog.polymath.network/" target="_blank">Blog</a>
+								</li>
+			
+							</ul>
+						</div>
+						<!-- <a class="navbar-brand mx-auto" href="#">Navbar</a> -->
+						<a href="index.html" class="mx-auto">
+							<img src="dist/assets/images/logo/logo-top-bar.svg" alt="Polymath">
+						</a>
+						<div class="collapse navbar-collapse">
+							<ul class="navbar-nav text-center">
+							  
+								<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <a class="dropdown-item" href="team.html">Team</a>
+								<a class="dropdown-item" href="advisors.html">Advisors</a>
+							  <a class="dropdown-item" href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
+							</div>
+						  </li>
+								<li class="nav-item">
+									<a class="nav-link" href="https://developers.polymath.network" target="_blank">Developers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contact Us</a>
+								</li>
+			
+							</ul>
+						</div>
+			
+					</nav>
+					<!-- End Main Header -->
 
 		<!-- Start #content -->
 		<div id="content">
-
-			<style type="text/css">
-				.hbspt-form input {
-					width: 80%;
-					clear: both;
-				}
-
-				#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					height: 50px;
-					margin-bottom: 10px;
-				}
-
-				#firstname-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					padding: 6px;
-					margin-bottom: 10px;
-				}
-
-				#email-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					padding: 6px;
-					margin-bottom: 10px;
-				}
-
-				#message-c95809d8-9859-4bba-9e0b-b38cf471070e {
-					width: 90%;
-					background: #f9f9f9;
-					border: solid 1px #dedede;
-					padding: 6px;
-					height: 120px;
-					margin-bottom: 10px;
-				}
-
-				.hs-button {
-					background: #252E6A;
-					color: white;
-					padding: 8px;
-					width: 200px;
-					border: 0px;
-					margin: 10px;
-				}
-
-				#contactForm {
-					text-align: center;
-					font-weight: bold;
-					margin: top
-				}
-			</style>
 
 			<section class="section pt-70">
 				<div class="container">
@@ -196,33 +153,17 @@
 								</p>
 							</header>
 
-
-							<style type="text/css">
-							.custom_dropdown, .hs-input {    display: inline-block;
-						    width: 90%;
-						    max-width: 500px;
-						    height: 40px;
-						    padding: 9px 10px;
-						    font-size: 16px;
-						    font-weight: normal;
-						    line-height: 22px;
-						    color: #33475b;
-						    background-color: #ffff;
-						    border: 1px solid #dedede;
-						    box-sizing: border-box;
-								margin-bottom: 8px;}
-
-								.hs-richtext p {font-size: 12px !important; color: #dedede; line-height: 18px;}
-								.hs-richtext p a {font-size: 12px !important; }
-
-							</style>
-
 							<div style="width: 100%; text-align: center;">
 								<p style="margin: 0; padding: 0; margin-bottom: 15px; font-size: 14px !important; font-weight: bold">This webinar is offered several times. Select the date and time that works best for you.</p>
 								<select id="training-series-times" tabindex="1" name="webinar" size="" class="form-control custom_dropdown" style="width: 475px"></select>
 							</div>
 
-							<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
+							<div style="width: 100%; text-align: center;" id="ineterest">
+								<p style="margin: 0; padding: 0; margin-bottom: 15px; font-size: 14px !important; font-weight: bold">What are you interested in doing with Polyath?</p>
+								<select id="what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb" required="" class="hs-input" name="what_are_you_interested_in_doing_with_polymath_" data-reactid=".hbspt-forms-0.1:$4.1:$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.0"><option value="" disabled="" selected="" data-reactid=".hbspt-forms-0.1:$4.1:$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.0.0">Please Select</option><option value="Creating a Security Token" data-reactid=".hbspt-forms-0.1:$4.1:$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.0.1:$Creating a Security Token">Creating a Security Token</option><option value="Becoming a Solution Provider" data-reactid=".hbspt-forms-0.1:$4.1:$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.0.1:$Becoming a Solution Provider">Becoming a Solution Provider</option><option value="Investing in Security Tokens" data-reactid=".hbspt-forms-0.1:$4.1:$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.0.1:$Investing in Security Tokens">Investing in Security Tokens</option><option value="Other" data-reactid=".hbspt-forms-0.1:$4.1:$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.0.1:$Other">Other</option></select>
+							</div>
+
+							<script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
 
 							<script>
 
@@ -243,6 +184,10 @@
 
 							$( document ).ready(function() {
 
+							// Hide the Interst Field until a time is selected
+							$("#ineterest").hide();
+
+							// grab the Webinar ID from URL
 							let id = getUrlParameter('id');
 
 							var obj = [
@@ -264,12 +209,9 @@
 							dropdown.append('<option selected="true" disabled>Choose a time</option>');
 							dropdown.prop('selectedIndex', 0);
 
-							const url = 'https://api.myjson.com/bins/7xq2x';
-
-							// Populate dropdown with list of provinces
-
 							if (id === undefined) {
 
+							// if no id is set - use the JSON object to load the webinar times
 						  $.each(obj, function (key, entry) {
 
 								// check to see if date is in the past
@@ -282,27 +224,38 @@
 
 								staticDate = obj.find(x => x.id === id).datetime;
 								textDate = moment(staticDate).format("ddd, MMM D, YYYY hh:mm A") + " - " + moment(staticDate).add(1,"hours").format("hh:mm A");
-								//dropdown.append($('<option></option>').attr('value', id).text(moment(staticDate).format("ddd, MMM D, YYYY hh:mm A") + " - " + moment(staticDate).add(1,"hours").format("hh:mm A")));
 								dropdown.append('<option selected="true" id="'+ id +'">'+ textDate +'</option>');
-
-								hbspt.forms.create({
-									portalId: "4703451",
-									formId: "bbffc010-14f2-4fa6-9991-b03974e83a4a",
-									target: '#contactForm',
-									goToWebinarWebinarKey : id
-								});
+								// show the what are you interested in selection
+								$("#ineterest").show();
 
 						}
 
+							// show the what are you interested in selection when changed
 							$("#training-series-times").change(function() {
+								$("#ineterest").show();
+							});
+
+							$("#what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").change(function() {
+
+								var gtm = $("#training-series-times").val()
 								var option = $(this).val();
 
-								hbspt.forms.create({
-									portalId: "4703451",
-									formId: "bbffc010-14f2-4fa6-9991-b03974e83a4a",
-									target: '#contactForm',
-									goToWebinarWebinarKey : option
-								});
+								console.log(option);
+
+								// check if creating a token is selected
+								if(option === 'Creating a Security Token') {
+
+									createTokenForm(gtm);
+
+								} else if (option === 'Becoming a Solution Provider') {
+
+									serviceProviderForm(gtm);
+
+								} else if (option === 'Investing in Security Tokens') {
+									investorForm(gtm);
+								} else if (option === 'Other') {
+									otherForm(gtm);
+								}
 
 
 							});
@@ -347,90 +300,112 @@
 		<!-- End #content -->
 
 		<!-- Start Main Footer -->
-		<footer class="main-footer main-footer--style-centro" style="background-color:#252E6A;font-family:Overpass" data-fixed="true">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-6 col-md-3 text-lg-center">
-						<figure>
-							<img src="assets/images/logo-footer.svg" alt="Polymath">
-						</figure>
-					</div>
+	<footer class="main-footer main-footer--style-centro" style="background-color:#252E6A;font-family:Overpass" data-fixed="true">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 col-md-2 text-lg-center">
+					<figure>
+						<img src="assets/images/logo-footer.svg" alt="Polymath">
+					</figure>
+				</div>
 
-					<div class="col-sm-6 col-md-3 text-left">
-						<ul>
-							<li>
-								<a href="st20.html">ST-20 Standard</a>
-							</li>
+				<div class="col-sm-6 col-md-2 text-left">
+					<ul>
+						<li>
+							<a href="issuers.html">issuers</a>
+						</li>
+						<li>
+							<a href="investors.html">Investors</a>
+						</li>
+						<li>
+							<a href="serviceproviders.html">Service Providers</a>
+						</li>
+						<li>
+							<a href="st20.html">ST-20 Standard</a>
+						</li>
+						<li>
+							<a href="https://blog.polymath.network" target="_blank">Blog</a>
+						</li>
 
-							<li>
-								<a href="https://blog.polymath.network" target="_blank">Blog</a>
-							</li>
-							<li>
-								<a href="https://developers.polymath.network" target="_blank">Developers</a>
-							</li>
-							<li>
-								<a href="team.html">Team</a>
-							</li>
-							<li>
-								<a href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
-							</li>
+						
 
-						</ul>
+					</ul>
 
-					</div>
-					<div class="col-sm-12 col-md-6 text-center text-md-right">
-						<p class="poly_email">
-							<a href="contact.html"><i class="fas fa-globe"></i> Contact Us</a>
-						</p>
-						<ul class="social">
-							<li>
-								<a href="https://www.facebook.com/polymathnetwork" target="_blank">
-									<i class="fab fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/polymathnetwork" target="_blank">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.youtube.com/channel/UC77syPQJO0eA5FBUMczZ4bA" target="_blank">
-									<i class="fab fa-youtube"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/company/18168860/" target="_blank">
-									<i class="fab fa-linkedin-in"></i>
-								</a>
-							</li>
-						</ul>
-						<ul class="social">
-							<li>
-								<a href="https://t.me/polymathnetwork" target="_blank">
-									<i class="fab fa-telegram-plane"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/PolymathNetwork" target="_blank">
-									<i class="fab fa-github"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://medium.com/@polymathnetwork" target="_blank">
-									<i class="fab fa-medium-m"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.reddit.com/r/polymathnetwork" target="_blank">
-									<i class="fab fa-reddit-alien"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
+				</div>
+				<div class="col-sm-6 col-md-2 text-left">
+					<ul>
+						<li>
+							<a href="team.html">Team</a>
+						</li>
+						<li>
+							<a href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
+						</li>
+						
+						
+						<li>
+							<a href="https://developers.polymath.network" target="_blank">Developers</a>
+						</li>
+						<li>
+							<a href="contact.html">contact us</a>
+						</li>
+					<li>
+							<a href="whitepaper.html">Whitepaper</a>
+						</li>
+
+					</ul>
+
+				</div>
+				<div class="col-sm-12 col-md-6 text-center text-md-right">
+					
+					<ul class="social">
+						<li>
+							<a href="https://www.facebook.com/polymathnetwork" target="_blank">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/polymathnetwork" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/channel/UC77syPQJO0eA5FBUMczZ4bA" target="_blank">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/18168860/" target="_blank">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="social">
+						<li>
+							<a href="https://t.me/polymathnetwork" target="_blank">
+								<i class="fab fa-telegram-plane"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/PolymathNetwork" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://medium.com/@polymathnetwork" target="_blank">
+								<i class="fab fa-medium-m"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.reddit.com/r/polymathnetwork" target="_blank">
+								<i class="fab fa-reddit-alien"></i>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</footer>
-		<!-- End Main Footer -->
+		</div>
+	</footer>
+	<!-- End Main Footer -->
 
 
 
@@ -438,6 +413,7 @@
 	<!-- End #wrap -->
 
 	<script src="assets/js/core.min.js"></script>
+	<script src="assets/js/form_info.js"></script>
 
 	<script src="assets/vendors/modernizr.min.js"></script>
 	<!--  <script src="assets/js/theme.vendors.min.js"></script> -->
