@@ -85,6 +85,8 @@ input.hs-input, textarea.hs-input, select.hs-input {
     margin-bottom: 8px;
 }
 
+.hs_asset_detail, .hs_fixed_asset_detail, .hs_fund_detail, .hs_what_sto_documents_have_you_prepared_ {background: #efefef; border: dashed 1px #cecece; padding: 6px;}
+
 
   .hs-richtext p {font-size: 12px !important; color: #dedede; line-height: 18px;}
-  .hs-richtext p a {font-size: 12px !important; }
+  .hs-richtext p a {font-size: 11px !important; color: ##737373 !important}

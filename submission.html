@@ -14,10 +14,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
-	<link rel="stylesheet" href="assets/css/theme.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/forms.css">
-	<link rel="stylesheet" href="assets/css/theme-color/theme-centro.css">
+	<link rel="stylesheet" href="/assets/css/theme.min.css" type="text/css">
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="/assets/css/forms.css" type="text/css">
+	<link rel="stylesheet" href="/assets/css/theme-color/theme-centro.css" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href="dist/assets/css/compiled.min.css"> -->
 
@@ -135,11 +135,11 @@
 					<div class="row">
 						<div class="col-sm-12">
 							<header class="section-title section-title-default align-center mb-100" style=" margin-bottom: 2.25em !important">
-								<h2>Contact Polymath</h2>
+								<h2>Let's Get Started Creating Your Security Token</h2>
 							</header>
 
 							<div style="width: 100%; text-align: center;" class="interestBox" id="ineterest">
-								<p style="margin: 0; padding: 0; margin-bottom: 25px; font-size: 14px !important; font-weight: bold; color: #33475b">What are you interested in speaking with Polymath about?</p>
+								<p style="margin: 0; padding: 0; margin-bottom: 25px; font-size: 14px !important; font-weight: bold; color: #33475b">What are you interested in doing with Polymath?</p>
 								<select id="what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb" required="" class="hs-input" name="what_are_you_interested_in_doing_with_polymath_" data-reactid=".hbspt-forms-0.1:$4.1:$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.0"><option value="" disabled="" selected="" data-reactid=".hbspt-forms-0.1:$4.1:$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.0.0">Please Select</option>
 									<option value="Creating a Security Token" data-reactid=".hbspt-forms-0.1:$4.1:$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.0.1:$Creating a Security Token">Creating a Security Token</option>
 									<option value="Becoming a Solution Provider" data-reactid=".hbspt-forms-0.1:$4.1:$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.$what_are_you_interested_in_doing_with_polymath_.0.1:$Becoming a Solution Provider">Becoming a Solution Provider</option>
@@ -167,7 +167,6 @@
 							};
 
 							$( document ).ready(function() {
-
 							// Hide the Interst Field until a time is selected
 
 
@@ -190,7 +189,7 @@
 
 								// check if creating a token is selected
 								if(option === 'Creating a Security Token') {
-								
+
 									createTokenForm(gtm, 'create token');
 
 								} else if (option === 'Becoming a Solution Provider') {

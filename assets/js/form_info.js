@@ -1,6 +1,5 @@
 function serviceProviderForm(gtm = false) {
 
-  //f4ebffea-b69f-4571-acbd-b10562a2a731
   hbspt.forms.create({
     portalId: "4703451",
     formId: "f4ebffea-b69f-4571-acbd-b10562a2a731",
@@ -45,6 +44,7 @@ function investorForm(gtm = false) {
 }
 
 function otherForm(gtm = false) {
+
   hbspt.forms.create({
     portalId: "4703451",
     formId: "6742ac7d-ec45-4380-b8ff-469cbafce6ce",
@@ -66,11 +66,7 @@ function otherForm(gtm = false) {
     });
 }
 
-
 function createTokenForm(gtm = false, redirect = false) {
-
-  console.log(redirect);
-  return false;
 
   hbspt.forms.create({
     portalId: "4703451",
@@ -94,10 +90,8 @@ function createTokenForm(gtm = false, redirect = false) {
           fields_to_hide.hide()
         }
 
-        // what_are_you_interested_in_doing_with_polymath_
         $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Create a Security Token').change();
 
-        // https://polymath.zendesk.com/hc/en-us/requests/new
       });
 
       $("#do_you_have_a_lawyer0-70504cfb-bbeb-455e-9592-192a4ba89699").change(function() {
@@ -108,7 +102,7 @@ function createTokenForm(gtm = false, redirect = false) {
           //alert($(this).val())
           $(".hs_do_you_have_a_lawyer").show()
         }
-        // https://polymath.zendesk.com/hc/en-us/requests/new
+        //https://polymath.zendesk.com/hc/en-us/requests/new
       });
 
     },
