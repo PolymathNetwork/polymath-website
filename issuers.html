@@ -563,19 +563,31 @@ $(document).ready(function(){
 						</div>
 			
 
+						<style>
+						.mobileBtnLeft {text-align: right}	
+						@media (max-width:600px)  { 
+							.mobileBtn {text-align: center !important}
+							/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+						</style>
 
 		  <section class="section">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12" style="margin: 0 auto; text-align: center">
 							<h3>Take the Next Steps</h3>
+							
+						</div>
+						<div class="col-sm-12 col-md-6 mobileBtn mobileBtnLeft" style="padding-bottom: 10px">
 							<a href="/submission.html" class="btn btn-solid text-uppercase" style="border:none">
 								<span> Create Security Token </span>
 							</a>
+						</div>
+						<div class="col-sm-12 col-md-6 mobileBtn">	
 							<a href="/webinar.html" class="btn btn-default text-uppercase">
 								<span> Schedule a Demo </span>
 							</a>
 						</div>
+						
 					</div>
 				</div>
 			</section>
