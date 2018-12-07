@@ -8,7 +8,7 @@ function serviceProviderForm(gtm = false) {
     cssClass: '',
     onFormReady: function($form) {
         // what_are_you_interested_in_doing_with_polymath_
-        $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Becoming a Solution Provider').change();
+        $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Becoming a Service Provider').change();
       },
       onFormSubmit: function($form) {
         if(redirect == 'create token') {
