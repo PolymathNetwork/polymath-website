@@ -1,72 +1,6 @@
-/*
-*   PixFort
-*   MegaPack
-*   12/07/2018
-*   Firas ODEH
-*/
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
-/* Base */
-
-    html {
-        height: 100vh; /* set viewport constraint */
-        min-height: 100%; /* enforce height */
-    }
-
-    body { font-family: 'Open Sans',sans-serif !important;
-        /* Support for all WebKit browsers. */
-        -webkit-font-smoothing: antialiased;
-        /* Support for Safari and Chrome. */
-        text-rendering: optimizeLegibility;
-
-        /* Support for Firefox. */
-        -moz-osx-font-smoothing: grayscale;
-
-        /* Support for IE. */
-        font-feature-settings: 'liga';
-        -webkit-text-size-adjust: 100%;
-    }
-
-    .secondary-font { font-family: 'Montserrat', sans-serif; }
-    a:hover, a:focus { text-decoration: none; }
-    .pix-full-width { width:100%; }
-
-    /* Typography */
    
-
-    .pix-inline-block { display: inline-block; }
-    .big-text-60 { font-size: 60px;line-height: 86px; }
-    .big-text-24 { font-size: 24px;line-height: 38px; }
-    .big-text-20 { font-size: 20px;line-height: 32px; }
-    .big-text { font-size: 16px;line-height: 26px; }
-    .small-text { font-size: 14px; }
-    .extra-small-text { font-size: 12px; }
-
-    .pix-sm-lineheight { line-height: 58px; }
-    .pix-xm-lineheight { line-height: 56px; }
-    .pix-lineheight-24 { line-height: 24px; }
-    .pix-lineheight-32 { line-height: 32px; }
-    .pix-lineheight-36 { line-height: 36px !important; }
-
-
-    .small-icon-25 { font-size: 25px;line-height: 25px }
-    .small-icon-30 { font-size: 32px;line-height: 32px }
-    .small-icon-36 { font-size: 36px;line-height: 36px }
-    .small-icon-40 { font-size: 40px;line-height: 40px }
-    .big-icon-50 { font-size: 50px;line-height: 50px; }
-    .big-icon-55 { font-size: 55px; }
-    .big-icon-65 { font-size: 65px;line-height: 65px; }
-    .big-icon-60 { font-size: 60px;line-height: 60px; }
-    .big-icon { font-size: 70px; }
-    .big-icon-80 { font-size: 80px;line-height: 80px; }
-    .big-icon-90 { font-size: 90px;line-height: 90px; }
-    .big-icon-100 { font-size: 100px;line-height: 100px; }
-    .big-icon-120 { font-size: 120px;line-height: 120px; }
-    .big-icon-140 { font-size: 140px;line-height: 140px; }
-
     .pix-bold { font-weight: 700; }
 
     .pix-icon-big { font-size: 40px; }
@@ -414,20 +348,7 @@
 
 
 
-    /* Arrow Animation */
-    @-webkit-keyframes new_icon {
-        0% { top: 0px; }
-        100% { top: 15px;  }
-    }
-    @-moz-keyframes new_icon {
-        0% { top: 0px; }
-        100% { top: 15px;  }
-    }
-    .pix-moving-btn {
-        position: relative;
-        animation: new_icon 1s linear 0s infinite alternate;
-        -webkit-animation: new_icon 2s linear 0s infinite alternate;
-    }
+
 
     /* Boxes */
     .pix-border-box { border: 2px solid #eee;border-radius: 10px; }
