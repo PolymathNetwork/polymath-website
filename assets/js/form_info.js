@@ -8,6 +8,7 @@ function serviceProviderForm(gtm = false) {
     cssClass: '',
     onFormReady: function($form) {
         // what_are_you_interested_in_doing_with_polymath_
+        if(gtm != false) {$("input:checkbox[name='ProductCode']").val(gtm).change();}
         $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Becoming a Service Provider').change();
       },
       onFormSubmit: function($form) {
@@ -29,6 +30,7 @@ function investorForm(gtm = false) {
     goToWebinarWebinarKey : gtm,
     cssClass: '',
     onFormReady: function($form) {
+      if(gtm != false) {$("input:checkbox[name='ProductCode']").val(gtm).change();}
         // what_are_you_interested_in_doing_with_polymath_
         $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Investing in Security Tokens').change();
       },
@@ -52,6 +54,7 @@ function otherForm(gtm = false) {
     goToWebinarWebinarKey : gtm,
     cssClass: '',
     onFormReady: function($form) {
+      if(gtm != false) {$("input:checkbox[name='ProductCode']").val(gtm).change();}
         // what_are_you_interested_in_doing_with_polymath_
         $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Other').change();
       },
@@ -76,7 +79,7 @@ function createTokenForm(gtm = false, redirect = false) {
     cssClass: '',
 
     onFormReady: function($form) {
-
+      if(gtm != false) {$("input:checkbox[name='ProductCode']").val(gtm).change();}
       var fields_to_hide  = $(".hs_what_asset_are_you_looking_to_tokenize_, .hs_about_the_offering, .hs_about_the_team, .hs_do_you_have_a_lawyer, .hs_which_jurisdictions_will_you_be_marketing_your_offering_, .hs_how_much_capital_are_you_aiming_to_raise, .hs_do_you_have_investors_or_are_you_looking_for_help_bringing_investors_to_you");
 
       fields_to_hide.hide()
