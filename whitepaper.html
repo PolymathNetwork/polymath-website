@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Polymath - Error</title>
+	<title>Polymath - Whitepaper</title>
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,15 +14,19 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	 crossorigin="anonymous">
 
-	<link rel="stylesheet" href="assets/css/theme-vendors.css">
+	<!-- build:css -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/theme.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/theme-color/theme-centro.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/lity.min.css">
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href="dist/assets/css/compiled.min.css"> -->
+	<!-- <link rel="stylesheet" href="assets/css/theme.min.css">
+	<link rel="stylesheet" href="assets/css/theme-color/theme-centro.css"> -->
 
-
-
+	<!-- endbuild -->
 	<link href="https://fonts.googleapis.com/css?family=Overpass:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400" rel="stylesheet">
 
@@ -53,13 +57,15 @@
 	<!-- <script data-src="vendors/modernizr.min.js"></script> -->
 </head>
 
-<body>
+<body class="footer-fixed">
 
 	<!-- Start #wrap -->
 	<div id="wrap">
 
 		<!-- Start Main Header -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+			<div style="position: absolute; right: 20px; top: 10px;"><a href="#"><i class="fas fa-globe"></i> Contact Us</a></div>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
 			 aria-expanded="false" aria-label="Toggle navigation">
@@ -107,22 +113,30 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
-							<header class="section-title section-title-default align-center pt-70 mb-50">
-								<h2>Sorry that page does not exist</h2>
-								<a class="subtitle-link" href="https://polymath.network" target="_blank">
-									<span>Click here to return to homepage
-										<span class="arrow-right"></span>
-									</span>
-								</a>
+							<header class="section-title section-title-default align-center mb-4" data-plugin-textslide="true" data-plugin-textslide-options="{&quot;element&quot;:&quot;div&quot;,&quot;autoplay&quot;:true,&quot;delay&quot;:2000}">
+								<h2 class="text xl mb-0 font-weight-bold">Whitepaper</h2>
+								<p class="justify-content-center">
+									<a href="https://t.me/polymathnetwork" class="btn btn-solid text-uppercase" target="_blank">
+										<span> Join Telegram Community </span>
+									</a>
+								</p>
 							</header>
 						</div>
-
 						<!-- /.col-lg-12 -->
 					</div>
-					<!-- <div class="row">
-						<h3>Something</h3>
-					</div> -->
+					<!-- /.row -->
+					<div class="row">
+						<!-- /.col-lg-3 col-md-6 -->
+						<div class="col-sm-12">
 
+							<iframe src="https://drive.google.com/file/d/180nPuOOPOZlDRDKSUoJP84AvFY0T5AuB/preview" width="100%" height="600">
+								<p class="lead">This browser does not support PDFs. Please download the PDF to view it:</p>
+								<a href="./pdf/whitepaper_2018_02_23.pdf" class="btn btn-solid text-uppercase">Download PDF</a>
+							</iframe>
+						</div>
+						<!-- /.col-lg-3 col-md-6 -->
+					</div>
+					<!-- /.row -->
 				</div>
 				<!-- /.container -->
 			</section>
@@ -130,15 +144,34 @@
 
 
 
+			<!-- Start Latest Posts -->
 
+			<!-- End Latest Posts -->
+
+			<!-- Start Bottom Banner -->
+			<section class="section mt-70 pt-70 pb-100 tinted-image">
+
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-lg-8 col-md-10 mx-auto text-center">
+
+							<h2 class="text-white"> Trillions of Dollars On The Blockchain Are Coming</h2>
+							<a href="submission.html" class="btn btn-white text-uppercase" data-type="video">
+								<span>Create Your Security Token</span>
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Bottom Banner -->
 		</div>
 		<!-- End #content -->
 
-
-
 		<!-- Start Main Footer -->
-		<footer class="main-footer main-footer--style-centro" style="background-color:#252E6A;font-family:Overpass"
-		 data-fixed="true">
+		<footer class="main-footer main-footer--style-centro" style="background-color:#252E6A;font-family:Overpass" data-fixed="true">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-6 col-md-3 text-lg-center">
@@ -174,7 +207,7 @@
 					</div>
 					<div class="col-sm-12 col-md-6 text-center text-md-right">
 						<p class="poly_email">
-							<a href="mailto:support@polymath.zendesk.com">support@polymath.zendesk.com</a>
+							<a href="contact.html"><i class="fas fa-globe"></i> Contact Us</a>
 						</p>
 						<ul class="social">
 							<li>
@@ -227,10 +260,9 @@
 		<!-- End Main Footer -->
 
 
+
 	</div>
 	<!-- End #wrap -->
-
-
 
 
 	<script src="assets/js/core.min.js"></script>
