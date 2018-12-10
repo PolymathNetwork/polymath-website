@@ -1,4 +1,4 @@
-function serviceProviderForm(gtm = false) {
+function serviceProviderForm(gtm = false, redirect = false) {
 
   hbspt.forms.create({
     portalId: "4703451",
@@ -22,7 +22,7 @@ function serviceProviderForm(gtm = false) {
     });
 }
 
-function investorForm(gtm = false) {
+function investorForm(gtm = false, redirect = false) {
   hbspt.forms.create({
     portalId: "4703451",
     formId: "e1ff0ac0-b8d1-4dde-9921-157205014849",
@@ -45,7 +45,7 @@ function investorForm(gtm = false) {
     });
 }
 
-function otherForm(gtm = false) {
+function otherForm(gtm = false, redirect = false) {
 
   hbspt.forms.create({
     portalId: "4703451",
