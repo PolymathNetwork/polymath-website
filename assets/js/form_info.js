@@ -13,6 +13,7 @@ function serviceProviderForm(gtm = false, redirect = false) {
       },
       onFormSubmit: function($form) {
         if(redirect == 'create token') {
+          ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
           var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
   				window.location = "https://tokenstudio.polymath.network/ticker";
         } else {
@@ -36,6 +37,7 @@ function investorForm(gtm = false, redirect = false) {
       },
       onFormSubmit: function($form) {
         if(redirect == 'create token') {
+          ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
           var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
   				window.location = "https://tokenstudio.polymath.network/ticker";
         } else {
@@ -60,6 +62,7 @@ function otherForm(gtm = false, redirect = false) {
       },
     onFormSubmit: function($form) {
       if(redirect == 'create token') {
+        ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
         var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
         window.location = "https://tokenstudio.polymath.network/ticker";
       } else {
@@ -112,6 +115,7 @@ function createTokenForm(gtm = false, redirect = false) {
     onFormSubmit: function($form) {
 
       if(redirect == 'create token') {
+        ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
         var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
 				window.location = "https://tokenstudio.polymath.network/ticker";
       } else {
