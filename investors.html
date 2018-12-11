@@ -58,7 +58,7 @@
 	<style type="text/css" id="pix_page_style"></style>
 
 	<link href="https://fonts.googleapis.com/css?family=Overpass:400,700" rel="stylesheet">
-
+	<script src="assets/js/jquery.min.js"></script>		
 	<!-- Google Optimize Snippet -->
 	<style>.async-hide { opacity: 0 !important} </style>
 	<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
@@ -499,24 +499,9 @@
 								<![endif]-->
 							<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
 							<script>
-								hbspt.forms.create({
-									portalId: "4703451",
-									formId: "c95809d8-9859-4bba-9e0b-b38cf471070e",
-									target: '#contactForm',
-									onFormReady: function($form) {
-										$("#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e").change(function() {
-											var option = $(this).val();
-											//console.log($(this).val());
-											if (option == "Technical Help") {
-												ga('send', 'event', 'Site Transfer', 'dApp Ticket ', '');
-												window.location = 'https://polymath.zendesk.com/hc/en-us/requests/new';
-											}
-											// https://polymath.zendesk.com/hc/en-us/requests/new
-										});
-
-
-									}
-								});
+								$( document ).ready(function() {
+									investorForm();
+								});	
 							</script>
 							<div id="contactForm">
 							</div>
@@ -667,13 +652,15 @@
 
 	<!-- build:js -->
 	<!-- <script src="assets/js/core.min.js"></script> -->
-	<!-- <script src="assets/js/jquery.min.js"></script> -->
+	<script src="assets/js/jquery.min.js"></script>
 	<!-- <script src="assets/vendors/modernizr.min.js"></script> -->
 	<!-- <script src="assets/js/theme.vendors.min.js"></script>
 		<script src="assets/js/script.js"></script>
 		<script src="assets/js/theme.min.js"></script> -->
 
 	<script src="assets/js/core.min.js"></script>
+	<script src="assets/js/form_info.js"></script>
+
 	<!-- <script src="assets/js/jquery.min.js"></script> -->
 	<script src="assets/vendors/modernizr.min.js"></script>
 	<script src="assets/js/theme.vendors.min.js"></script>

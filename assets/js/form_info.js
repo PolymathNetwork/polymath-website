@@ -1,5 +1,7 @@
 function serviceProviderForm(gtm = false, redirect = false) {
 
+  console.log('load service provider form')
+
   hbspt.forms.create({
     portalId: "4703451",
     formId: "f4ebffea-b69f-4571-acbd-b10562a2a731",

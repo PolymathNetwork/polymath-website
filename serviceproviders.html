@@ -27,7 +27,7 @@
 
 	<meta charset="utf-8">
 
-	<link rel="icon" href="file:///Macintosh HD/Users/richardbrown/Downloads/polymath-website-rob-homepageUpdate/assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
 
 
 	<!-- build:css -->
@@ -45,7 +45,7 @@
 	<!-- endbuild -->
 
 	<link href="https://fonts.googleapis.com/css?family=Overpass:400,700" rel="stylesheet">
-
+	<script src="assets/js/jquery.min.js"></script>	
 	<!-- Google Optimize Snippet -->
 	<style>.async-hide { opacity: 0 !important} </style>
 	<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
@@ -279,35 +279,14 @@ RAISING CAPITAL AND ISSUING SECURITIES?</h3>
 		  <section class="section pt-70">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12" style="margin-top: -88px">
-						
+						<div class="col-sm-12" style="margin-top: -88px; text-align: center;">
+							
+								Join the Advisors/Broker-Dealers, Law Firms, Marketing Firms, KYC Providers, and Custodians who are already part of the Polymath Network.
+								<br><br>
+								<a href="/contact.html?id=contact" class="btn btn-solid text-uppercase" style="border:none">
+									<span> Register Now </span>
+								</a>
 
-							<!--[if lte IE 8]>
-								<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-								<![endif]-->
-							<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
-							<script>
-								hbspt.forms.create({
-									portalId: "4703451",
-									formId: "c95809d8-9859-4bba-9e0b-b38cf471070e",
-									target: '#contactForm',
-									onFormReady: function($form) {
-										$("#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e").change(function() {
-											var option = $(this).val();
-											//console.log($(this).val());
-											if (option == "Technical Help") {
-												ga('send', 'event', 'Site Transfer', 'dApp Ticket ', '');
-												window.location = 'https://polymath.zendesk.com/hc/en-us/requests/new';
-											}
-											// https://polymath.zendesk.com/hc/en-us/requests/new
-										});
-
-
-									}
-								});
-							</script>
-							<div id="contactForm">
-							</div>
 						</div>
 					</div>
 				</div>
@@ -440,6 +419,8 @@ RAISING CAPITAL AND ISSUING SECURITIES?</h3>
 				</div>
 				</div>
 				
+				<div id="contactForm">
+					</div>
 				
 			</section>
 			
@@ -513,43 +494,6 @@ RAISING CAPITAL AND ISSUING SECURITIES?</h3>
 
 			</style>
 
-
-		  <section class="section pt-70">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12" style="margin-top: -35px">
-						
-
-							<!--[if lte IE 8]>
-								<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-								<![endif]-->
-							<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
-							<script>
-								hbspt.forms.create({
-									portalId: "4703451",
-									formId: "c95809d8-9859-4bba-9e0b-b38cf471070e",
-									target: '#contactForm',
-									onFormReady: function($form) {
-										$("#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e").change(function() {
-											var option = $(this).val();
-											//console.log($(this).val());
-											if (option == "Technical Help") {
-												ga('send', 'event', 'Site Transfer', 'dApp Ticket ', '');
-												window.location = 'https://polymath.zendesk.com/hc/en-us/requests/new';
-											}
-											// https://polymath.zendesk.com/hc/en-us/requests/new
-										});
-
-
-									}
-								});
-							</script>
-							<div id="contactForm">
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 		</br>
 </br>
 		
@@ -699,6 +643,7 @@ RAISING CAPITAL AND ISSUING SECURITIES?</h3>
 		<script src="assets/js/theme.min.js"></script> -->
 
 	<script src="assets/js/core.min.js"></script>
+	<script src="assets/js/form_info.js"></script>
 	<!-- <script src="assets/js/jquery.min.js"></script> -->
 	<script src="assets/vendors/modernizr.min.js"></script>
 	<script src="assets/js/theme.vendors.min.js"></script>
