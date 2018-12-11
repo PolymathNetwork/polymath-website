@@ -187,8 +187,17 @@
 
 							if (id === undefined) {
 
-							// if no id is set - use the JSON object to load the webinar times
-
+								if(id === "create_token") {
+									console.log('contact is here')
+									$("#what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val('Creating a Security Token')	
+									$('#what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb').trigger('change');
+									serviceProviderForm();
+								} else if(id === "advisor") {
+									console.log('contact is here')
+									$("#what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val('Becoming a Service Provider')	
+									$('#what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb').trigger('change');
+									serviceProviderForm();
+								}
 							} else {
 
 							}
