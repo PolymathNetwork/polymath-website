@@ -233,6 +233,17 @@
 
 							// show the what are you interested in selection when changed
 							$("#training-series-times").change(function() {
+
+								type = getUrlParameter('type');
+								console.log(type)
+								if(type !== undefined) {
+									if (type == "create_token") {
+										console.log('got here')
+										$('#what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb').val('Creating a Security Token').change();
+										$('#what_are_you_interested_in_doing_with_polymath_-bf4e57b7-b0b6-4326-9197-a25b13ad18fb').trigger('change');
+									}
+								}
+
 								$("#ineterest").show();
 							});
 
@@ -286,7 +297,7 @@
 
 						<div class="col-lg-8 col-md-10 mx-auto text-center">
 
-							<h2 class="text-white"> Trillions of Dollars On The Blockchain Are Coming</h2>
+							<h2 class="text-white"> Trillions of Dollars are Coming to the Blockchain</h2>
 							<a href="submission.html" class="btn btn-white text-uppercase" data-type="video">
 									<span>Create Your Security Token</span>
 								</a>
