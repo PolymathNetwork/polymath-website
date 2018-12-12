@@ -1,0 +1,92 @@
+.hbspt-form input {
+  width: 80%;
+  clear: both;
+}
+
+.interestBox {padding-bottom: 20px;}
+
+#request_type-c95809d8-9859-4bba-9e0b-b38cf471070e {
+  width: 90%;
+  background: #f9f9f9;
+  border: solid 1px #dedede;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+#firstname-c95809d8-9859-4bba-9e0b-b38cf471070e {
+  width: 90%;
+  background: #f9f9f9;
+  border: solid 1px #dedede;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+#email-c95809d8-9859-4bba-9e0b-b38cf471070e {
+  width: 90%;
+  background: #f9f9f9;
+  border: solid 1px #dedede;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+#message-c95809d8-9859-4bba-9e0b-b38cf471070e {
+  width: 90%;
+  background: #f9f9f9;
+  border: solid 1px #dedede;
+  padding: 6px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.hs-button {
+  background: #252E6A;
+  color: white;
+  padding: 8px;
+  width: 200px;
+  border: 0px;
+  margin: 10px;
+}
+
+#contactForm {
+  text-align: center;
+  font-weight: bold;
+  margin: top
+}
+
+input.hs-input, textarea.hs-input, select.hs-input {
+    display: inline-block;
+    width: 210px;
+    height: 27px;
+    padding: 4px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #666;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.custom_dropdown, .hs-input {
+    display: inline-block;
+    width: 90%;
+    max-width: 500px;
+    height: 40px;
+    padding: 9px 10px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #33475b;
+    background-color: #ffff;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+.hs_asset_detail, .hs_fixed_asset_detail, .hs_fund_detail, .hs_what_sto_documents_have_you_prepared_ {background: #efefef; border: dashed 1px #cecece; padding: 6px;}
+
+
+  .hs-richtext p {font-size: 12px !important; color: #dedede; line-height: 18px;}
+  .hs-richtext p a {font-size: 11px !important; color: ##737373 !important}
