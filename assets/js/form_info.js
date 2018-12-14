@@ -16,6 +16,7 @@ function serviceProviderForm(gtm = false, redirect = false) {
       onFormSubmit: function($form) {
         if(redirect == 'create token') {
           ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
+          $("input[name='lead_detail']").val('Create Security Token Form').change();
           var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
   				window.location = "https://tokenstudio.polymath.network/ticker";
         } else {
@@ -40,6 +41,7 @@ function investorForm(gtm = false, redirect = false) {
       onFormSubmit: function($form) {
         if(redirect == 'create token') {
           ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
+          $("input[name='lead_detail']").val('Create Security Token Form').change();
           var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
   				window.location = "https://tokenstudio.polymath.network/ticker";
         } else {
@@ -59,12 +61,14 @@ function otherForm(gtm = false, redirect = false) {
     cssClass: '',
     onFormReady: function($form) {
       if(gtm != false) {$("input:checkbox[name='ProductCode']").val(gtm).change();}
+      $("input[name='lead_detail']").val('Create Security Token Form').change();
         // what_are_you_interested_in_doing_with_polymath_
         $('#what_are_you_interested_in_doing_with_polymath_-70514cfb-bbeb-455e-9592-192a4ba89699').val('Other').change();
       },
     onFormSubmit: function($form) {
       if(redirect == 'create token') {
         ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
+        $("input[name='lead_detail']").val('Create Security Token Form').change();
         var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
         window.location = "https://tokenstudio.polymath.network/ticker";
       } else {
@@ -118,6 +122,7 @@ function createTokenForm(gtm = false, redirect = false) {
 
       if(redirect == 'create token') {
         ga('send', 'event', 'Form Submit', 'Create Security Token ', '');
+        $("input[name='lead_detail']").val('Create Security Token Form').change();
         var email = $("#email-bf4e57b7-b0b6-4326-9197-a25b13ad18fb").val();
 				window.location = "https://tokenstudio.polymath.network/ticker";
       } else {
