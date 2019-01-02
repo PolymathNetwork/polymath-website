@@ -31,14 +31,14 @@
 
 
 	<!-- build:css -->
-	<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/theme.min.css">
 	<link rel="stylesheet" href="assets/css/theme-color/theme-centro.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/lity.min.css">-->
+	<link rel="stylesheet" href="assets/css/lity.min.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="dist/assets/css/compiled.min.css">
+	<!-- <link rel="stylesheet" href="dist/assets/css/compiled.min.css"> -->
 	<!-- <link rel="stylesheet" href="assets/css/theme.min.css">
 	<link rel="stylesheet" href="assets/css/theme-color/theme-centro.css"> -->
 
@@ -46,6 +46,14 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Overpass:400,700" rel="stylesheet">
 
+	<!-- Google Optimize Snippet -->
+	<style>.async-hide { opacity: 0 !important} </style>
+	<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+	h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+	(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+	})(window,document.documentElement,'async-hide','dataLayer',4000,
+	{'GTM-NV9W4NS':true});</script>
+	<!-- Google Analytics with Optmize -->
 	<script type="text/javascript">
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
@@ -58,6 +66,7 @@
 			m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 		ga('create', 'UA-103883877-1', 'auto');
+		ga('require', 'GTM-NV9W4NS');
 		ga('send', 'pageview');
 	</script>
 	<!--  Google Tag Manager  -->
@@ -117,601 +126,592 @@
 	<!-- Start #wrap -->
 	<div id="wrap">
 
-        <!-- Start Main Header -->
-		<header class="main-header header-overlay logo-sm-left main-header--style-centro" data-wait-for-images="true">
+		<!-- Start Main Header -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white" style="background: red">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
+			 aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav text-center">
+					<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="issuers.html">Issuers</a>
+		          <a class="dropdown-item" href="investors.html">Investors</a>
+		          <a class="dropdown-item" href="serviceproviders.html">Service Providers</a>
+		        </div>
+		      </li>
+				<li class="nav-item">
+						<a class="nav-link" href="st20.html">ST-20 Standard</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://blog.polymath.network/" target="_blank">Blog</a>
+					</li>
 
-                <!-- Start Main Header -->
-                <header class="main-header header-overlay logo-sm-left main-header--style-centro" data-wait-for-images="true">
+				</ul>
+			</div>
+			<!-- <a class="navbar-brand mx-auto" href="#">Navbar</a> -->
+			<a href="index.html" class="mx-auto">
+				<img src="dist/assets/images/logo/logo-top-bar.svg" alt="Polymath">
+			</a>
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav text-center">
+				  
+					<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="team.html">Team</a>
+					<a class="dropdown-item" href="advisors.html">Advisors</a>
+		          <a class="dropdown-item" href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
+		        </div>
+		      </li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://developers.polymath.network" target="_blank">Developers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact Us</a>
+					</li>
 
-                    <!-- Start Mainbar -->
-                    <section class="main-bar-container header-fullwidth-justified header-logo-centered main-bar-container">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="main-bar navbar-expand-lg">
-                                        <div class="navbar-header d-lg-none d-xl-none py-0 px-0">
-                                            <a href="index.html" class="navbar-brand">
-                                                <img src="dist/assets/images/logo/logo-top-bar.svg" height="100" width="100" alt="Polymath">
-                                            </a>
-                                        </div>
-                                        <div id="mobile-nav" class="collapse navbar-collapse">
-                                            <ul id="menu-main-nav-1" class="nav navbar-nav main-nav">
-                                                <li class="menu-item">
-                                                    <a href="./st20.html">
-                                                        <span class="link-txt">ST-20 Standard</span>
-                                                    </a>
-                                                </li>
+				</ul>
+			</div>
 
-                                                <li class="menu-item">
-                                                    <a href="team.html">
-                                                        <span class="link-txt">Team</span>
-                                                    </a>
-                                                </li>
+		</nav>
+		<!-- End Main Header -->
 
-                                                <li class="menu-item d-block d-lg-none">
-                                                    <a href="https://blog.polymath.network/">
-                                                        <span class="link-txt">Blog</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item d-block d-lg-none">
-                                                    <a href="https://polymath.bamboohr.com/jobs/">
-                                                        <span class="link-txt">Careers</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <a href="index.html" class="navbar-brand d-md-none d-sm-none d-lg-inline-block d-xl-inline-block py-0">
-                                            <img src="dist/assets/images/logo/logo-top-bar.svg" alt="Polymath">
-                                        </a>
-                                        <div id="main-header-nav-2" class="collapse navbar-collapse">
-                                            <ul id="menu-main-nav-2" class="nav navbar-nav main-nav">
-                                                <li class="menu-item d-none d-lg-block">
-                                                    <a href="https://blog.polymath.network/">
-                                                        <span class="link-txt">Blog</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item d-none d-lg-block">
-                                                    <a href="https://polymath.bamboohr.com/jobs/">
-                                                        <span class="link-txt">Careers</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="header-module module-nav-trigger d-lg-none d-xl-none">
-                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav" aria-expanded="false">
-                                                <span class="sr-only">Toggle navigation</span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- End Mainbar -->
 
-                </header>
-                <!-- End Main Header -->
 
-            </header>
-            <!-- End Main Header -->
 
-        <!-- Email CSS-->
-			<script src="https://assets.convertkit.com/assets/CKJS4.js?v=21"></script>
-			<div class="ck_form_container ck_inline" data-ck-version="7">
-			  <div class="ck_form ck_minimal">
-			  <div class="ck_form_fields">
-				<h3 class="ck_form_title">Join the Stampede</h3>
-				<div class="ck_description">
-				  <p>Subscribe to stay up to date on the security token revolution.
-			</p>
-				</div>
+		<!-- Start #content -->
+		<div id="content">
 
-				<div id="ck_success_msg"  style="display:none;">
-				  <p>Success! Now check your email to confirm your subscription.</p>
-				</div>
+			
 
-				<!--  Form starts here  -->
-				<form id="ck_subscribe_form" class="ck_subscribe_form" action="https://app.convertkit.com/landing_pages/351382/subscribe" data-remote="true">
-				  <input type="hidden" value="{&quot;form_style&quot;:&quot;minimal&quot;,&quot;converted_behavior&quot;:&quot;show&quot;,&quot;days_no_show&quot;:&quot;15&quot;,&quot;delay_seconds&quot;:&quot;10&quot;,&quot;display_devices&quot;:&quot;all&quot;,&quot;display_position&quot;:&quot;br&quot;,&quot;embed_style&quot;:&quot;inline&quot;,&quot;embed_trigger&quot;:&quot;scroll_percentage&quot;,&quot;scroll_percentage&quot;:&quot;70&quot;}" id="ck_form_options">
-				  <input type="hidden" name="id" value="351382" id="landing_page_id">
-				  <input type="hidden" name="ck_form_recaptcha" value="" id="ck_form_recaptcha">
-				  <div class="ck_errorArea">
-					<div id="ck_error_msg" style="display:none">
-					  <p>There was an error submitting your subscription. Please try again.</p>
+
+
+			<style type="text/css">
+				/* Layout */
+
+				.hs-email {float: left; margin-left: 30px; width: 400px;}
+				.hs-button {float: left; background: #252E6A; color: white; }
+				.hs-input {margin-left: 20px; width: 80%; display: inline;}
+				.hs-form {max-width: 600px !important; padding-left: 15px}
+				#label-email-a3f6b6e4-347d-43fb-88d0-aaa432dad647 {float: left; }
+
+			</style>
+
+			<!-- Email CSS-->
+			<section class="section pt-90 pb-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 mb-sm-0 mb-4">
+							<header class="section-title section-title-resolve section-title-default" style="margin-bottom: 2.25em"><br><br>
+								<h3>Subscribe to stay up to date on the security token revolution.</h3>
+							</header>
+
+							<!--  START HERE  -->
+
+							<!--[if lte IE 8]>
+							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+							<![endif]-->
+
+							<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
+							<script>
+							hbspt.forms.create({
+							portalId: "4703451",
+							formId: "a3f6b6e4-347d-43fb-88d0-aaa432dad647",
+
+							});
+							</script>
+							<br>
+							<div style="clear: both; width: 100%; text-align: center; padding-top: 15px; ">We won't send you spam. Unsubscribe at any time.</div>
+
+						</div>
+
 					</div>
-				  </div>
-				  <div class="ck_control_group ck_email_field_group">
-					<label class="ck_label" for="ck_emailField" style="display: none">Email Address</label>
-					<input type="email" name="email" class="ck_email_address" id="ck_emailField" placeholder="Email Address" required>
-				  </div>
-				  <div class="ck_control_group ck_captcha2_h_field_group ck-captcha2-h" style="position: absolute !important;left: -999em !important;">
-					<input type="text" name="captcha2_h" class="ck-captcha2-h" id="ck_captcha2_h" placeholder="We use this field to detect spam bots. If you fill this in, you will be marked as a spammer.">
-				  </div>
+				</div>
+			</section>
 
 
-				  <button class="subscribe_button ck_subscribe_button btn fields" id="ck_subscribe_button">
-					Subscribe
-				  </button>
-				  <span class="ck_guarantee">
-					We won&#39;t send you spam. Unsubscribe at any time.
-				  </span>
-				</form>
-			  </div>
-
-			</div>
-
-			</div>
 
 
-			<style type="text/css">/* Layout */
-			  .ck_form.ck_minimal {
-			  /* divider image */
-				background: #ffffff;
-				font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
-				line-height: 1.5em;
-				overflow: hidden;
-				color: #666;
-				font-size: 16px;
-				-webkit-box-shadow: none;
-				-moz-box-shadow: none;
-				box-shadow: none;
-				clear: both;
-				margin: 20px 0px;
-				text-align: center;
-			}
+			<style type="text/css">
+				/* Layout */
+
+				.ck_form.ck_minimal {
+					/* divider image */
+					background: #ffffff;
+					font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+					line-height: 1.5em;
+					overflow: hidden;
+					color: #666;
+					font-size: 16px;
+					-webkit-box-shadow: none;
+					-moz-box-shadow: none;
+					box-shadow: none;
+					clear: both;
+					margin: 20px 0px;
+					text-align: center;
+				}
 
 
-			.ck_form.ck_minimal h3.ck_form_title {
-				text-align: center;
-				margin: 150px 0px 10px;
-				font-size: 28px;
-			}
+				.ck_form.ck_minimal h3.ck_form_title {
+					text-align: center;
+					margin: 0px 0px 10px;
+					font-size: 28px;
+				}
 
-			.ck_form.ck_minimal h4 {
-				text-align: center;
-				font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-				text-transform: uppercase;
-				font-size: 18px;
-				font-weight: normal;
-				padding-top: 0px;
-				margin-top: 0px;
-			}
+				.ck_form.ck_minimal h4 {
+					text-align: center;
+					font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+					text-transform: uppercase;
+					font-size: 18px;
+					font-weight: normal;
+					padding-top: 0px;
+					margin-top: 0px;
+				}
 
-			.ck_form.ck_minimal p {
-				padding: 0px;
-			}
+				.ck_form.ck_minimal p {
+					padding: 0px;
+				}
 
-			.ck_form, .ck_form * {
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: inherit;
-			}
+				.ck_form,
+				.ck_form * {
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: inherit;
+				}
 
-			.ck_form.ck_minimal .ck_form_fields {
-				width: 100%;
-				float: left;
-				padding: 5%;
-			}
-			/* Form fields */
+				.ck_form.ck_minimal .ck_form_fields {
+					width: 100%;
+					float: left;
+					padding: 5%;
+				}
 
-			.ck_errorArea {
-				display: none; /* temporary */
-			}
+				/* Form fields */
 
-			#ck_success_msg {
-				padding: 10px 10px 0px;
-				border: solid 1px #ddd;
-				background: #eee;
-			}
+				.ck_errorArea {
+					display: none;
+					/* temporary */
+				}
 
-			.ck_form.ck_minimal input[type="text"], .ck_form.ck_minimal input[type="email"] {
-				font-size: 18px;
-				padding: 10px 8px;
-				width: 68%;
-				border: 1px solid #d6d6d6; /* stroke */
-				-moz-border-radius: 3px;
-				-webkit-border-radius: 3px;
-				border-radius: 3px; /* border radius */
-				background-color: #fff; /* layer fill content */
-				margin-bottom: 5px;
-				height: auto;
-				float: left;
-				margin: 0px;
-				margin-right: 2%;
-				height: 50px;
-			}
+				#ck_success_msg {
+					padding: 10px 10px 0px;
+					border: solid 1px #ddd;
+					background: #eee;
+				}
 
-			.ck_form input[type="text"]:focus, .ck_form input[type="email"]:focus {
-				outline: none;
-				border-color: #aaa;
-			}
+				.ck_form.ck_minimal input[type="text"],
+				.ck_form.ck_minimal input[type="email"] {
+					font-size: 18px;
+					padding: 10px 8px;
+					width: 68%;
+					border: 1px solid #d6d6d6;
+					/* stroke */
+					-moz-border-radius: 3px;
+					-webkit-border-radius: 3px;
+					border-radius: 3px;
+					/* border radius */
+					background-color: #fff;
+					/* layer fill content */
+					margin-bottom: 5px;
+					height: auto;
+					float: left;
+					margin: 0px;
+					margin-right: 2%;
+					height: 50px;
+				}
 
-			.ck_form.ck_minimal .ck_subscribe_button {
-				width: 100%;
-				color: #fff;
-				margin: 0px;
-				padding:  11px 0px;
-				font-size: 18px;
-				background: #313a62;
-				-moz-border-radius: 3px;
-				-webkit-border-radius: 3px;
-				border-radius: 3px; /* border radius */
-				cursor: pointer;
-				border: none;
-				text-shadow: none;
-				width: 30%;
-				float: left;
-				height: 50px;
-			  }
+				.ck_form input[type="text"]:focus,
+				.ck_form input[type="email"]:focus {
+					outline: none;
+					border-color: #aaa;
+				}
+
+				.ck_form.ck_minimal .ck_subscribe_button {
+					width: 100%;
+					color: #fff;
+					margin: 0px;
+					padding: 11px 0px;
+					font-size: 18px;
+					background: #313a62;
+					-moz-border-radius: 3px;
+					-webkit-border-radius: 3px;
+					border-radius: 3px;
+					/* border radius */
+					cursor: pointer;
+					border: none;
+					text-shadow: none;
+					width: 30%;
+					float: left;
+					height: 50px;
+				}
 
 
-			.ck_form.ck_minimal .ck_guarantee {
-				color: #626262;
-				font-size: 12px;
-				text-align: center;
-				padding: 15px 0px 0px;
-				display: block;
-				clear: both;
-			}
-			.ck_form .ck_powered_by {
-				display: block;
-				color: #aaa;
-				font-size: 12px;
-			}
+				.ck_form.ck_minimal .ck_guarantee {
+					color: #626262;
+					font-size: 12px;
+					text-align: center;
+					padding: 15px 0px 0px;
+					display: block;
+					clear: both;
+				}
 
-			.ck_form .ck_powered_by:hover {
-				display: block;
-				color: #444;
-			}
+				.ck_form .ck_powered_by {
+					display: block;
+					color: #aaa;
+					font-size: 12px;
+				}
 
-			.ck_converted_content {
-			  display: none;
-				padding: 5%;
-				background: #fff;
-			}
+				.ck_form .ck_powered_by:hover {
+					display: block;
+					color: #444;
+				}
 
-			.ck_form.ck_minimal.width400 .ck_subscribe_button, .ck_form.ck_minimal.width400 input[type="email"] {
+				.ck_converted_content {
+					display: none;
+					padding: 5%;
+					background: #fff;
+				}
+
+				.ck_form.ck_minimal.width400 .ck_subscribe_button,
+				.ck_form.ck_minimal.width400 input[type="email"] {
 					width: 100%;
 					float: none;
 					margin-top: 5px;
 				}
 
-			.ck_slide_up, .ck_modal, .ck_slide_up .ck_minimal, .ck_modal .ck_minimal  {
-				min-width: 400px;
-			}
-
-			.page .ck_form.ck_minimal {
-				margin: 50px auto;
-				max-width: 600px;
-			}
-
-
-			/* v6 */
-			.ck_slide_up.ck_form_v6, .ck_modal.ck_form_v6, .ck_slide_up.ck_form_v6 .ck_minimal, .ck_modal.ck_form_v6 .ck_minimal {
-			  min-width: 0 !important;
-			}
-
-			@media all and (min-width: 801px) {
-			  .ck_modal.ck_form_v6 .ck_form.ck_minimal {
-				margin-left: -300px;
-				width: 600px;
-			  }
-			}
-
-			.ck_modal.ck_form_v6 .ck_minimal .ck_subscribe_form {
-			  padding-top: 20px;
-			}
-
-			.ck_slide_up.ck_form_v6 .ck_minimal .ck_subscribe_form {
-			  padding-top: 10px;
-			}
-
-			.ck_form_v6 #ck_success_msg {
-			  margin-top: 15px;
-			  padding: 0px 10px;
-			}
-
-			.ck_slide_up.ck_form_v6 .ck_minimal + .ck_close_link {
-			  top: 5px;
-			}
-			.ck_slide_up.ck_form_v6 .ck_minimal h3.ck_form_title {
-			  margin-top: 5px;
-			}
-
-
-
-			.ck_form_bar {
-				font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
-				line-height: 1.5em;
-				overflow: hidden;
-				color: #666;
-				font-size: 16px;
-				border-bottom: solid 1px #d1d1d1;
-				clear: both;
-				margin: 20px 0px;
-				padding: 20px;
-				background: #f9f9f9;
-				width: 100%;
-				position: relative;
-				position: fixed;
-				top: 0px;
-				margin: 0px;
-				left: 0px;
-				z-index: 500;
-			}
-
-			.ck_form_bar, .ck_form_bar * {
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-			}
-
-			.ck_form_bar .ck_form_bar_title {
-				font-size: 30px;
-				color: #333;
-				text-align: left;
-				margin: 18px 0px;
-				font-weight: normal;
-			}
-
-			.ck_form_bar_content {
-				width: 50%;
-				float: left;
-			}
-
-			.ck_form_bar_fields {
-				width: 50%;
-				float: left;
-			}
-
-
-			/* Form fields */
-
-			.ck_errorArea {
-				display: none; /* temporary */
-			}
-
-			#ck_success_msg {
-				padding: 10px 10px 0px;
-				border: solid 1px #ddd;
-				background: #eee;
-				text-align: center;
-			}
-
-			.ck_form_bar input[type="text"], .ck_form_bar input[type="email"] {
-				font-size: 14px;
-				padding: 10px 8px;
-				width: 100%;
-				border: 1px solid #d6d6d6; /* stroke */
-				background-color: #fff; /* layer fill content */
-				margin-bottom: 5px;
-				height: auto;
-				width: 58%;
-				display: inline-block;
-			}
-
-			.ck_form_bar input[type="text"]:focus, .ck_form_bar input[type="email"]:focus {
-				outline: none;
-				border-color: #aaa;
-			}
-
-			.ck_checkbox input.optIn {
-			  margin-left: -20px;
-			  margin-top: 0;
-			}
-			.ck_form_bar .ck_opt_in_prompt {
-			  margin-left: 4px;
-			}
-			.ck_form_bar .ck_opt_in_prompt p {
-			  display: inline;
-			}
-
-			.ck_subscribe_form {
-				margin:  0px;
-			}
-
-			.ck_form_bar .ck_subscribe_button {
-				color: #fff;
-				margin: 10px 0px 0px;
-				padding:  10px 0px;
-				font-size: 16px;
-				background: #0d6db8;
-				cursor: pointer;
-				border: none;
-				text-shadow: none;
-				display: inline-block;
-				width: auto;
-				width: 38%;
-				padding-left: 2%;
-				padding-right: 2%;
-			  }
-
-			/* Trigger the vertical layout with media queries as well */
-
-			@media all and (max-width: 1023px) {
-				.ck_form_bar_content, .ck_form_bar_fields {
-					width: 100%;
-					float: none;
+				.ck_slide_up,
+				.ck_modal,
+				.ck_slide_up .ck_minimal,
+				.ck_modal .ck_minimal {
+					min-width: 400px;
 				}
-			}
 
-			@media all and (max-width: 611px) {
+				.page .ck_form.ck_minimal {
+					margin: 50px auto;
+					max-width: 600px;
+				}
+
+
+				/* v6 */
+
+				.ck_slide_up.ck_form_v6,
+				.ck_modal.ck_form_v6,
+				.ck_slide_up.ck_form_v6 .ck_minimal,
+				.ck_modal.ck_form_v6 .ck_minimal {
+					min-width: 0 !important;
+				}
+
+				@media all and (min-width: 801px) {
+					.ck_modal.ck_form_v6 .ck_form.ck_minimal {
+						margin-left: -300px;
+						width: 600px;
+					}
+				}
+
+				.ck_modal.ck_form_v6 .ck_minimal .ck_subscribe_form {
+					padding-top: 20px;
+				}
+
+				.ck_slide_up.ck_form_v6 .ck_minimal .ck_subscribe_form {
+					padding-top: 10px;
+				}
+
+				.ck_form_v6 #ck_success_msg {
+					margin-top: 15px;
+					padding: 0px 10px;
+				}
+
+				.ck_slide_up.ck_form_v6 .ck_minimal+.ck_close_link {
+					top: 5px;
+				}
+
+				.ck_slide_up.ck_form_v6 .ck_minimal h3.ck_form_title {
+					margin-top: 5px;
+				}
+
+
+
+				.ck_form_bar {
+					font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+					line-height: 1.5em;
+					overflow: hidden;
+					color: #666;
+					font-size: 16px;
+					border-bottom: solid 1px #d1d1d1;
+					clear: both;
+					margin: 20px 0px;
+					padding: 20px;
+					background: #f9f9f9;
+					width: 100%;
+					position: relative;
+					position: fixed;
+					top: 0px;
+					margin: 0px;
+					left: 0px;
+					z-index: 500;
+				}
+
+				.ck_form_bar,
+				.ck_form_bar * {
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+
+				.ck_form_bar .ck_form_bar_title {
+					font-size: 30px;
+					color: #333;
+					text-align: left;
+					margin: 18px 0px;
+					font-weight: normal;
+				}
+
+				.ck_form_bar_content {
+					width: 50%;
+					float: left;
+				}
+
+				.ck_form_bar_fields {
+					width: 50%;
+					float: left;
+				}
+
+
+				/* Form fields */
+
+				.ck_errorArea {
+					display: none;
+					/* temporary */
+				}
+
+				#ck_success_msg {
+					padding: 10px 10px 0px;
+					border: solid 1px #ddd;
+					background: #eee;
+					text-align: center;
+				}
+
+				.ck_form_bar input[type="text"],
 				.ck_form_bar input[type="email"] {
-					width:  100%;
-				}
-				.ck_form_bar .ck_subscribe_button {
+					font-size: 14px;
+					padding: 10px 8px;
 					width: 100%;
+					border: 1px solid #d6d6d6;
+					/* stroke */
+					background-color: #fff;
+					/* layer fill content */
+					margin-bottom: 5px;
+					height: auto;
+					width: 58%;
+					display: inline-block;
 				}
-			}
 
+				.ck_form_bar input[type="text"]:focus,
+				.ck_form_bar input[type="email"]:focus {
+					outline: none;
+					border-color: #aaa;
+				}
+
+				.ck_checkbox input.optIn {
+					margin-left: -20px;
+					margin-top: 0;
+				}
+
+				.ck_form_bar .ck_opt_in_prompt {
+					margin-left: 4px;
+				}
+
+				.ck_form_bar .ck_opt_in_prompt p {
+					display: inline;
+				}
+
+				.ck_subscribe_form {
+					margin: 0px;
+				}
+
+				.ck_form_bar .ck_subscribe_button {
+					color: #fff;
+					margin: 10px 0px 0px;
+					padding: 10px 0px;
+					font-size: 16px;
+					background: #0d6db8;
+					cursor: pointer;
+					border: none;
+					text-shadow: none;
+					display: inline-block;
+					width: auto;
+					width: 38%;
+					padding-left: 2%;
+					padding-right: 2%;
+				}
+
+				/* Trigger the vertical layout with media queries as well */
+
+				@media all and (max-width: 1023px) {
+
+					.ck_form_bar_content,
+					.ck_form_bar_fields {
+						width: 100%;
+						float: none;
+					}
+				}
+
+				@media all and (max-width: 611px) {
+					.ck_form_bar input[type="email"] {
+						width: 100%;
+					}
+
+					.ck_form_bar .ck_subscribe_button {
+						width: 100%;
+					}
+				}
 			</style>
 
 
 			<!-- Email CSS-->
 
-			</div>
-			<!-- End #content -->
-
-
-
-
-
 		</div>
-		<!-- End #wrap -->
+		<!-- End #content -->
 
-		<!-- build:js -->
-		<!-- <script src="assets/js/core.min.js"></script> -->
-		<!-- <script src="assets/js/jquery.min.js"></script> -->
-		<!-- <script src="assets/vendors/modernizr.min.js"></script> -->
-		<!-- <script src="assets/js/theme.vendors.min.js"></script>
+		<!-- Start Main Footer -->
+	<footer class="main-footer main-footer--style-centro" style="background-color:#252E6A;font-family:Overpass" data-fixed="true">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 col-md-2 text-lg-center">
+					<figure>
+						<img src="assets/images/logo-footer.svg" alt="Polymath">
+					</figure>
+				</div>
+
+				<div class="col-sm-6 col-md-2 text-left">
+					<ul>
+						<li>
+							<a href="issuers.html">issuers</a>
+						</li>
+						<li>
+							<a href="investors.html">Investors</a>
+						</li>
+						<li>
+							<a href="serviceproviders.html">Service Providers</a>
+						</li>
+						<li>
+							<a href="st20.html">ST-20 Standard</a>
+						</li>
+						<li>
+							<a href="https://blog.polymath.network" target="_blank">Blog</a>
+						</li>
+
+						
+
+					</ul>
+
+				</div>
+				<div class="col-sm-6 col-md-2 text-left">
+					<ul>
+						<li>
+							<a href="team.html">Team</a>
+						</li>
+						<li>
+							<a href="advisors.html">Advisors</a>
+						</li>
+						<li>
+							<a href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
+						</li>
+						<li>
+							<a href="https://developers.polymath.network" target="_blank">Developers</a>
+						</li>
+						<li>
+							<a href="contact.html">contact us</a>
+						</li>
+					
+
+					</ul>
+
+				</div>
+				<div class="col-sm-12 col-md-6 text-center text-md-right">
+					
+					<ul class="social">
+						<li>
+							<a href="https://www.facebook.com/polymathnetwork" target="_blank">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/polymathnetwork" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/channel/UC77syPQJO0eA5FBUMczZ4bA" target="_blank">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/18168860/" target="_blank">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="social">
+						<li>
+							<a href="https://t.me/polymathnetwork" target="_blank">
+								<i class="fab fa-telegram-plane"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/PolymathNetwork" target="_blank">
+								<i class="fab fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://blog.polymath.network/" target="_blank">
+								<i class="fab fa-medium-m"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.reddit.com/r/polymathnetwork" target="_blank">
+								<i class="fab fa-reddit-alien"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Main Footer -->
+
+
+
+	</div>
+	<!-- End #wrap -->
+
+	<!-- build:js -->
+	<!-- <script src="assets/js/core.min.js"></script> -->
+	<!-- <script src="assets/js/jquery.min.js"></script> -->
+	<!-- <script src="assets/vendors/modernizr.min.js"></script> -->
+	<!-- <script src="assets/js/theme.vendors.min.js"></script>
 		<script src="assets/js/script.js"></script>
 		<script src="assets/js/theme.min.js"></script> -->
 
-		<script src="assets/js/core.min.js"></script>
-		<!-- <script src="assets/js/jquery.min.js"></script> -->
-		<script src="assets/vendors/modernizr.min.js"></script>
-		<script src="assets/js/theme.vendors.min.js"></script>
-		<!-- <script src="assets/js/script.js"></script> -->
-		<script src="assets/js/theme.min.js"></script>
+	<script src="assets/js/core.min.js"></script>
+	<!-- <script src="assets/js/jquery.min.js"></script> -->
+	<script src="assets/vendors/modernizr.min.js"></script>
+	<script src="assets/js/theme.vendors.min.js"></script>
+	<!-- <script src="assets/js/script.js"></script> -->
+	<script src="assets/js/theme.min.js"></script>
 
-		<script type="text/javascript" src="assets/js/jQuery.loadScroll.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.drawsvg.js"></script>
-		<script type="text/javascript" src="assets/js/lity.min.js"></script>
-		<!--endbuild-->
-		<!-- cdnjs -->
-
-
-		<script>
-			var $svg = $('svg').drawsvg();
-
-			$svg.hover(function () {
-				$svg.drawsvg('animate');
-			})
-
-
-			$('img').loadScroll(500);
-		</script>
-		<script>
-			//Smooth scrolling to view explainer video
-			$("#btn_watchvideo").on('click', function (e) {
-
-				// prevent default anchor click behavior
-				e.preventDefault();
-
-				// store hash
-				var hash = this.hash;
-
-				// animate
-				$('html, body').animate({
-					scrollTop: $(hash).offset().top
-				}, 200, function () {
-
-					// when done, add hash to url
-					// (default click behaviour)
-					window.location.hash = hash;
-				});
-
-			});
-		</script>
-		<script type="text/javascript">
-			$(function () {
-				var $content = $('#section-articles');
-
-				var data = {
-					rss_url: 'https://blog.polymath.network/feed' //Get posts from publication
-
-				};
-				$.get('https://api.rss2json.com/v1/api.json', data, function (response) {
-					if (response.status == 'ok') {
-
-						var styles = [
-							"blue-card",
-							"",
-							"gray-card"
-						];
-
-						var images = [
-							'dist/assets/images/medium/how.jpeg',
-							'dist/assets/images/medium/security.jpeg',
-							'dist/assets/images/medium/machine.jpeg'
-						]
-
-						var output = '';
-						var items = response.items;
-						console.log("Medium Feed", items)
-						// $.each(response.items, function (k, item) {
-						for (var i = 0; i < 3; i++) {
-
-
-							output += '<div class="col-lg-4 offset-lg-0 col-sm-12">' +
-								'<article class="latest-post latest-post-hover" data-hover3d="true" data-custom-image="true" data-custom-image-selector="{ &quot;backgroundImage&quot;: &quot;.latest-post-figure&quot;, &quot;src&quot;: &quot;.latest-post-image&quot; }" data-custom-links="true">' +
-								'<div class="latest-hover-box blue-card" data-stacking-factor="0.6">' +
-								'<div class="latest-hover-box-inner"></div>' +
-								'</div>' +
-								'<div class="latest-hover-image  blue-card" data-stacking-factor="0.6">' +
-								'<figure class="latest-post-figure" style="background-image: url( ' + images[i] + ');">' +
-								'<img class="latest-post-image" src="dist/assets/images/medium/security.jpeg" alt="">' +
-								'</figure>' +
-								'</div>' +
-								'<div class="latest-hover-line  blue-card" data-stacking-factor="0.7">' +
-								'<div class="latest-hover-content">' +
-								'<header>' +
-								'<h3 class="entry-title latest-post__title">' + items[i].title + '</h3>' +
-								'</header>' +
-								'<div class="latest-post__excerpt">' +
-								'</div>' +
-								'<footer>' +
-								'<span>Read the story' +
-								'<i class="fas fa-arrow-right novi-icon"></i>' +
-								'</span>' +
-								'</footer>' +
-								'</div>' +
-								'</div>' +
-								'<a class="entry-read-more overlay-link" href=" ' + items[i].link + '"></a>' +
-								'</article>' +
-								'</div>';
-						};
-
-
-						$content.append(output);
-
-					} else {
-						console.log("Could not retreive medium feed")
-					}
-				});
-			});
-		</script>
+	<script type="text/javascript" src="assets/js/jQuery.loadScroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.drawsvg.js"></script>
+	<script type="text/javascript" src="assets/js/lity.min.js"></script>
+	<!--endbuild-->
+	<!-- cdnjs -->
+	
 
 
 
-		<script type="text/javascript">
-			// $("#ipo-animation").mouseover(function(e) {
-			// 	$("#ipo-animation").attr("src", 'assets/images/animations/ipos.gif');
-			// });
-			//
-			// $("#ipo-animation").mouseout(function(e) {
-			// 	$("#ipo-animation").attr("src", 'assets/images/animations/ipos.png');
-			// });
-			//
-			// $("#eth-animation").mouseover(function(e) {
-			// 	$("#eth-animation").attr("src", 'assets/images/graphs/eth-graph.gif');
-			// });
-			//
-			// $("#eth-animation").mouseout(function(e) {
-			// 	$("#eth-animation").attr("src", 'assets/images/graphs/eth-graph.png');
-			// });
-			//
-			// $("#poly-animation").mouseover(function(e) {
-			// 	$("#poly-animation").attr("src", 'assets/images/graphs/poly-graph.gif');
-			// });
-			//
-			// $("#poly-animation").mouseout(function(e) {
-			// 	$("#poly-animation").attr("src", 'assets/images/graphs/poly-graph.png');
-			// });
-		</script>
+	
 </body>
 
 </html>
