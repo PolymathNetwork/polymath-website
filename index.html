@@ -36,7 +36,6 @@
 	<link rel="stylesheet" href="assets/css/theme-color/theme-centro.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/lity.min.css">
-
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href="dist/assets/css/compiled.min.css"> -->
 	<!-- <link rel="stylesheet" href="assets/css/theme.min.css">
@@ -48,11 +47,12 @@
 
 	<!-- Google Optimize Snippet -->
 	<style>.async-hide { opacity: 0 !important} </style>
-	<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-	h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-	(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-	})(window,document.documentElement,'async-hide','dataLayer',4000,
-	{'GTM-NV9W4NS':true});</script>
+	<script>(function (a, s, y, n, c, h, i, d, e) {
+			s.className += ' ' + y; h.start = 1 * new Date;
+			h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+			(a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
+		})(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
+			{ 'GTM-NV9W4NS': true });</script>
 	<!-- Google Analytics with Optmize -->
 	<script type="text/javascript">
 		(function (i, s, o, g, r, a, m) {
@@ -128,21 +128,22 @@
 
 		<!-- Start Main Header -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-white" style="background: red">
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdown"
 			 aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
+				<span class="navbar-toggler-icon"></span>
+			</button>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav text-center">
 					<li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="issuers.html">Issuers</a>
-		          <a class="dropdown-item" href="investors.html">Investors</a>
-		          <a class="dropdown-item" href="serviceproviders.html">Service Providers</a>
-		        </div>
-		      </li>
-				<li class="nav-item">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+						 aria-haspopup="true" aria-expanded="false">Solutions</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="issuers.html">Issuers</a>
+							<a class="dropdown-item" href="investors.html">Investors</a>
+							<a class="dropdown-item" href="serviceproviders.html">Service Providers</a>
+						</div>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="st20.html">ST-20 Standard</a>
 					</li>
 					<li class="nav-item">
@@ -157,15 +158,16 @@
 			</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav text-center">
-				  
+
 					<li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <!-- <a class="dropdown-item" href="team.html">Team</a> -->
-					<a class="dropdown-item" href="advisors.html">Advisors</a>
-		          <a class="dropdown-item" href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
-		        </div>
-		      </li>
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+						 aria-haspopup="true" aria-expanded="false">About</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="team.html">Team</a>
+							<a class="dropdown-item" href="advisors.html">Advisors</a>
+							<a class="dropdown-item" href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
+						</div>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="https://developers.polymath.network" target="_blank">Developers</a>
 					</li>
@@ -226,8 +228,7 @@
 					<div class="row">
 						<div class="col-1"></div>
 						<div class="col-5">
-							<a href="/submission.html" class="btn btn-block btn-solid text-uppercase" style="border:none"
-							 target="_blank">
+							<a href="/submission.html" class="btn btn-block btn-solid text-uppercase" style="border:none" target="_blank">
 								<span style="padding:10px;font-size:70%"> Create Token </span>
 							</a>
 						</div>
@@ -309,7 +310,124 @@
 			</section>
 
 
+			<style type="text/css" id="pix_page_style">
+				.pix-cover-shape-180 {
+					position: relative;
+					width: 100%;
+					height: 80px;
+					display: inline-block;
+					overflow: hidden;
+					border-radius: 3px;
+					top: 0;
+					left: 0;
+					background-color: #465387;
+					padding: 6% 0% 18% 0%;
+				}
 
+				.pix-black-gray-light {
+					color: #FFF;
+					font-size: 30px;
+				}
+
+				.pix-padding-v-20 {
+					padding-top: 20px;
+					padding-bottom: 20px;
+				}
+
+				.pix-padding-v-40 {
+					padding-top: 0px;
+					padding-bottom: 40px;
+				}
+
+				.pix-margin-bottom-15 {
+					margin-bottom: 15px;
+				}
+
+				.pix-margin-bottom-20 {
+					margin-bottom: -20px;
+					padding-bottom: 40px;
+				}
+			</style>
+
+
+
+			<!-- Start Token Chart -->
+			<section class="section pt-70 pb-70">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<header class="section-title section-title-default align-center mb-100">
+								<h2>See how many businesses are using Polymath to create their own security tokens</h2>
+
+
+								<div class="pix_section pix-padding-v-40" id="section_features_1" style="display: block;">
+									<div class="container">
+										<div class="row">
+											<div class="col-xs-6 col-sm-6 column ui-droppable" style="display: block;">
+												<div class="pix-content pix-margin-v-20 gray-bg text-center fade-in-right animate-in" style="background-color: #f7f7f7; background-repeat: repeat-x; padding: 0px; margin: 20px 0px; border-radius: 5%;">
+													<div class="pix-cover-shape-180 no-radius">
+														<h5 class="pix-black-gray-light" style="line-height: 1.2em;"> <span class="pix_edit_text"><strong>Security
+																	Token<br>
+																	Symbols Reserved</strong></span></h5>
+
+													</div>
+													<div class="pix-padding-h-10 pix-padding-v-20">
+														<h1 class="pix-black-gray-dark">
+
+															<span class="pix_edit_text"><strong>4023</strong></span> </h1>
+
+													</div>
+													<span class="pix_edit_text"> Most Recent Symbols </span>
+													<p class="pix-black-gray-dark big-text pix-margin-bottom-20">
+														<span class="pix_edit_text">
+															NVO, WLW, ICL
+														</span>
+													</p>
+
+												</div>
+											</div>
+											<div class="col-xs-6 col-sm-6 column ui-droppable">
+												<div class="pix-content pix-margin-v-20 gray-bg text-center fade-in-left animate-in" style="background-color: #f7f7f7; background-repeat: repeat-x; padding: 0px; margin: 20px 0px;border-radius: 5%;">
+													<div class="pix-cover-shape-180 no-radius">
+														<h5 class="pix-black-gray-light" style="line-height: 1.2em;"> <span class="pix_edit_text"><strong>Security
+																	<br>
+																	Tokens Created</strong></span> </h5>
+													</div>
+													<div class="pix-padding-h-10 pix-padding-v-20">
+														<h1 class="pix-black-gray-dark">
+															<span class="pix_edit_text"><strong>343</strong></span> </h1>
+
+
+													</div>
+													<span class="pix_edit_text"> Most Recent Tokens </span>
+													<p class="pix-black-gray-dark big-text pix-margin-bottom-20">
+														<span class="pix_edit_text">
+															BRCA, FHW, OLE
+														</span>
+													</p>
+
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+								<header class="section-title section-title-default align-center mb-100">
+									<p class="justify-content-center">
+										<a href="/submission.html" class="btn btn-solid text-uppercase">
+											<span> Start Creating Your Own Token Now </span>
+										</a>
+									</p>
+								</header>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- Token Chart -->
 
 
 			<!-- Start Iconboxes -->
@@ -556,70 +674,7 @@
 			</section>
 			<!-- End Iconboxes -->
 
-			<!-- Graph -->
-			<section class="section pt-70 pb-70">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<header class="section-title section-title-default align-center mb-100">
-								<h2>The Ethereum Polymath Equivalency</h2>
-								<p class="color-faded mb-5 big">
-									What Ethereum did for tokens, Polymath will do for securities.
-								</p>
-							</header>
-						</div>
-						<div class="col-sm-6">
-							<div>
-								<img src="assets/images/graphs/eth-graph.gif" alt="Ethereum" id="eth-animation">
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div>
-								<img src="assets/images/graphs/poly-graph.gif" alt="Polymath" id="poly-animation">
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</section>
-
-			<!-- <section>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="shadow-lg p-3 mb-5 bg-white rounded poly-cta">
-								<div class="row">
-									<div class="col-sm-2"></div>
-									<div class="col-sm-10 text-left">
-										<h2 style="font-size:32px;">The Securities Token Stampede is Imminent</h2>
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</section> -->
-			<!-- End Graph -->
-			<!-- Start Video -->
-			<section class="section pt-70 pb-70" id="works">
-				<div class="container">
-					<div class="row">
-
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe width="100%" height="591" src="https://www.youtube.com/embed/pOYcro53SOI" frameborder="0" allow="autoplay;encrypted-media"
-							 allowfullscreen></iframe>
-						</div>
-
-						<!-- /.col-lg-12 -->
-					</div>
-					<!-- /.row -->
-				</div>
-				<!-- /.container -->
-			</section>
-			<!-- End Video -->
+			
 			<!-- Start Token -->
 			<section class="section pt-70 pb-70">
 				<div class="container">
@@ -680,7 +735,8 @@
 
 			<!-- End ICO Diagram -->
 
-		
+
+
 
 			<section class="mb-160">
 				<div class="container">
@@ -709,37 +765,64 @@
 
 			</section>
 
-			<!-- Start Video -->
-			<section class="section pt-150 pb-150">
-				<div class="video-bg">
-					<div class="overlay">
-					</div>
-					<iframe class="inner" title="YouTube video player" width="1920" height="1080" src="https://www.youtube.com/embed/AGvi-SFjxHw?autoplay=1&amp;iv_load_policy=3&amp;enablejsapi=1&amp;disablekb=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;wmode=transparent&amp;origin=http%3A%2F%2Fboo.themerella.com&amp;widgetid=1&amp;mute=1"></iframe>
-				</div>
-				<!-- /.video-bg__inner -->
-
-				<!-- /.video-bg -->
-				<div class="container-fluid">
+			<!-- Events -->
+			<!--
+			<section class="section pb-70">
+				<div class="container">
 					<div class="row">
-						<div class="col-sm-12 px-0 text-lg-center">
-							<header class="section-title section-title-default text-light mb-0">
-								<h2>
-									<span class="text-light">The World's First Security Token Conference</span>
+						<div class="col-12 ml-md-auto mr-md-auto">
+							<header class="section-title section-title-default section-title-resolve" data-plugin-fillin="true
+					"
+							 data-plugin-fillin-options="{ &quot;element&quot;: &quot;h6&quot; }" data-plugin-textslide="true"
+							 data-plugin-textslide-options="{&quot;element&quot;:&quot;h2&quot;,&quot;autoplay&quot;:true,
+						&quot;delay&quot;: 2500}"><br><br><br>
+								<h2> Events
+									<span class="typed-keywords"></span>
 								</h2>
-								<a class="btn btn-solid btn-xlg text-uppercase icon-left" style="border:none" href="https://www.youtube.com/watch?v=AGvi-SFjxHw"
-								 data-lity>
-									<span>
-										<i class="novi-icon fa fa-play"></i>Watch Now</span>
-								</a>
+								<p class="color-faded mb-5 big">Meet members of our team at any of the following events.</p>
 							</header>
 						</div>
-						<!-- /.col-sm-12 px-0 -->
 					</div>
-					<!-- /.row -->
-				</div>
-				<!-- /.container-fluid -->
+					<div class="row justify-content-center">
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+							<div class="icon-box icon-box-heading-md icon-box-shadow-onhover icon-box-xlg">
+								<div class="contents">
+									<h2 class="weight-medium">Toronto</h2>
+									<p>Boost Blockchain Job Fair<br>August 24, 2018</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+							<div class="icon-box icon-box-heading-md icon-box-shadow-onhover icon-box-xlg">
+								<div class="contents">
+									<h2 class="weight-medium">Berlin</h2>
+									<p>ETH Berlin<br>September 7-9, 2018</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+							<div class="icon-box icon-box-heading-md icon-box-shadow-onhover icon-box-xlg">
+								<div class="contents">
+									<h2 class="weight-medium">Hong Kong</h2>
+									<p>ETHIS<br>September 8-9, 2018</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+							<div class="icon-box icon-box-heading-md icon-box-shadow-onhover icon-box-xlg">
+								<div class="contents">
+									<h2 class="weight-medium">Toronto</h2>
+									<p>Hack-The-North<br>September 14-16, 2018</p>
+								</div>
+							</div>
+						</div>
+					</div>
 			</section>
-			<!-- End Video -->
+			-->
+			<!-- /Events -->
 
 			<!-- Start Latest Posts -->
 			<section class="section pt-90 pb-100" id="section-articles">
@@ -780,12 +863,32 @@
 			<style type="text/css">
 				/* Layout */
 
-				.hs-email {float: left; margin-left: 30px; width: 400px;}
-				.hs-button {float: left; background: #252E6A; color: white; }
-				.hs-input {margin-left: 20px; width: 80%; display: inline;}
-				.hs-form {max-width: 600px !important; padding-left: 15px}
-				#label-email-a3f6b6e4-347d-43fb-88d0-aaa432dad647 {float: left; }
+				.hs-email {
+					float: left;
+					margin-left: 30px;
+					width: 400px;
+				}
 
+				.hs-button {
+					float: left;
+					background: #252E6A;
+					color: white;
+				}
+
+				.hs-input {
+					margin-left: 20px;
+					width: 80%;
+					display: inline;
+				}
+
+				.hs-form {
+					max-width: 600px !important;
+					padding-left: 15px
+				}
+
+				#label-email-a3f6b6e4-347d-43fb-88d0-aaa432dad647 {
+					float: left;
+				}
 			</style>
 
 			<!-- Email CSS-->
@@ -805,14 +908,15 @@
 
 							<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
 							<script>
-							hbspt.forms.create({
-							portalId: "4703451",
-							formId: "a3f6b6e4-347d-43fb-88d0-aaa432dad647",
+								hbspt.forms.create({
+									portalId: "4703451",
+									formId: "a3f6b6e4-347d-43fb-88d0-aaa432dad647",
 
-							});
+								});
 							</script>
 							<br>
-							<div style="clear: both; width: 100%; text-align: center; padding-top: 15px; ">We won't send you spam. Unsubscribe at any time.</div>
+							<div style="clear: both; width: 100%; text-align: center; padding-top: 15px; ">We won't send you spam.
+								Unsubscribe at any time.</div>
 
 						</div>
 
@@ -820,455 +924,118 @@
 				</div>
 			</section>
 
-
-
-
-			<style type="text/css">
-				/* Layout */
-
-				.ck_form.ck_minimal {
-					/* divider image */
-					background: #ffffff;
-					font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
-					line-height: 1.5em;
-					overflow: hidden;
-					color: #666;
-					font-size: 16px;
-					-webkit-box-shadow: none;
-					-moz-box-shadow: none;
-					box-shadow: none;
-					clear: both;
-					margin: 20px 0px;
-					text-align: center;
-				}
-
-
-				.ck_form.ck_minimal h3.ck_form_title {
-					text-align: center;
-					margin: 0px 0px 10px;
-					font-size: 28px;
-				}
-
-				.ck_form.ck_minimal h4 {
-					text-align: center;
-					font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-					text-transform: uppercase;
-					font-size: 18px;
-					font-weight: normal;
-					padding-top: 0px;
-					margin-top: 0px;
-				}
-
-				.ck_form.ck_minimal p {
-					padding: 0px;
-				}
-
-				.ck_form,
-				.ck_form * {
-					-webkit-box-sizing: border-box;
-					-moz-box-sizing: border-box;
-					box-sizing: inherit;
-				}
-
-				.ck_form.ck_minimal .ck_form_fields {
-					width: 100%;
-					float: left;
-					padding: 5%;
-				}
-
-				/* Form fields */
-
-				.ck_errorArea {
-					display: none;
-					/* temporary */
-				}
-
-				#ck_success_msg {
-					padding: 10px 10px 0px;
-					border: solid 1px #ddd;
-					background: #eee;
-				}
-
-				.ck_form.ck_minimal input[type="text"],
-				.ck_form.ck_minimal input[type="email"] {
-					font-size: 18px;
-					padding: 10px 8px;
-					width: 68%;
-					border: 1px solid #d6d6d6;
-					/* stroke */
-					-moz-border-radius: 3px;
-					-webkit-border-radius: 3px;
-					border-radius: 3px;
-					/* border radius */
-					background-color: #fff;
-					/* layer fill content */
-					margin-bottom: 5px;
-					height: auto;
-					float: left;
-					margin: 0px;
-					margin-right: 2%;
-					height: 50px;
-				}
-
-				.ck_form input[type="text"]:focus,
-				.ck_form input[type="email"]:focus {
-					outline: none;
-					border-color: #aaa;
-				}
-
-				.ck_form.ck_minimal .ck_subscribe_button {
-					width: 100%;
-					color: #fff;
-					margin: 0px;
-					padding: 11px 0px;
-					font-size: 18px;
-					background: #313a62;
-					-moz-border-radius: 3px;
-					-webkit-border-radius: 3px;
-					border-radius: 3px;
-					/* border radius */
-					cursor: pointer;
-					border: none;
-					text-shadow: none;
-					width: 30%;
-					float: left;
-					height: 50px;
-				}
-
-
-				.ck_form.ck_minimal .ck_guarantee {
-					color: #626262;
-					font-size: 12px;
-					text-align: center;
-					padding: 15px 0px 0px;
-					display: block;
-					clear: both;
-				}
-
-				.ck_form .ck_powered_by {
-					display: block;
-					color: #aaa;
-					font-size: 12px;
-				}
-
-				.ck_form .ck_powered_by:hover {
-					display: block;
-					color: #444;
-				}
-
-				.ck_converted_content {
-					display: none;
-					padding: 5%;
-					background: #fff;
-				}
-
-				.ck_form.ck_minimal.width400 .ck_subscribe_button,
-				.ck_form.ck_minimal.width400 input[type="email"] {
-					width: 100%;
-					float: none;
-					margin-top: 5px;
-				}
-
-				.ck_slide_up,
-				.ck_modal,
-				.ck_slide_up .ck_minimal,
-				.ck_modal .ck_minimal {
-					min-width: 400px;
-				}
-
-				.page .ck_form.ck_minimal {
-					margin: 50px auto;
-					max-width: 600px;
-				}
-
-
-				/* v6 */
-
-				.ck_slide_up.ck_form_v6,
-				.ck_modal.ck_form_v6,
-				.ck_slide_up.ck_form_v6 .ck_minimal,
-				.ck_modal.ck_form_v6 .ck_minimal {
-					min-width: 0 !important;
-				}
-
-				@media all and (min-width: 801px) {
-					.ck_modal.ck_form_v6 .ck_form.ck_minimal {
-						margin-left: -300px;
-						width: 600px;
-					}
-				}
-
-				.ck_modal.ck_form_v6 .ck_minimal .ck_subscribe_form {
-					padding-top: 20px;
-				}
-
-				.ck_slide_up.ck_form_v6 .ck_minimal .ck_subscribe_form {
-					padding-top: 10px;
-				}
-
-				.ck_form_v6 #ck_success_msg {
-					margin-top: 15px;
-					padding: 0px 10px;
-				}
-
-				.ck_slide_up.ck_form_v6 .ck_minimal+.ck_close_link {
-					top: 5px;
-				}
-
-				.ck_slide_up.ck_form_v6 .ck_minimal h3.ck_form_title {
-					margin-top: 5px;
-				}
-
-
-
-				.ck_form_bar {
-					font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
-					line-height: 1.5em;
-					overflow: hidden;
-					color: #666;
-					font-size: 16px;
-					border-bottom: solid 1px #d1d1d1;
-					clear: both;
-					margin: 20px 0px;
-					padding: 20px;
-					background: #f9f9f9;
-					width: 100%;
-					position: relative;
-					position: fixed;
-					top: 0px;
-					margin: 0px;
-					left: 0px;
-					z-index: 500;
-				}
-
-				.ck_form_bar,
-				.ck_form_bar * {
-					-webkit-box-sizing: border-box;
-					-moz-box-sizing: border-box;
-					box-sizing: border-box;
-				}
-
-				.ck_form_bar .ck_form_bar_title {
-					font-size: 30px;
-					color: #333;
-					text-align: left;
-					margin: 18px 0px;
-					font-weight: normal;
-				}
-
-				.ck_form_bar_content {
-					width: 50%;
-					float: left;
-				}
-
-				.ck_form_bar_fields {
-					width: 50%;
-					float: left;
-				}
-
-
-				/* Form fields */
-
-				.ck_errorArea {
-					display: none;
-					/* temporary */
-				}
-
-				#ck_success_msg {
-					padding: 10px 10px 0px;
-					border: solid 1px #ddd;
-					background: #eee;
-					text-align: center;
-				}
-
-				.ck_form_bar input[type="text"],
-				.ck_form_bar input[type="email"] {
-					font-size: 14px;
-					padding: 10px 8px;
-					width: 100%;
-					border: 1px solid #d6d6d6;
-					/* stroke */
-					background-color: #fff;
-					/* layer fill content */
-					margin-bottom: 5px;
-					height: auto;
-					width: 58%;
-					display: inline-block;
-				}
-
-				.ck_form_bar input[type="text"]:focus,
-				.ck_form_bar input[type="email"]:focus {
-					outline: none;
-					border-color: #aaa;
-				}
-
-				.ck_checkbox input.optIn {
-					margin-left: -20px;
-					margin-top: 0;
-				}
-
-				.ck_form_bar .ck_opt_in_prompt {
-					margin-left: 4px;
-				}
-
-				.ck_form_bar .ck_opt_in_prompt p {
-					display: inline;
-				}
-
-				.ck_subscribe_form {
-					margin: 0px;
-				}
-
-				.ck_form_bar .ck_subscribe_button {
-					color: #fff;
-					margin: 10px 0px 0px;
-					padding: 10px 0px;
-					font-size: 16px;
-					background: #0d6db8;
-					cursor: pointer;
-					border: none;
-					text-shadow: none;
-					display: inline-block;
-					width: auto;
-					width: 38%;
-					padding-left: 2%;
-					padding-right: 2%;
-				}
-
-				/* Trigger the vertical layout with media queries as well */
-
-				@media all and (max-width: 1023px) {
-
-					.ck_form_bar_content,
-					.ck_form_bar_fields {
-						width: 100%;
-						float: none;
-					}
-				}
-
-				@media all and (max-width: 611px) {
-					.ck_form_bar input[type="email"] {
-						width: 100%;
-					}
-
-					.ck_form_bar .ck_subscribe_button {
-						width: 100%;
-					}
-				}
-			</style>
-
-
 			<!-- Email CSS-->
 
 		</div>
 		<!-- End #content -->
 
 		<!-- Start Main Footer -->
-	<footer class="main-footer main-footer--style-centro" style="background-color:#252E6A;font-family:Overpass" data-fixed="true">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-6 col-md-2 text-lg-center">
-					<figure>
-						<img src="assets/images/logo-footer.svg" alt="Polymath">
-					</figure>
-				</div>
+		<footer class="main-footer main-footer--style-centro" style="background-color:#252E6A;font-family:Overpass"
+		 data-fixed="true">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-md-2 text-lg-center">
+						<figure>
+							<img src="assets/images/logo-footer.svg" alt="Polymath">
+						</figure>
+					</div>
 
-				<div class="col-sm-6 col-md-2 text-left">
-					<ul>
-						<li>
-							<a href="issuers.html">issuers</a>
-						</li>
-						<li>
-							<a href="investors.html">Investors</a>
-						</li>
-						<li>
-							<a href="serviceproviders.html">Service Providers</a>
-						</li>
-						<li>
-							<a href="st20.html">ST-20 Standard</a>
-						</li>
-						<li>
-							<a href="https://blog.polymath.network" target="_blank">Blog</a>
-						</li>
+					<div class="col-sm-6 col-md-2 text-left">
+						<ul>
+							<li>
+								<a href="issuers.html">issuers</a>
+							</li>
+							<li>
+								<a href="investors.html">Investors</a>
+							</li>
+							<li>
+								<a href="serviceproviders.html">Service Providers</a>
+							</li>
+							<li>
+								<a href="st20.html">ST-20 Standard</a>
+							</li>
+							<li>
+								<a href="https://blog.polymath.network" target="_blank">Blog</a>
+							</li>
 
-						
 
-					</ul>
 
-				</div>
-				<div class="col-sm-6 col-md-2 text-left">
-					<ul>
-						<!-- <li>
-							<a href="team.html">Team</a>
-						</li> -->
-						<li>
-							<a href="advisors.html">Advisors</a>
-						</li>
-						<li>
-							<a href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
-						</li>
-						<li>
-							<a href="https://developers.polymath.network" target="_blank">Developers</a>
-						</li>
-						<li>
-							<a href="contact.html">contact us</a>
-						</li>
-					
+						</ul>
 
-					</ul>
+					</div>
+					<div class="col-sm-6 col-md-2 text-left">
+						<ul>
+							<li>
+								<a href="team.html">Team</a>
+							</li>
+							<li>
+								<a href="advisors.html">Advisors</a>
+							</li>
+							<li>
+								<a href="https://polymath.bamboohr.com/jobs/" target="_blank">Careers</a>
+							</li>
+							<li>
+								<a href="https://developers.polymath.network" target="_blank">Developers</a>
+							</li>
+							<li>
+								<a href="contact.html">contact us</a>
+							</li>
 
-				</div>
-				<div class="col-sm-12 col-md-6 text-center text-md-right">
-					
-					<ul class="social">
-						<li>
-							<a href="https://www.facebook.com/polymathnetwork" target="_blank">
-								<i class="fab fa-facebook"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/polymathnetwork" target="_blank">
-								<i class="fab fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.youtube.com/channel/UC77syPQJO0eA5FBUMczZ4bA" target="_blank">
-								<i class="fab fa-youtube"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/company/18168860/" target="_blank">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
-						</li>
-					</ul>
-					<ul class="social">
-						<li>
-							<a href="https://t.me/polymathnetwork" target="_blank">
-								<i class="fab fa-telegram-plane"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/PolymathNetwork" target="_blank">
-								<i class="fab fa-github"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://blog.polymath.network/" target="_blank">
-								<i class="fab fa-medium-m"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.reddit.com/r/polymathnetwork" target="_blank">
-								<i class="fab fa-reddit-alien"></i>
-							</a>
-						</li>
-					</ul>
+
+						</ul>
+
+					</div>
+					<div class="col-sm-12 col-md-6 text-center text-md-right">
+
+						<ul class="social">
+							<li>
+								<a href="https://www.facebook.com/polymathnetwork" target="_blank">
+									<i class="fab fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/polymathnetwork" target="_blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/channel/UC77syPQJO0eA5FBUMczZ4bA" target="_blank">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/company/18168860/" target="_blank">
+									<i class="fab fa-linkedin-in"></i>
+								</a>
+							</li>
+						</ul>
+						<ul class="social">
+							<li>
+								<a href="https://t.me/polymathnetwork" target="_blank">
+									<i class="fab fa-telegram-plane"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/PolymathNetwork" target="_blank">
+									<i class="fab fa-github"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://blog.polymath.network/" target="_blank">
+									<i class="fab fa-medium-m"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.reddit.com/r/polymathnetwork" target="_blank">
+									<i class="fab fa-reddit-alien"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<!-- End Main Footer -->
+		</footer>
+		<!-- End Main Footer -->
 
 
 
@@ -1277,7 +1044,17 @@
 
 	<!-- build:js -->
 	<!-- <script src="assets/js/core.min.js"></script> -->
-	<!-- <script src="assets/js/jquery.min.js"></script> -->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<script>
+		$.ajax({
+			type: 'GET',
+			url: 'https://ssmojqt4f2.execute-api.us-east-1.amazonaws.com/prod/stats',
+			dataType: 'json',
+			crossDomain: true 
+		});
+	</script>
+
 	<!-- <script src="assets/vendors/modernizr.min.js"></script> -->
 	<!-- <script src="assets/js/theme.vendors.min.js"></script>
 		<script src="assets/js/script.js"></script>
@@ -1295,7 +1072,6 @@
 	<script type="text/javascript" src="assets/js/lity.min.js"></script>
 	<!--endbuild-->
 	<!-- cdnjs -->
-
 
 	<script>
 		var $svg = $('svg').drawsvg();
@@ -1338,67 +1114,67 @@
 			// 	rss_url: 'https://blog.polymath.network/feed' //Get posts from publication
 			// };
 			$.ajax({
-					url: 'https://api.rss2json.com/v1/api.json',
-					method: 'GET',
-					dataType: 'json',
-					data: {
-						rss_url: 'https://blog.polymath.network/feed',
-						// api_key: '0000000000000000000000000000000000000000', // put your api key here
-						// count: 3
-					}
+				url: 'https://api.rss2json.com/v1/api.json',
+				method: 'GET',
+				dataType: 'json',
+				data: {
+					rss_url: 'https://blog.polymath.network/feed',
+					// api_key: '0000000000000000000000000000000000000000', // put your api key here
+					// count: 3
+				}
 			}).done(function (response) {
-				if(response.status != 'ok'){ 
+				if (response.status != 'ok') {
 					throw response.message;
-					console.log("Could not retreive medium feed") 
+					console.log("Could not retreive medium feed")
 				}
 
 				console.log('====== ' + response.feed.title + ' ======');
 
 				var styles = [
-						"blue-card",
-						"",
-						"gray-card"
-					];
+					"blue-card",
+					"",
+					"gray-card"
+				];
 
-					var images = [
-						'dist/assets/images/medium/how.jpeg',
-						'dist/assets/images/medium/security.jpeg',
-						'dist/assets/images/medium/machine.jpeg'
-					]
+				var images = [
+					'dist/assets/images/medium/how.jpeg',
+					'dist/assets/images/medium/security.jpeg',
+					'dist/assets/images/medium/machine.jpeg'
+				]
 
-					var output = '';
+				var output = '';
 
-				for(var i = 0; i < 3; i++){
+				for (var i = 0; i < 3; i++) {
 
 					var item = response.items[i];
 					console.log(item.title);
 					output += '<div class="col-lg-4 offset-lg-0 col-sm-12">' +
-							'<article class="latest-post latest-post-hover" data-hover3d="true" data-custom-image="true" data-custom-image-selector="{ &quot;backgroundImage&quot;: &quot;.latest-post-figure&quot;, &quot;src&quot;: &quot;.latest-post-image&quot; }" data-custom-links="true">' +
-							'<div class="latest-hover-box blue-card" data-stacking-factor="0.6">' +
-							'<div class="latest-hover-box-inner"></div>' +
-							'</div>' +
-							'<div class="latest-hover-image  blue-card" data-stacking-factor="0.6">' +
-							'<figure class="latest-post-figure" style="background-image: url( ' + images[i] + ');">' +
-							'<img class="latest-post-image" src="dist/assets/images/medium/security.jpeg" alt="">' +
-							'</figure>' +
-							'</div>' +
-							'<div class="latest-hover-line  blue-card" data-stacking-factor="0.7">' +
-							'<div class="latest-hover-content">' +
-							'<header>' +
-							'<h3 class="entry-title latest-post__title">' + item.title + '</h3>' +
-							'</header>' +
-							'<div class="latest-post__excerpt">' +
-							'</div>' +
-							'<footer>' +
-							'<span>Read the story' +
-							'<i class="fas fa-arrow-right novi-icon"></i>' +
-							'</span>' +
-							'</footer>' +
-							'</div>' +
-							'</div>' +
-							'<a class="entry-read-more overlay-link" href=" ' + item.link + '"></a>' +
-							'</article>' +
-							'</div>';
+						'<article class="latest-post latest-post-hover" data-hover3d="true" data-custom-image="true" data-custom-image-selector="{ &quot;backgroundImage&quot;: &quot;.latest-post-figure&quot;, &quot;src&quot;: &quot;.latest-post-image&quot; }" data-custom-links="true">' +
+						'<div class="latest-hover-box blue-card" data-stacking-factor="0.6">' +
+						'<div class="latest-hover-box-inner"></div>' +
+						'</div>' +
+						'<div class="latest-hover-image  blue-card" data-stacking-factor="0.6">' +
+						'<figure class="latest-post-figure" style="background-image: url( ' + images[i] + ');">' +
+						'<img class="latest-post-image" src="dist/assets/images/medium/security.jpeg" alt="">' +
+						'</figure>' +
+						'</div>' +
+						'<div class="latest-hover-line  blue-card" data-stacking-factor="0.7">' +
+						'<div class="latest-hover-content">' +
+						'<header>' +
+						'<h3 class="entry-title latest-post__title">' + item.title + '</h3>' +
+						'</header>' +
+						'<div class="latest-post__excerpt">' +
+						'</div>' +
+						'<footer>' +
+						'<span>Read the story' +
+						'<i class="fas fa-arrow-right novi-icon"></i>' +
+						'</span>' +
+						'</footer>' +
+						'</div>' +
+						'</div>' +
+						'<a class="entry-read-more overlay-link" href=" ' + item.link + '"></a>' +
+						'</article>' +
+						'</div>';
 				}
 
 				$content.append(output);
@@ -1407,97 +1183,10 @@
 
 			});
 
-			// $.getJSON('https://api.rss2json.com/v1/api.json', data, function (response) {
-			// 	if (response.status == 'ok') {
 
-			// 		var styles = [
-			// 			"blue-card",
-			// 			"",
-			// 			"gray-card"
-			// 		];
-
-			// 		var images = [
-			// 			'dist/assets/images/medium/how.jpeg',
-			// 			'dist/assets/images/medium/security.jpeg',
-			// 			'dist/assets/images/medium/machine.jpeg'
-			// 		]
-
-			// 		var output = '';
-			// 		var items = response.items;
-			// 		console.log("Medium Feed", items)
-			// 		// $.each(response.items, function (k, item) {
-			// 		for (var i = 0; i < 3; i++) {
-
-
-			// 			output += '<div class="col-lg-4 offset-lg-0 col-sm-12">' +
-			// 				'<article class="latest-post latest-post-hover" data-hover3d="true" data-custom-image="true" data-custom-image-selector="{ &quot;backgroundImage&quot;: &quot;.latest-post-figure&quot;, &quot;src&quot;: &quot;.latest-post-image&quot; }" data-custom-links="true">' +
-			// 				'<div class="latest-hover-box blue-card" data-stacking-factor="0.6">' +
-			// 				'<div class="latest-hover-box-inner"></div>' +
-			// 				'</div>' +
-			// 				'<div class="latest-hover-image  blue-card" data-stacking-factor="0.6">' +
-			// 				'<figure class="latest-post-figure" style="background-image: url( ' + images[i] + ');">' +
-			// 				'<img class="latest-post-image" src="dist/assets/images/medium/security.jpeg" alt="">' +
-			// 				'</figure>' +
-			// 				'</div>' +
-			// 				'<div class="latest-hover-line  blue-card" data-stacking-factor="0.7">' +
-			// 				'<div class="latest-hover-content">' +
-			// 				'<header>' +
-			// 				'<h3 class="entry-title latest-post__title">' + items[i].title + '</h3>' +
-			// 				'</header>' +
-			// 				'<div class="latest-post__excerpt">' +
-			// 				'</div>' +
-			// 				'<footer>' +
-			// 				'<span>Read the story' +
-			// 				'<i class="fas fa-arrow-right novi-icon"></i>' +
-			// 				'</span>' +
-			// 				'</footer>' +
-			// 				'</div>' +
-			// 				'</div>' +
-			// 				'<a class="entry-read-more overlay-link" href=" ' + items[i].link + '"></a>' +
-			// 				'</article>' +
-			// 				'</div>';
-			// 		};
-
-
-			// 		$content.append(output);
-
-			// 		$('#section-articles').show();
-
-			// 	} else {
-			// 		console.log("Could not retreive medium feed")
-			// 	}
-			// });
-		
 		});
 	</script>
 
-
-
-	<script type="text/javascript">
-			// $("#ipo-animation").mouseover(function(e) {
-			// 	$("#ipo-animation").attr("src", 'assets/images/animations/ipos.gif');
-			// });
-			//
-			// $("#ipo-animation").mouseout(function(e) {
-			// 	$("#ipo-animation").attr("src", 'assets/images/animations/ipos.png');
-			// });
-			//
-			// $("#eth-animation").mouseover(function(e) {
-			// 	$("#eth-animation").attr("src", 'assets/images/graphs/eth-graph.gif');
-			// });
-			//
-			// $("#eth-animation").mouseout(function(e) {
-			// 	$("#eth-animation").attr("src", 'assets/images/graphs/eth-graph.png');
-			// });
-			//
-			// $("#poly-animation").mouseover(function(e) {
-			// 	$("#poly-animation").attr("src", 'assets/images/graphs/poly-graph.gif');
-			// });
-			//
-			// $("#poly-animation").mouseout(function(e) {
-			// 	$("#poly-animation").attr("src", 'assets/images/graphs/poly-graph.png');
-			// });
-	</script>
 </body>
 
 </html>
