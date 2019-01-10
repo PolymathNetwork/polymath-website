@@ -374,16 +374,17 @@
 													<div class="pix-padding-h-10 pix-padding-v-20">
 														<h1 class="pix-black-gray-dark">
 
-															<span class="pix_edit_text"><strong>4023</strong></span> </h1>
+															<span class="pix_edit_text" id="ticker_count"><strong>4023</strong></span> </h1>
 
 													</div>
+													<!--
 													<span class="pix_edit_text"> Most Recent Symbols </span>
 													<p class="pix-black-gray-dark big-text pix-margin-bottom-20">
 														<span class="pix_edit_text">
-															NVO, WLW, ICL
+
 														</span>
 													</p>
-
+													-->
 												</div>
 											</div>
 											<div class="col-xs-6 col-sm-6 column ui-droppable">
@@ -395,17 +396,18 @@
 													</div>
 													<div class="pix-padding-h-10 pix-padding-v-20">
 														<h1 class="pix-black-gray-dark">
-															<span class="pix_edit_text"><strong>343</strong></span> </h1>
+															<span class="pix_edit_text" id="token_count"></span> </h1>
 
 
 													</div>
+													<!--
 													<span class="pix_edit_text"> Most Recent Tokens </span>
 													<p class="pix-black-gray-dark big-text pix-margin-bottom-20">
 														<span class="pix_edit_text">
-															BRCA, FHW, OLE
+
 														</span>
 													</p>
-
+													-->
 												</div>
 											</div>
 										</div>
@@ -414,9 +416,9 @@
 									</div>
 								</div>
 								<header class="section-title section-title-default align-center mb-100">
-									<p class="justify-content-center">
-										<a href="/submission.html" class="btn btn-solid text-uppercase">
-											<span> Start Creating Your Own Token Now </span>
+									<p class="justify-content-center" >
+										<a href="/submission.html" class="btn btn-solid text-uppercase" style="padding-top: 6px">
+											<span > Start Creating Your Own Token Now </span>
 										</a>
 									</p>
 								</header>
@@ -674,7 +676,7 @@
 			</section>
 			<!-- End Iconboxes -->
 
-			
+
 			<!-- Start Token -->
 			<section class="section pt-70 pb-70">
 				<div class="container">
@@ -1051,7 +1053,11 @@
 			type: 'GET',
 			url: 'https://ssmojqt4f2.execute-api.us-east-1.amazonaws.com/prod/stats',
 			dataType: 'json',
-			crossDomain: true 
+			crossDomain: true,
+			success: function (data) {
+				$('#token_count').html(data.securityTokenStats.tokens);
+				$('#ticker_count').html(data.securityTokenStats.tickers);
+			}
 		});
 	</script>
 
