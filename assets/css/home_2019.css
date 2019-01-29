@@ -139,7 +139,7 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-mo
 }
 
 button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted ButtonText
 }
 
 fieldset {
@@ -376,96 +376,9 @@ nav.social a span {
   white-space: nowrap
 }
 
-.modal-trigger {
-  cursor: pointer
-}
 
-.modal {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.9);
-  display: none
-}
 
-.modal-window {
-  position: fixed;
-  width: 85%;
-  max-width: 486px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 1006;
-  max-height: 90%
-}
 
-.modal-content {
-  padding: 42px 30px 30px 30px
-}
-
-.modal.video .modal-window {
-  max-width: 1280px
-}
-
-.modal.video .modal-window .modal-content {
-  position: relative;
-  padding: 0 0 56.35% 0;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%
-}
-
-.modal.video .modal-window .modal-content iframe, .modal.video .modal-window .modal-content object, .modal.video .modal-window .modal-content embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%
-}
-
-.modal-window .modal-close {
-  background-color: #485592;
-  height: 60px;
-  width: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: fixed;
-  -webkit-transition: background-color 300ms ease;
-  transition: background-color 300ms ease
-}
-
-.modal-window .modal-close:after, .modal-window .modal-close:before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background-color: #fff;
-  height: 3px;
-  width: 35px
-}
-
-.modal-window .modal-close:after {
-  margin-top: -2px;
-  margin-left: -16px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg)
-}
-
-.modal-window .modal-close:before {
-  margin-top: -2px;
-  margin-left: -16px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg)
-}
-
-.no-touch .modal-window .modal-close:hover {
-  background-color: #3e4a80
-}
 
 @media (min-width: 768px) {
   .modal-window .modal-close {
