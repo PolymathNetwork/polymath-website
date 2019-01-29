@@ -589,6 +589,16 @@ nav.social a span {
   right: 25%
 }
 
+.polygon-animation.background>span:nth-child(7) {
+  background-image: url(../img/bg-shape-4.svg);
+  left: 85%
+}
+
+.polygon-animation.background>span:nth-child(8) {
+  background-image: url(../img/bg-shape-3.svg);
+  left: 75%
+}
+
 
 .polygon-animation.background>span:nth-child(6) {
   background-color: green;
@@ -1045,6 +1055,45 @@ nav.social a span {
 .no-touch .video-button:hover>span>span svg {
   fill: #7483c7
 }
+
+/* TICKER & TOKEN STYLES */
+.pix-cover-shape-180 {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 3px;
+        top: 0;
+        left: 0;
+        background-color: #465387;
+        padding: 6% 0% 18% 0%;
+}
+
+.pix-black-gray-light {
+        color: #FFF;
+        font-size: 150%;
+}
+
+.pix-padding-v-20 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+}
+
+.pix-padding-v-40 {
+        padding-top: 0px;
+        padding-bottom: 40px;
+}
+
+.pix-margin-bottom-15 {
+        margin-bottom: 15px;
+}
+
+.pix-margin-bottom-20 {
+        margin-bottom: -20px;
+        padding-bottom: 40px;
+}
+
 
 @media screen and (min-width: 768px) {
   #intro .bull {
