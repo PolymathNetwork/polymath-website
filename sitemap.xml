@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://polymath.network/</loc>
+  <lastmod>2019-01-30T18:24:55+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://polymath.network/issuers.html</loc>
+  <lastmod>2019-01-30T18:24:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://polymath.network/investors.html</loc>
+  <lastmod>2019-01-30T18:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://polymath.network/serviceproviders.html</loc>
+  <lastmod>2019-01-30T18:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://polymath.network/st20.html</loc>
+  <lastmod>2019-01-30T18:24:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://polymath.network/index.html</loc>
+  <lastmod>2019-01-30T18:24:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://polymath.network/advisors.html</loc>
+  <lastmod>2019-01-30T18:24:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://polymath.network/contact.html</loc>
+  <lastmod>2019-01-30T18:24:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://polymath.network/submission.html</loc>
+  <lastmod>2019-01-30T18:24:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://polymath.network/webinar.html</loc>
+  <lastmod>2019-01-30T18:24:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://polymath.network/whitepaper.html</loc>
+  <lastmod>2018-12-13T18:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://polymath.network/team.html</loc>
+  <lastmod>2018-12-21T17:47:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
