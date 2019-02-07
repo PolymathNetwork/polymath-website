@@ -2,6 +2,10 @@ body {
   /* Margin bottom by footer height */
   /* margin-bottom: 60px; */
 }
+
+/* Updated Header Feb1*/
+.navBorder {z-index: 3; border-bottom: solid 1px #efefef !important; font-family: 'Overpass', sans-serif !important;}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -555,7 +559,7 @@ ul.social li a:hover i {
   .hs_submit {
       text-align: center;
   }
-	
+
 	/* Serice Provider Page */
  serviceproviderlogo {
   padding : 25px;
