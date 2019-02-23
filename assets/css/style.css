@@ -569,3 +569,8 @@ ul.social li a:hover i {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
+
+/* Global styles for convertkit form */
+.ck_form.ck_minimal {
+  border:none !important;
+}
