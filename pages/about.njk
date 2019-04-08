@@ -1,0 +1,48 @@
+<!-- index.nunjucks -->
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <!-- Page Content -->
+    <!-- Page Content -->
+    <header id="hero" class="bg-success py-5 mb-5">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 text-white mt-5 py-5 mb-2">
+                        About Us
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>About Imoro</h2>
+                    <p class="lead">At IMORO we invite you to indulge in our heritage, Caribbean history and folklore of our ancestor’s way of using remedial ingredients from land and sea to naturally soothe and benefit the body. Fast forward to today where we at IMORO capture some of these elements in our award-winning line of Body and Spa products.</p>
+                    <p>Rich body butters, emulsifying scrubs, luxurious skin oils, masks and pain-relieving jellies incorporate local and regional botanicals, trace minerals and other sustainably source raw ingredients to create our natural products and Spa treats.</p>
+                    <p>After our initial launch in April 2015, which focus more on the professional side of the business we have since expanded our line to our loyal customers to take the Spa experience home with them. Our extensive offerings cater to both male and female of all ages. (see our product listing for more) We will continue to add to our line as we research and develop new products.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>Imorotherapy Spa Treats</h2>
+                        <p>Elevate your Spa experience with our line of professional IMOROTHERAPY Spa products, created and develop by our founder Portia K. Doyle a Certified Cosmetic Formulator and renown Spa & Wellness expert for over 25 years. The line includes but is not limited to the following: massage oils, skincare, body scrubs, enzymatic mask and body wraps. This line captured the Small Business Association 2018 Niche Manufacturing Award.</p>
+                        <p>We take pride great joy in making luxurious products using quality ingredients. Most of our items are vegan, we do occasionally use honey or beeswax, but we do not use any animal fats or milk.</p>
+                        <p>All our products are currently made in Barbados with a goal to expand to my native island of St. Vincent & the Grenadines. All our products are cruelty free and never tested on animals, nor do they contain mineral oil or fillers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            {% include "partials/contactform.html" %}
+        </section>
+        <!-- /.container -->
+
+    {% endblock %}

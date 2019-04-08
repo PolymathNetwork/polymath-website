@@ -1,0 +1,58 @@
+<!-- index.nunjucks -->
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <!-- Page Content -->
+    <header id="hero" class="bg-success py-5 mb-5">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 text-white mt-5 py-5 mb-2">
+                        Store
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">Our Products</h1>
+            <p class="lead">View the products in our store. Click each category in order to find out more</p>
+        </div>
+
+        <div class="row">
+
+            {% for category in categories %}
+                {# {% if product.id == 1 %} #}
+                <div class="col-md-4 my-4">
+                    <div class="imagebox">
+                        <a href="products/{{category.link}}.html">
+                            <img src="{{category.photo}}" class="category-banner img-fluid">
+                            <span class="imagebox-desc">{{category.name}}</span>
+                        </a>
+                    </div>
+                </div>
+                {# {% endif %} #}
+            {% endfor %}
+        </div>
+
+        <section id="disclaimer" class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>Disclaimer</h2>
+                        <p>Our products are not intended to diagnose, treat, cure or prevent any disease nor are they edible. Be aware of ingredients that you may have sensitivity to, if you’re allergic to a plant or flow chances are you will be sensitive to the essential oil of said plant or flower including citrus. We do offer coconut oil and shea butter free options, just send a note with your order or send us an email with your preferences.</p>
+                        <p>Place a small amount product on clean skin over a 24hr period to patch test for sensitivity if unsure. Discontinue use and consult a physician if irritation occurs</p>
+                        <p>Due to health and hygienic policies, no refunds or returns will be offered on any bath and body products if the seal has been damaged or broken. Please be sure to read all ingredients prior to purchasing and if you have any questions on the product, please ask before purchasing. We are happy to discuss the ingredients list but will not disclose the recipe in full.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- /.container -->
+
+{% endblock %}

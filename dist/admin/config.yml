@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: polymathnetwork/polymath-website
+  branch: dev # Branch to update (optional; defaults to master)
+# This line should *not* be indented
+media_folder: "assets/images/uploads"
+public_folder: "/images/uploads"
+collections:
+  - name: "posts" # Used in routes, e.g. /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    filter:
+      - field: publication_url
+      - value: ""
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Categories", name: "categories", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Publication URL", name: "publication_url", widget: "string" }
+  - label: "Team"
+    name: "team"
+    folder: "assets/images/team" # The path to the folder where the documents are stored
+    widget: "list"
+    create: true
+    fields:
+      - {
+          label: Quote,
+          name: quote,
+          widget: string,
+          default: "Everything is awesome!",
+        }
+      - label: Author
+        name: author
+        widget: object
+        fields:
+          - { label: Name, name: name, widget: string, default: "Emmet" }
+          - {
+              label: Avatar,
+              name: avatar,
+              widget: image,
+              default: "/img/emmet.jpg",
+            }

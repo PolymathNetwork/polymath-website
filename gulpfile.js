@@ -1,153 +1,94 @@
-// include gulp
-var gulp = require("gulp");
-//jshint
-var jshint = require("gulp-jshint");
-var changed = require("gulp-changed");
-//imgs
-var imagemin = require("gulp-imagemin");
-const imageminMozjpeg = require("imagemin-mozjpeg");
-var minifyHTML = require("gulp-minify-html");
-// js files
-var concat = require("gulp-concat");
-var stripDebug = require("gulp-strip-debug");
-var uglify = require("gulp-uglify");
-// css files
-var autoprefix = require("gulp-autoprefixer");
-var cleanCSS = require("gulp-clean-css");
+// Load plugins
+const browsersync = require("browser-sync").create();
+const gulp = require("gulp");
+var nunjucksRender = require("gulp-nunjucks-render");
+var data = require("gulp-data");
+var path = require("path");
+var fs = require("fs");
+var netlify = require("gulp-netlify");
 
-var browserSync = require("browser-sync").create();
-var htmlreplace = require("gulp-html-replace");
+const imagemin = require("gulp-imagemin");
 
-var postcss = require("gulp-postcss");
-var uncss = require("postcss-uncss");
+var manageEnvironment = function(env) {
+  env.addFilter("split", function(str, seperator) {
+    return str.split(seperator);
+  });
+};
 
-const purgecss = require("gulp-purgecss");
+gulp.task("render_content", function(cb) {
+  // Copy assets to dist folder
+  gulp.src(["./assets/**/*"]).pipe(gulp.dest("./dist/assets/"));
 
-const webp = require("gulp-webp");
-var gzip = require("gulp-gzip");
+  //Render images
+  // gulp
+  //   .src("./assets/images/**/*")
+  //   .pipe(imagemin())
+  //   .pipe(gulp.dest("dist/assets/images"));
 
-var csso = require("gulp-csso");
-purge = require("gulp-css-purge");
-
-var runSequence = require("run-sequence");
-
-// JS hint task
-gulp.task("jshint", function() {
+  //Render nunjucks to html
   gulp
-    .src("./src/scripts/*.js")
-    .pipe(jshint())
-    .pipe(jshint.reporter("default"));
-});
-
-// minify new images
-gulp.task("imagemin", function() {
-  var imgSrc = "./assets/images/**/*",
-    imgDst = "./dist/assets/images";
-
-  gulp
-    .src(imgSrc)
-    // .pipe(webp())
-    // .pipe(changed(imgDst))
+    .src("pages/**/*.+(html|njk|yml)")
+    // Adding data to Nunjucks
+    // .pipe(
+    //   data(function() {
+    //     return require("data.json");
+    //   })
+    // )
+    // .pipe(
+    //   data(function(file) {
+    //     return JSON.parse(fs.readFileSync("./assets/data/data.json"));
+    //   })
+    // )
     .pipe(
-      imagemin([
-        imageminMozjpeg({
-          quality: 50
-        })
-      ])
-    )
-    .pipe(gulp.dest(imgDst));
-});
-
-// minify new or changed HTML pages
-gulp.task("clean-html", function() {
-  var htmlSrc = "*.html",
-    htmlDst = "./dist";
-
-  gulp
-    .src(htmlSrc)
-    // .pipe(changed(htmlDst))
-    .pipe(minifyHTML())
-    // .pipe(gzip({ append: false }))
-    .pipe(gulp.dest(htmlDst));
-});
-
-// CSS concat, auto-prefix and minify
-gulp.task("clean-css", function() {
-  var plugins = [
-    uncss({
-      html: ["*.html"]
-    })
-  ];
-  return (
-    gulp
-      .src([
-        "./assets/css/bootstrap.min.css",
-        // "./assets/css/theme-vendors.css",
-        "./assets/css/theme.min.css",
-        "./assets/css/theme-color/theme-centro.css",
-        "./assets/css/lity.min.css",
-        "./assets/css/style.css"
-      ])
-      //
-      .pipe(concat("compiled.min.css"))
-      // .pipe(postcss(plugins))
-      // .pipe(purgecss({ content: ["*.html"] }))
-      // .pipe(gzip({ append: false }))
-      // .pipe(purge())
-      // .pipe(cleanCSS())
-      // .pipe(csso())
-      .pipe(gulp.dest("dist/assets/css"))
-  );
-});
-
-// JS concat, strip debugging and minify
-gulp.task("clean-js", function() {
-  gulp
-    .src(["./assets/js/*.js", "./assets/js/*.min.js"])
-    .pipe(concat("compiled.min.js"))
-    // .pipe(stripDebug())
-    .pipe(uglify())
-    .pipe(gulp.dest("dist/assets/js/"));
-});
-
-gulp.task("renameSources", function() {
-  return gulp
-    .src(["index.html"])
-    .pipe(
-      htmlreplace({
-        // js: "assets/js/compiled.min.js",
-        css: "assets/css/compiled.min.css"
+      nunjucksRender({
+        path: ["templates/"], // String or Array
+        data: {
+          site_title: "Imoro Therapy"
+        },
+        envOptions: {
+          watch: false
+        },
+        manageEnv: manageEnvironment
       })
     )
-    .pipe(gulp.dest("dist/"));
+    .pipe(gulp.dest("dist"));
+  cb();
 });
 
-gulp.task("serve", ["imagemin", "clean-css"], function() {
-  browserSync.init({
-    server: "./"
+gulp.task("render_images", function(cb) {
+  gulp
+    .src("./assets/images/**/*")
+    .pipe(imagemin())
+    .pipe(gulp.dest("dist/assets/images"));
+  cb();
+});
+
+// BrowserSync
+function browserSync(done) {
+  browsersync.init({
+    server: {
+      baseDir: "./dist"
+    }
   });
+  done();
+}
 
-  gulp.watch("assets/css/**/*.scss", ["watchFiles"]);
-  gulp.watch(["*.html"]).on("change", browserSync.reload);
-  // gulp.start("renameSources");
-});
+// BrowserSync Reload
+function browserSyncReload(done) {
+  // gulp.parallel("vendor");
+  browsersync.reload();
+  done();
+}
 
-// default gulp task
-gulp.task(
-  "default",
-  ["imagemin", "clean-css", "clean-html", "clean-js", "renameSources"],
-  function() {
-    // gulp.start("renameSources");
-  }
-);
+// Watch files
+function watchFiles() {
+  gulp.watch("./assets/**/*", gulp.series("render_content"));
+  gulp.watch("./templates/**/*", gulp.series("render_content"));
+  gulp.watch("./pages/**/*", gulp.series("render_content"));
+  gulp.watch("./dist/*.html", browserSyncReload);
+}
 
-gulp.task("dist", function(callback) {
-  runSequence(
-    // "imagemin",
-    "clean-css",
-    "clean-html",
-    "clean-js",
-    "renameSources",
-    callback
-  );
-});
+gulp.task("default", gulp.parallel("render_content", "render_images"));
+
+// dev task
+gulp.task("dev", gulp.parallel("render_content", watchFiles, browserSync));

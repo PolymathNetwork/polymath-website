@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include "partials/header.html" %}
+
+    <body class="footer-fixed">
+
+        <!-- Start #wrap -->
+        <div id="wrap">
+
+            {% include "partials/nav.html" %}
+
+            {% block content %}{% endblock %}
+
+            {% include "partials/footer.html" %}
+
+        </div>
+        <!-- Bootstrap core JavaScript -->
+
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+
+            var items = [];
+            var products = [];
+            $.getJSON("/assets/data/data.json", function (data) {
+
+                // console.log(data);
+                $.each(data, function (key, val) {
+                    items.push(data)
+                });
+
+                console.log(items)
+                products = items[0].products;
+                console.log(products)
+            });
+
+            var infoModal = $("#myModal");
+            $(".openModal").on("click", function () {
+                console.log(this.value);
+                var product_id = parseInt(this.value) - 1
+                console.log(products[product_id])
+                // htmlData = $(this)
+                //   .find(".profile")
+                //   .html();
+                infoModal
+                    .find(".modal-title")
+                    .html(products[product_id].name);
+                infoModal
+                    .find(".modal-description")
+                    .html(products[product_id].ingredients);
+                infoModal
+                    .find(".product-directions")
+                    .html(products[product_id].directions);
+                infoModal
+                    .find(".product-disclaimer")
+                    .html(products[product_id].disclaimer);
+                infoModal.modal("show");
+                return false;
+            });
+        </script>
+    </body>
+</html>
