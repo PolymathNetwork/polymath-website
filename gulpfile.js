@@ -2,7 +2,6 @@
 var gulp = require("gulp");
 //jshint
 var jshint = require("gulp-jshint");
-var changed = require("gulp-changed");
 //imgs
 var imagemin = require("gulp-imagemin");
 const imageminMozjpeg = require("imagemin-mozjpeg");
@@ -11,9 +10,6 @@ var minifyHTML = require("gulp-minify-html");
 var concat = require("gulp-concat");
 var stripDebug = require("gulp-strip-debug");
 var uglify = require("gulp-uglify");
-// css files
-var autoprefix = require("gulp-autoprefixer");
-var cleanCSS = require("gulp-clean-css");
 
 var browserSync = require("browser-sync").create();
 var htmlreplace = require("gulp-html-replace");
@@ -21,12 +17,6 @@ var htmlreplace = require("gulp-html-replace");
 var postcss = require("gulp-postcss");
 var uncss = require("postcss-uncss");
 
-const purgecss = require("gulp-purgecss");
-
-const webp = require("gulp-webp");
-var gzip = require("gulp-gzip");
-
-var csso = require("gulp-csso");
 purge = require("gulp-css-purge");
 
 var runSequence = require("run-sequence");
@@ -90,12 +80,6 @@ gulp.task("clean-css", function() {
       ])
       //
       .pipe(concat("compiled.min.css"))
-      // .pipe(postcss(plugins))
-      // .pipe(purgecss({ content: ["*.html"] }))
-      // .pipe(gzip({ append: false }))
-      // .pipe(purge())
-      // .pipe(cleanCSS())
-      // .pipe(csso())
       .pipe(gulp.dest("dist/assets/css"))
   );
 });
@@ -135,7 +119,7 @@ gulp.task("serve", ["imagemin", "clean-css"], function() {
 // default gulp task
 gulp.task(
   "default",
-  ["imagemin", "clean-css", "clean-html", "clean-js", "renameSources"],
+  ["imagemin", "clean-css", "clean-html", "renameSources"],
   function() {
     // gulp.start("renameSources");
   }
@@ -146,7 +130,6 @@ gulp.task("dist", function(callback) {
     // "imagemin",
     "clean-css",
     "clean-html",
-    "clean-js",
     "renameSources",
     callback
   );

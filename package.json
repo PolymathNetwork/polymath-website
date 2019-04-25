@@ -27,7 +27,6 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-minify-html": "^1.0.6",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-strip-debug": "^3.0.0",
     "gulp-uglify": "^3.0.0",
