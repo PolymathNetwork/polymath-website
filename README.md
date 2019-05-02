@@ -1,6 +1,6 @@
 # Polymath Website
 
-Homepage for [Polymath](www.polymath.network)
+Homepage for [Polymath](https://www.polymath.network)
 
 ## Quick start
 
