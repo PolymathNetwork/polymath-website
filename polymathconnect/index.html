@@ -44,6 +44,21 @@
                 bottom: 0;
                 top: 0;
             }
+
+            .demo-iframe-holder {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                top: 0;
+                -webkit-overflow-scrolling: touch;
+                overflow-y: scroll;
+            }
+
+            .demo-iframe-holder iframe {
+                height: 100%;
+                width: 100%;
+            }
         </style>
         <script>
             (function (a, s, y, n, c, h, i, d, e) {
@@ -89,8 +104,8 @@
         <!-- <script data-src="vendors/modernizr.min.js"></script> -->
     </head>
     <body>
-        <div id="content">
-            <iframe width="100%" height="100%" frameborder="0" src="https://polymathconnect.polymath.network"/>
+        <div class="demo-iframe-holder">
+            <iframe src="https://polymathconnect.polymath.network"></iframe>
         </div>
     </body>
 </html>
