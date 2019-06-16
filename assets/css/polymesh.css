@@ -1,0 +1,90 @@
+.navbar-brand img {
+  height: 80px;
+  filter: invert(30%);
+}
+
+.navbar-blue {
+  background-color: #2a3e7d;
+  justify-content: center;
+  height: 120px !important;
+}
+
+.polymesh-content {
+  color: #2a3e7d !important;
+}
+
+.polymesh-content h1,
+.polymesh-content h2 {
+  font-weight: bold;
+  color: #2a3e7d !important;
+}
+
+.polymesh-content h1 {
+  font-size: 60px;
+}
+
+.polymesh-content h2 {
+  font-size: 40px;
+}
+.polymesh-content h2 span {
+  font-size: 60%;
+  font-weight: normal;
+  display: block;
+  line-height: 32px;
+}
+
+.polymesh-content h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.polymesh-content p {
+  font-size: 18px !important;
+}
+
+.polymesh-content a {
+  border: none;
+  padding: 10px;
+}
+
+.polymesh-content a span {
+  font-size: 24px;
+  line-height: 30px !important;
+}
+
+.articles {
+  min-height: 250px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+.articles a {
+  margin-top: auto;
+}
+
+.articles p {
+  font-size: 22px !important;
+}
+
+.bg-blue {
+  background-color: #2a3e7d;
+}
+
+.bg-blue h2 {
+  color: #fff !important;
+}
+
+.main-footer {
+  background-color: #252e6a;
+  font-family: Overpass;
+}
+
+.main-footer p {
+  font-size: 22px !important;
+}
+
+.btn-default {
+  border: 3px solid #252e6a !important;
+}
