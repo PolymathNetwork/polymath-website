@@ -961,7 +961,7 @@ h2.xl {
 }
 
 .telegram-cta {
-  background: url("../images/Telegram_logo.svg") no-repeat;
+  background: url('../images/Telegram_logo.svg') no-repeat;
   background-position: bottom -50px left -40px;
   /* background-attachment: fixed; */
   /* background-size: contain; */
@@ -1065,12 +1065,12 @@ h2.xl {
 }
 .terms-content li:before {
   counter-increment: section;
-  content: counters(section, ".") ". ";
+  content: counters(section, '.') '. ';
 }
 
 .terms-content li li:before {
   counter-increment: section;
-  content: counters(section, ".") " ";
+  content: counters(section, '.') ' ';
 }
 
 .terms-content ol ol ol {
@@ -1086,7 +1086,7 @@ h2.xl {
 
 .terms-content ol ol ol > li:before {
   counter-increment: list;
-  content: "(" counter(list, lower-alpha) ") ";
+  content: '(' counter(list, lower-alpha) ') ';
   text-indent: 2em;
   position: absolute;
   left: -1.4em;
@@ -1170,7 +1170,7 @@ span.poly {
 }
 
 .arrow-right {
-  background: url("../images/icons/svg/icn-arrow.svg") no-repeat center center;
+  background: url('../images/icons/svg/icn-arrow.svg') no-repeat center center;
   background-size: contain;
   cursor: pointer;
   display: inline-block;
@@ -1179,7 +1179,7 @@ span.poly {
 }
 
 .poly-cta {
-  background: url("../images/bull_circle.svg") no-repeat -10px 50px;
+  background: url('../images/bull_circle.svg') no-repeat -10px 50px;
 }
 
 .slider {
@@ -1250,7 +1250,7 @@ span.poly {
 
 .background-polymath {
   height: 600px;
-  background: url("../images/bg/header-polymath.png") no-repeat center 80%;
+  background: url('../images/bg/header-polymath.png') no-repeat center 80%;
   /* background: url("../images/bg/bg_bull.png") no-repeat center center; */
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1377,7 +1377,7 @@ ul.social li a:hover i {
 
 .tinted-image {
   background: linear-gradient(rgba(37, 46, 106, 0.45), rgba(37, 46, 106, 0.45)),
-    url("../images/bg/bottom_lg.jpg") no-repeat bottom center;
+    url('../images/bg/bottom_lg.jpg') no-repeat bottom center;
   background-size: cover;
 }
 
@@ -1474,7 +1474,7 @@ ul.social li a:hover i {
   }
 
   .telegram-cta {
-    background: url("../images/Telegram_logo.svg") no-repeat;
+    background: url('../images/Telegram_logo.svg') no-repeat;
     background-position: bottom -40px left -30px;
     /* background-attachment: fixed; */
     /* background-size: contain; */
